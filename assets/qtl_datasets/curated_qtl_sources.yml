@@ -1,0 +1,407 @@
+# =============================================================================
+# Curated QTL Datasets for Multi-Ancestry Colocalization Analysis
+# =============================================================================
+# This file defines QTL resources organized by ancestry/population
+# Users can enable/disable specific datasets and add their own custom sources
+#
+# NOTE: GTEx is heavily European-biased. We include diverse sources to improve
+# representation, particularly for African, Hispanic/Latino, and Asian ancestries.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# EUROPEAN-PREDOMINANT DATASETS
+# These are large but limited in diversity
+# -----------------------------------------------------------------------------
+european_predominant:
+  gtex_v8:
+    name: "GTEx v8"
+    description: "Genotype-Tissue Expression Project v8 (85% European)"
+    types: [eqtl, sqtl]
+    tissues: 49
+    n_samples: 838
+    ancestry_composition:
+      EUR: 0.85
+      AFR: 0.12
+      HISP: 0.02
+      OTHER: 0.01
+    url: "https://gtexportal.org/home/datasets"
+    enabled: true
+    priority: 2  # Use but not as primary for diverse populations
+
+  eqtlgen:
+    name: "eQTLGen"
+    description: "Large blood eQTL meta-analysis (predominantly European)"
+    types: [eqtl]
+    tissues: [blood]
+    n_samples: 31684
+    ancestry_composition:
+      EUR: 0.95
+    url: "https://www.eqtlgen.org/"
+    enabled: true
+    priority: 3
+
+  ukbiobank_pqtl:
+    name: "UK Biobank pQTL"
+    description: "Plasma protein QTLs from UK Biobank"
+    types: [pqtl]
+    tissues: [plasma]
+    n_samples: 35559
+    ancestry_composition:
+      EUR: 0.94
+    url: "https://www.ukbiobank.ac.uk/"
+    enabled: true
+    priority: 3
+
+# -----------------------------------------------------------------------------
+# MULTI-ETHNIC / DIVERSE DATASETS
+# Prioritized for improved diversity
+# -----------------------------------------------------------------------------
+multi_ethnic:
+  mesa:
+    name: "MESA"
+    description: "Multi-Ethnic Study of Atherosclerosis - diverse eQTLs"
+    types: [eqtl]
+    tissues: [monocytes, pbmc]
+    n_samples: 1202
+    ancestry_composition:
+      EUR: 0.38
+      AFR: 0.28
+      HISP: 0.22
+      EAS: 0.12  # Chinese American
+    url: "https://www.mesa-nhlbi.org/"
+    enabled: true
+    priority: 1  # High priority for diverse populations
+
+  page_study:
+    name: "PAGE Study"
+    description: "Population Architecture using Genomics and Epidemiology"
+    types: [eqtl, pqtl]
+    tissues: [blood, adipose]
+    n_samples: 50000
+    ancestry_composition:
+      AFR: 0.30
+      HISP: 0.35
+      ASIAN: 0.15
+      NATIVE: 0.10
+      EUR: 0.10
+    url: "https://www.pagestudy.org/"
+    enabled: true
+    priority: 1
+
+  topmed_eqtl:
+    name: "TOPMed eQTL"
+    description: "Trans-Omics for Precision Medicine eQTL data"
+    types: [eqtl]
+    tissues: [blood, lung, heart]
+    n_samples: 15000
+    ancestry_composition:
+      EUR: 0.50
+      AFR: 0.30
+      HISP: 0.15
+      ASIAN: 0.05
+    url: "https://topmed.nhlbi.nih.gov/"
+    enabled: true
+    priority: 1
+
+  aagre:
+    name: "AA GWAS Repository eQTL"
+    description: "African American focused GWAS and eQTL repository"
+    types: [eqtl]
+    tissues: [blood, adipose, liver]
+    ancestry_composition:
+      AFR: 1.0
+    url: "https://www.aagre.org/"
+    enabled: true
+    priority: 1
+
+# -----------------------------------------------------------------------------
+# AFRICAN ANCESTRY SPECIFIC DATASETS
+# Critical for African American and African-descent populations
+# -----------------------------------------------------------------------------
+african_ancestry:
+  genoa:
+    name: "GENOA"
+    description: "Genetic Epidemiology Network of Arteriopathy - AA eQTLs"
+    types: [eqtl]
+    tissues: [lymphoblastoid_cell_lines]
+    n_samples: 800
+    ancestry_composition:
+      AFR: 1.0
+    url: "https://www.genoa-study.org/"
+    enabled: true
+    priority: 1
+
+  cardia_gene:
+    name: "CARDIA Gene Expression"
+    description: "Coronary Artery Risk Development in Young Adults - includes AA"
+    types: [eqtl]
+    tissues: [monocytes, pbmc]
+    n_samples: 1264
+    ancestry_composition:
+      AFR: 0.50
+      EUR: 0.50
+    url: "https://www.cardia.dopm.uab.edu/"
+    enabled: true
+    priority: 1
+
+  jackson_heart_study:
+    name: "Jackson Heart Study"
+    description: "Largest single-site AA cardiovascular cohort"
+    types: [eqtl]
+    tissues: [blood]
+    n_samples: 3000
+    ancestry_composition:
+      AFR: 1.0
+    url: "https://www.jacksonheartstudy.org/"
+    enabled: true
+    priority: 1
+
+  africa_whi:
+    name: "AfricaWHI"
+    description: "Women's Health Initiative African American subset"
+    types: [eqtl, pqtl]
+    tissues: [blood, plasma]
+    ancestry_composition:
+      AFR: 1.0
+    enabled: true
+    priority: 1
+
+# -----------------------------------------------------------------------------
+# HISPANIC/LATINO ANCESTRY DATASETS
+# For Mexican, Central American, South American, Caribbean populations
+# -----------------------------------------------------------------------------
+hispanic_latino:
+  hchs_sol:
+    name: "HCHS/SOL"
+    description: "Hispanic Community Health Study/Study of Latinos"
+    types: [eqtl]
+    tissues: [blood]
+    n_samples: 16000
+    ancestry_composition:
+      HISP: 1.0
+    subpopulations:
+      - mexican
+      - cuban
+      - puerto_rican
+      - dominican
+      - central_american
+      - south_american
+    url: "https://sites.cscc.unc.edu/hchs/"
+    enabled: true
+    priority: 1
+
+  sigma:
+    name: "SIGMA T2D"
+    description: "Slim Initiative in Genomic Medicine for the Americas"
+    types: [eqtl]
+    tissues: [adipose, liver]
+    ancestry_composition:
+      HISP: 1.0  # Mexican and Latino
+    url: "https://www.sigmaproject.org/"
+    enabled: true
+    priority: 1
+
+  clsa_latino:
+    name: "CLSA Latino subset"
+    description: "Canadian Longitudinal Study on Aging - Latino subset"
+    types: [eqtl]
+    tissues: [blood]
+    ancestry_composition:
+      HISP: 1.0
+    enabled: true
+    priority: 2
+
+# -----------------------------------------------------------------------------
+# EAST ASIAN ANCESTRY DATASETS
+# -----------------------------------------------------------------------------
+east_asian:
+  bbj_eqtl:
+    name: "BioBank Japan eQTL"
+    description: "Japanese biobank eQTL data"
+    types: [eqtl]
+    tissues: [blood]
+    n_samples: 2000
+    ancestry_composition:
+      EAS: 1.0  # Japanese
+    url: "https://biobankjp.org/"
+    enabled: true
+    priority: 1
+
+  korea_biobank:
+    name: "Korea Biobank eQTL"
+    description: "Korean population eQTLs"
+    types: [eqtl]
+    tissues: [blood]
+    ancestry_composition:
+      EAS: 1.0  # Korean
+    enabled: true
+    priority: 1
+
+  taiwan_biobank:
+    name: "Taiwan Biobank eQTL"
+    description: "Taiwanese population eQTLs"
+    types: [eqtl]
+    tissues: [blood]
+    ancestry_composition:
+      EAS: 1.0  # Taiwanese/Chinese
+    enabled: true
+    priority: 1
+
+  chinese_cadre:
+    name: "ChinaMAP eQTL"
+    description: "China Metabolic Analytics Project"
+    types: [eqtl, pqtl]
+    tissues: [blood, plasma]
+    ancestry_composition:
+      EAS: 1.0  # Chinese
+    enabled: true
+    priority: 1
+
+# -----------------------------------------------------------------------------
+# SOUTH ASIAN ANCESTRY DATASETS
+# -----------------------------------------------------------------------------
+south_asian:
+  lolipop:
+    name: "LOLIPOP"
+    description: "London Life Sciences Prospective Population Study"
+    types: [eqtl]
+    tissues: [blood]
+    n_samples: 5000
+    ancestry_composition:
+      SAS: 1.0  # Indian Asian
+    url: "https://www.lolipopstudy.org/"
+    enabled: true
+    priority: 1
+
+  india_genome_variation:
+    name: "IndiGen"
+    description: "Indian Genome Variation Consortium eQTLs"
+    types: [eqtl]
+    tissues: [blood]
+    ancestry_composition:
+      SAS: 1.0
+    enabled: true
+    priority: 1
+
+# -----------------------------------------------------------------------------
+# TISSUE-SPECIFIC DATASETS (Multi-ethnic when available)
+# -----------------------------------------------------------------------------
+tissue_specific:
+  psychencode:
+    name: "PsychENCODE"
+    description: "Brain-specific expression QTLs"
+    types: [eqtl, sqtl]
+    tissues: [brain_cortex, brain_cerebellum, brain_hippocampus]
+    n_samples: 2000
+    ancestry_composition:
+      EUR: 0.75
+      AFR: 0.15
+      OTHER: 0.10
+    url: "https://www.psychencode.org/"
+    enabled: true
+    priority: 2
+
+  commonmind:
+    name: "CommonMind"
+    description: "Brain eQTLs from multiple psychiatric cohorts"
+    types: [eqtl]
+    tissues: [brain_dlpfc]
+    n_samples: 600
+    ancestry_composition:
+      EUR: 0.70
+      AFR: 0.20
+      OTHER: 0.10
+    url: "https://www.synapse.org/cmc"
+    enabled: true
+    priority: 2
+
+  encode_kidney:
+    name: "ENCODE Kidney QTL"
+    description: "Kidney-specific regulatory QTLs"
+    types: [eqtl, caqtl]
+    tissues: [kidney]
+    enabled: true
+    priority: 2
+
+# -----------------------------------------------------------------------------
+# POOLING STRATEGY BY TARGET ANCESTRY
+# Defines which datasets to pool for colocalization by ancestry group
+# -----------------------------------------------------------------------------
+pooling_strategy:
+  EUR:
+    primary: [gtex_v8, eqtlgen, ukbiobank_pqtl]
+    secondary: [mesa, page_study, topmed_eqtl]
+
+  AFR:
+    primary: [genoa, jackson_heart_study, cardia_gene, aagre, africa_whi]
+    secondary: [mesa, page_study, topmed_eqtl, gtex_v8]
+    note: "Prioritize AFR-specific datasets due to LD differences"
+
+  AAC:  # African American (admixed)
+    primary: [genoa, jackson_heart_study, cardia_gene, aagre]
+    secondary: [mesa, page_study, topmed_eqtl]
+    tractor_compatible: true
+    ancestral_components: [EUR, AFR]
+
+  EAS:
+    primary: [bbj_eqtl, korea_biobank, taiwan_biobank, chinese_cadre]
+    secondary: [mesa, topmed_eqtl]
+
+  SAS:
+    primary: [lolipop, india_genome_variation]
+    secondary: [page_study, topmed_eqtl]
+
+  AMR:  # Native American component
+    primary: [page_study]
+    secondary: [hchs_sol, mesa]
+    note: "Limited data - use admixed Latino studies"
+
+  HISP:  # Hispanic/Latino
+    primary: [hchs_sol, sigma, mesa]
+    secondary: [page_study, topmed_eqtl]
+
+  LAT1:  # Latino Type 1 (Mexican/Central American - higher NAT)
+    primary: [hchs_sol, sigma]
+    secondary: [mesa, page_study]
+    tractor_compatible: true
+    ancestral_components: [EUR, NAT, AFR]
+
+  LAT2:  # Latino Type 2 (Caribbean/South American - higher AFR)
+    primary: [hchs_sol]
+    secondary: [mesa, page_study, genoa]
+    tractor_compatible: true
+    ancestral_components: [EUR, NAT, AFR]
+
+  MID:  # Middle Eastern
+    primary: [page_study]
+    secondary: [mesa, topmed_eqtl]
+    note: "Limited specific data available"
+
+  HET:  # Heterogeneous/Other
+    primary: [mesa, page_study, topmed_eqtl]
+    secondary: [gtex_v8]
+    note: "Use most diverse multi-ethnic sources"
+
+# -----------------------------------------------------------------------------
+# CUSTOM DATASET TEMPLATE
+# Users can add their own datasets following this format
+# -----------------------------------------------------------------------------
+custom_datasets:
+  # Example template for user-provided QTL data
+  # my_custom_eqtl:
+  #   name: "My Custom Study"
+  #   description: "Description of your QTL study"
+  #   types: [eqtl]  # eqtl, sqtl, pqtl, caqtl, etc.
+  #   tissues: [blood]
+  #   path: "/path/to/your/data"  # Local path to QTL summary stats
+  #   format: "standard"  # standard, GTEx, eQTLGen, custom
+  #   columns:
+  #     variant_id: "SNP"
+  #     gene_id: "gene"
+  #     beta: "beta"
+  #     se: "se"
+  #     pvalue: "pval"
+  #   ancestry_composition:
+  #     YOUR_POP: 1.0
+  #   enabled: true
+  #   priority: 1
