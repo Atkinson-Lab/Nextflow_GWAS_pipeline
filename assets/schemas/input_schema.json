@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ancestry-Aware GWAS Pipeline Input Schema",
+  "description": "Schema for validating input samplesheet",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "sample_id": {
+        "type": "string",
+        "description": "Unique sample identifier",
+        "minLength": 1
+      },
+      "cohort": {
+        "type": "string",
+        "description": "Cohort or study name"
+      },
+      "bed": {
+        "type": "string",
+        "description": "Path to PLINK BED file",
+        "pattern": ".*\\.bed$"
+      },
+      "bim": {
+        "type": "string",
+        "description": "Path to PLINK BIM file",
+        "pattern": ".*\\.bim$"
+      },
+      "fam": {
+        "type": "string",
+        "description": "Path to PLINK FAM file",
+        "pattern": ".*\\.fam$"
+      },
+      "pgen": {
+        "type": "string",
+        "description": "Path to PLINK2 PGEN file",
+        "pattern": ".*\\.pgen$"
+      },
+      "pvar": {
+        "type": "string",
+        "description": "Path to PLINK2 PVAR file",
+        "pattern": ".*\\.pvar$"
+      },
+      "psam": {
+        "type": "string",
+        "description": "Path to PLINK2 PSAM file",
+        "pattern": ".*\\.psam$"
+      },
+      "bgen": {
+        "type": "string",
+        "description": "Path to BGEN file",
+        "pattern": ".*\\.bgen$"
+      },
+      "sample": {
+        "type": "string",
+        "description": "Path to BGEN sample file",
+        "pattern": ".*\\.sample$"
+      },
+      "vcf": {
+        "type": "string",
+        "description": "Path to VCF file",
+        "pattern": ".*\\.vcf(\\.gz)?$"
+      }
+    },
+    "required": ["sample_id"],
+    "anyOf": [
+      {"required": ["bed", "bim", "fam"]},
+      {"required": ["pgen", "pvar", "psam"]},
+      {"required": ["bgen", "sample"]},
+      {"required": ["vcf"]}
+    ]
+  }
+}

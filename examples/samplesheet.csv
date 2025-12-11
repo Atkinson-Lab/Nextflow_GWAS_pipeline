@@ -1,0 +1,5 @@
+sample_id,cohort,bed,bim,fam
+ukbb_chr1,UKBB,/data/ukbb/ukbb_chr1.bed,/data/ukbb/ukbb_chr1.bim,/data/ukbb/ukbb_chr1.fam
+ukbb_chr2,UKBB,/data/ukbb/ukbb_chr2.bed,/data/ukbb/ukbb_chr2.bim,/data/ukbb/ukbb_chr2.fam
+aou_chr1,AoU,/data/aou/aou_chr1.bed,/data/aou/aou_chr1.bim,/data/aou/aou_chr1.fam
+mvp_chr1,MVP,/data/mvp/mvp_chr1.bed,/data/mvp/mvp_chr1.bim,/data/mvp/mvp_chr1.fam
