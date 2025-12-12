@@ -1480,14 +1480,28 @@ pharmacogenomics:
 # MULTI-ANCESTRY FINE-MAPPING RESOURCES
 # -----------------------------------------------------------------------------
 fine_mapping_resources:
-  sushie_weights:
-    name: "SuShiE Multi-Ancestry Weights"
-    description: "Cross-ancestry fine-mapping and expression prediction weights"
-    publication: "Nat Genet 2024"
+  sushie_mesa_zenodo:
+    name: "SuShiE MESA Multi-Ancestry Weights (Zenodo)"
+    description: "CRITICAL: Only public Latino eQTL/pQTL resource - MESA Hispanic fine-mapping"
+    publication: "Nat Genet 2025"
     url: "https://www.nature.com/articles/s41588-025-02262-7"
+    zenodo_url: "https://doi.org/10.5281/zenodo.10963033"
+    github_url: "https://github.com/mancusolab/sushie"
     access: "public"
-    types: [fine_mapping, prediction_weights]
+    download_required: true
+    types: [fine_mapping, prediction_weights, twas_weights, pwas_weights]
     tissues: [pbmc, lcl, plasma]
+    data_contents:
+      - fine_mapping_results       # Per-ancestry credible sets
+      - twas_weights_tsv           # TWAS prediction weights (EUR/AFR/HIS)
+      - twas_weights_fusion        # FUSION format weights
+      - pwas_weights               # Protein prediction weights
+      - cross_ancestry_correlations
+    sample_sizes:
+      MESA_EUR: 578
+      MESA_AFR: 233
+      MESA_HIS: 352   # HISPANIC - key for Latino analysis
+      GENOA_AFR: 814  # LCL
     features:
       - multi_ancestry_fine_mapping
       - cross_ancestry_effect_correlation
@@ -1496,10 +1510,12 @@ fine_mapping_resources:
     ancestry:
       EUR: 0.40
       AFR: 0.30
-      HISP: 0.30
+      HISP: 0.30  # 352 Hispanic samples from MESA
     genome_build: "GRCh38"
-    availability: "VERIFIED - Code and weights on GitHub"
+    availability: "VERIFIED - Zenodo public download, no application required"
     priority_latino: 1
+    priority_leukemia: 1
+    note: "DOWNLOAD FIRST - Only public resource with Hispanic fine-mapping/weights"
     enabled: true
 
   mesusie_resources:
@@ -1590,14 +1606,24 @@ study_type_presets:
     cell_types: [HSPC, T_cell, B_cell, monocyte]
 
   leukemia_latino:
-    description: "Leukemia/blood cancer in Hispanic/Latino populations"
-    primary: [hchs_sol_multi_omics, topmed_multi_ancestry, mesa_multi_omics, onek1k_pbmc]
-    secondary: [dice_immune, pancanqtl_v2, gala_sage_eqtl]
-    databases: [xqtlatlas, qtlbase2, eqtl_catalogue]
-    fine_mapping: [sushie_weights, carmax_admixed]
+    description: "Leukemia/blood cancer in Hispanic/Latino populations (PUBLIC RESOURCES)"
+    # PUBLIC (no dbGaP):
+    public_primary: [sushie_mesa_zenodo, onek1k_pbmc, dice_immune, eqtlgen_blood]
+    public_secondary: [pancanqtl_v2, gtex_v8, godmc]
+    api_databases: [xqtlatlas, qtlbase2, eqtl_catalogue, xqtlbiolinks]
+    fine_mapping: [sushie_mesa_zenodo, carmax_admixed, mesusie_resources]
     pharmacogenomics: [pancanqtl_drug_response, pharmgkb_annotations, qtlbase2_drug_treatment]
     cell_types: [HSPC, T_cell, B_cell, monocyte, pbmc]
-    note: "Prioritize HCHS/SOL and TOPMed for Hispanic-specific eQTL; use CARMA-X for admixed fine-mapping"
+    # CONTROLLED ACCESS (only if absolutely necessary):
+    dbgap_if_needed: [hchs_sol_multi_omics, topmed_multi_ancestry]
+    strategy: |
+      1. Download SuShiE Zenodo (MESA Hispanic n=352 fine-mapping weights)
+      2. Use EUR eQTL (eQTLGen/GTEx/DICE) for colocalization discovery
+      3. Apply SuShiE Hispanic weights for TWAS/fine-mapping
+      4. Query xQTLatlas/QTLbase2 for cross-ancestry validation
+      5. Flag DIVERGENT signals (EUR-only coloc) for Latino-specific validation
+      6. Use PancanQTL for drug response associations
+      CAVEAT: Limited Latino-specific eQTL - interpret with caution
 
 # -----------------------------------------------------------------------------
 # POOLING STRATEGY FOR LEUKEMIA COHORT
@@ -1635,12 +1661,19 @@ pooling_strategy:
     note: "Use both AFR and EUR sources for admixed"
 
   HISP:  # Hispanic/Latino combined
-    primary: [hchs_sol_multi_omics, topmed_multi_ancestry, mesa_multi_omics, gala_sage_eqtl]
-    secondary: [mexican_biobank, onek1k_pbmc, gtex_v8]
-    databases: [xqtlatlas, qtlbase2, eqtl_catalogue]
-    fine_mapping: [sushie_weights, carmax_admixed, mesusie_resources]
+    # PUBLIC RESOURCES (no dbGaP required):
+    public_primary: [sushie_mesa_zenodo, eqtlgen_blood, gtex_v8, dice_immune]
+    public_secondary: [godmc, pancanqtl_v2]
+    api_databases: [xqtlatlas, qtlbase2, eqtl_catalogue, xqtlbiolinks]
+    fine_mapping: [sushie_mesa_zenodo, carmax_admixed, mesusie_resources]
     pharmacogenomics: [pancanqtl_drug_response, pharmgkb_annotations]
-    note: "Use HCHS/SOL as primary - largest Hispanic omics; TOPMed for multi-ancestry; CARMA-X for admixed fine-mapping"
+    # CONTROLLED ACCESS (dbGaP required - use only if necessary):
+    dbgap_if_needed: [hchs_sol_multi_omics, topmed_multi_ancestry, mesa_multi_omics]
+    note: |
+      PUBLIC STRATEGY: SuShiE Zenodo is ONLY public Latino resource (MESA HIS n=352).
+      Use EUR eQTL (eQTLGen/GTEx) for discovery, flag divergent signals.
+      Query xQTLatlas/QTLbase2 APIs for cross-ancestry validation.
+      Most Hispanic-specific data requires dbGaP (HCHS/SOL, TOPMed).
 
   EAS:
     primary: [bbj_eqtl, eas_blood_mqtl, aida_sqtl]
@@ -1827,30 +1860,55 @@ data_access:
 # =============================================================================
 # RECOMMENDED DOWNLOAD PRIORITY FOR LATINO LEUKEMIA COHORT
 # =============================================================================
-# Priority order for setting up the pipeline:
+# REALITY CHECK: Most Latino-specific QTL data requires dbGaP access.
+# This strategy focuses on PUBLIC resources that can be used immediately.
 #
-# STEP 1: PUBLIC DOWNLOADS (do first - no application needed)
-#   1. eQTLGen blood eQTL
-#   2. GTEx v8 blood tissues
-#   3. DICE immune cell eQTL
-#   4. PancanQTLv2 (cancer eQTL + drug response)
-#   5. PharmGKB annotations
-#   6. GoDMC mQTL
+# =============================================================================
+# PUBLIC-ONLY STRATEGY (NO dbGaP REQUIRED)
+# =============================================================================
 #
-# STEP 2: INSTALL API TOOLS
+# STEP 1: CRITICAL DOWNLOADS (public, no application)
+#   1. SuShiE Zenodo - ONLY PUBLIC LATINO RESOURCE
+#      URL: https://doi.org/10.5281/zenodo.10963033
+#      Contains: MESA Hispanic (n=352) fine-mapping, TWAS/PWAS weights
+#   2. eQTLGen blood eQTL (~15GB) - largest blood eQTL
+#   3. GTEx v8 blood (Whole_Blood, Cells_EBV-LCL)
+#   4. DICE immune cell eQTL - cell-type specific
+#   5. PancanQTLv2 - cancer eQTL + drug response associations
+#   6. PharmGKB - pharmacogenomics annotations
+#   7. GoDMC mQTL - methylation QTL
+#
+# STEP 2: API-BASED TOOLS (query without bulk download)
 #   1. xQTLbiolinks R package
-#   2. Test eQTL Catalogue API
+#      Install: devtools::install_github('dingruofan/xQTLbiolinks')
+#      Queries: GTEx, eQTLGen, DICE automatically
+#   2. eQTL Catalogue API (https://www.ebi.ac.uk/eqtl/api-docs/)
+#   3. xQTLatlas web (http://www.hitxqtl.org.cn/) - 151 cell types
+#   4. QTLbase2 web (http://mulinlab.org/qtlbase) - drug treatment QTLs
 #
-# STEP 3: APPLY FOR CONTROLLED ACCESS (start early - 2-4 weeks)
-#   1. HCHS/SOL (phs000810) - HIGHEST PRIORITY for Latino
-#   2. TOPMed RNA-seq - multi-ancestry eQTL
-#   3. MESA multi-omics - Hispanic pQTL
-#   4. GENOA - African American (for AAC Tractor comparison)
-#   5. BLUEPRINT - cell-type specific
+# STEP 3: COLOCALIZATION STRATEGY FOR LATINO WITHOUT LATINO eQTL
+#   Problem: No large public Latino eQTL summary stats exist
+#   Solution:
+#   a) Use SuShiE Hispanic weights for TWAS/fine-mapping
+#   b) Use EUR eQTL (eQTLGen/GTEx) for discovery
+#   c) Query xQTLatlas/QTLbase2 for cross-ancestry consistency
+#   d) Prioritize SHARED signals (consistent across ancestries)
+#   e) Flag DIVERGENT signals - may be ancestry-specific, need validation
+#   f) For divergent loci: check if in LD with Latino-specific variants
 #
-# STEP 4: CONTACT PIs
-#   1. GALA/SAGE - Latino/AA blood eQTL (if needed)
-#   2. Mexican Biobank - reference panel (if imputation needed)
+# INTERPRETATION CAVEATS (document in results):
+#   - Colocalization with EUR eQTL may miss Latino-specific regulatory variants
+#   - LD patterns differ between EUR and admixed Latino populations
+#   - Use SuShiE cross-ancestry weights to partially address this
+#   - Consider ancestry-specific fine-mapping with CARMA-X if individual data available
+#
+# =============================================================================
+# OPTIONAL: dbGaP ACCESS (only if absolutely necessary)
+# =============================================================================
+# These require 2-4 week application process:
+#   - HCHS/SOL (phs000810) - no public summary stats, individual-level only
+#   - TOPMed GSR (phs001974) - only low p-values public, full stats controlled
+#   - MESA (phs001416) - multi-ethnic pQTL/eQTL individual data
 # =============================================================================
 
 download_paths:
