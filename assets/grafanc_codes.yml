@@ -3,14 +3,67 @@
 # =============================================================================
 # Reference: https://github.com/jimmy-penn/grafanc
 # GRAF-ANC infers ancestry into ~40 subpopulations organized into 8 major groups
-# Use category NAMES directly (not numeric codes)
+# Codes are numeric (e.g., 107 for African American)
 # =============================================================================
+
+# -----------------------------------------------------------------------------
+# GRAF-ANC NUMERIC CODES
+# -----------------------------------------------------------------------------
+# Major continental groups use codes in ranges:
+#   1xx = African-related
+#   2xx = Middle Eastern / North African
+#   3xx = European
+#   4xx = South Asian
+#   5xx = East Asian
+#   6xx = American / Indigenous / Latino
+#   7xx = Oceanian
+#   8xx = Other / Heterogeneous
+
+grafanc_codes:
+  # African ancestry
+  AFR: 100           # Continental African
+  AFR_WEST: 101      # West African
+  AFR_EAST: 102      # East African
+  AFR_SOUTH: 103     # South African
+  AAC: 107           # African American (AFR-EUR 2-way admixed)
+
+  # Middle Eastern / North African
+  MEN: 200           # Middle Eastern / North African
+
+  # European
+  EUR: 300           # European
+  EUR_NORTH: 301     # Northern European
+  EUR_SOUTH: 302     # Southern European
+  EUR_EAST: 303      # Eastern European
+  EUR_ASH: 304       # Ashkenazi Jewish
+
+  # South Asian
+  SAS: 400           # South Asian
+
+  # East Asian
+  EAS: 500           # East Asian
+  EAS_CHN: 501       # Chinese
+  EAS_JPN: 502       # Japanese
+  EAS_KOR: 503       # Korean
+  EAS_SEA: 504       # Southeast Asian
+
+  # American / Indigenous / Latino
+  AMR: 600           # Native American / Indigenous
+  LAT1: 601          # Mexican / Central American Latino
+  LAT2: 602          # Caribbean / South American Latino
+
+  # Oceanian
+  OCN: 700           # Oceanian (Pacific Islander)
+
+  # Mixed / Other
+  MIX: 800           # Mixed / Heterogeneous
 
 # -----------------------------------------------------------------------------
 # MAJOR CONTINENTAL GROUPS (8 categories)
 # -----------------------------------------------------------------------------
 major_groups:
   AFR:
+    code: 100
     name: "African"
     description: "Continental African ancestry"
     subpopulations:
@@ -20,6 +73,7 @@ major_groups:
     1000G_populations: ["YRI", "ESN", "GWD", "MSL", "LWK", "ACB", "ASW"]
 
   MEN:
+    code: 200
     name: "Middle Eastern / North African"
     description: "Middle East and North African ancestry"
     subpopulations:
@@ -28,6 +82,7 @@ major_groups:
     notes: "Sometimes called MENA in other tools"
 
   EUR:
+    code: 300
     name: "European"
     description: "European continental ancestry"
     subpopulations:
@@ -38,6 +93,7 @@ major_groups:
     1000G_populations: ["CEU", "GBR", "FIN", "IBS", "TSI"]
 
   SAS:
+    code: 400
     name: "South Asian"
     description: "Indian subcontinent ancestry"
     subpopulations:
@@ -48,6 +104,7 @@ major_groups:
     1000G_populations: ["GIH", "PJL", "BEB", "STU", "ITU"]
 
   EAS:
+    code: 500
     name: "East Asian"
     description: "East and Southeast Asian ancestry"
     subpopulations:
@@ -59,6 +116,7 @@ major_groups:
     1000G_populations: ["CHB", "CHS", "CDX", "JPT", "KHV"]
 
   AMR:
+    code: 600
     name: "American / Indigenous"
     description: "Native American / Indigenous ancestry"
     subpopulations:
@@ -70,6 +128,7 @@ major_groups:
     1000G_populations: ["PEL (indigenous component)"]
 
   OCN:
+    code: 700
     name: "Oceanian"
     description: "Pacific Islander and Australian ancestry"
     subpopulations:
@@ -80,6 +139,7 @@ major_groups:
     notes: "Previously sometimes labeled as API (Asian/Pacific Islander) - OCN is correct"
 
   MIX:
+    code: 800
     name: "Mixed / Admixed / Heterogeneous"
     description: "Individuals with heterogeneous or unclassified ancestry"
     notes: "Catchall for individuals not fitting other categories"
@@ -87,44 +147,70 @@ major_groups:
 # -----------------------------------------------------------------------------
 # ADMIXED GROUPS (for Tractor local ancestry analysis)
 # -----------------------------------------------------------------------------
+# NOTE: Some admixed individuals can be analyzed with either 2-way or 3-way Tractor
+#       depending on their ancestry composition:
+#       - AAC (code 107): Typically 2-way (AFR-EUR), but some may have AMR component → 3-way
+#       - Latino: Always 3-way (EUR-AFR-AMR/NAT)
+#       - Mixed with AMR component: Use 3-way (AFR-EUR-AMR)
+
 admixed_groups:
   AAC:
+    code: 107
     name: "African American"
-    description: "African American with AFR-EUR admixture"
+    description: "African American with AFR-EUR admixture (some may have AMR component)"
     tractor_configuration:
-      type: "2-way"
-      ancestral_populations: ["AFR", "EUR"]
+      # Default: 2-way for most African Americans
+      default_type: "2-way"
+      default_ancestral_populations: ["AFR", "EUR"]
+      # Alternative: 3-way if AMR component is significant
+      alternative_type: "3-way"
+      alternative_ancestral_populations: ["AFR", "EUR", "AMR"]
       expected_proportions:
-        AFR: 0.75-0.85
-        EUR: 0.15-0.25
+        AFR: 0.70-0.90
+        EUR: 0.10-0.30
+        AMR: 0.00-0.10  # Some AAC have small Native American component
     1000G_populations: ["ASW", "ACB"]
-    notes: "Uses 2-way Tractor decomposition (African + European components)"
+    notes: |
+      Most AAC use 2-way Tractor (AFR + EUR).
+      If significant AMR/NAT component detected, can use 3-way (AFR + EUR + AMR).
+      Pipeline parameter: tractor_aac_pops = 'AFR,EUR' or 'AFR,EUR,AMR'
+
+  AAC_3WAY:
+    code: 107  # Same GRAF-ANC code, different Tractor model
+    name: "African American (3-way)"
+    description: "African American with significant AMR/NAT component"
+    tractor_configuration:
+      type: "3-way"
+      ancestral_populations: ["AFR", "EUR", "AMR"]
+    notes: "Use when AAC individuals have significant Native American ancestry"
 
   LAT1:
+    code: 601
     name: "Mexican / Central American Latino"
     description: "Latino with higher Native American component"
     tractor_configuration:
       type: "3-way"
-      ancestral_populations: ["EUR", "AFR", "NAT"]
+      ancestral_populations: ["EUR", "AFR", "AMR"]
       expected_proportions:
         EUR: 0.40-0.60
-        NAT: 0.30-0.50
+        AMR: 0.30-0.50
         AFR: 0.05-0.15
     1000G_populations: ["MXL"]
-    notes: "3-way Tractor (European + African + Native American)"
+    notes: "3-way Tractor (European + African + Native American/AMR)"
 
   LAT2:
+    code: 602
     name: "Caribbean / South American Latino"
     description: "Latino with higher African component"
     tractor_configuration:
       type: "3-way"
-      ancestral_populations: ["EUR", "AFR", "NAT"]
+      ancestral_populations: ["EUR", "AFR", "AMR"]
       expected_proportions:
         EUR: 0.50-0.70
         AFR: 0.15-0.30
-        NAT: 0.10-0.25
+        AMR: 0.10-0.25
     1000G_populations: ["PUR", "CLM", "PEL"]
-    notes: "3-way Tractor (European + African + Native American)"
+    notes: "3-way Tractor (European + African + Native American/AMR)"
 
   LATINO:
     name: "Combined Latino"
@@ -132,30 +218,64 @@ admixed_groups:
     combines: ["LAT1", "LAT2"]
     tractor_configuration:
       type: "3-way"
-      ancestral_populations: ["EUR", "AFR", "NAT"]
+      ancestral_populations: ["EUR", "AFR", "AMR"]
     notes: "Combine LAT1 and LAT2 for better statistical power in Tractor"
+
+  MIX_3WAY:
+    code: 800
+    name: "Mixed 3-way (AFR-EUR-AMR)"
+    description: "Mixed ancestry individuals with AFR, EUR, and AMR components"
+    tractor_configuration:
+      type: "3-way"
+      ancestral_populations: ["AFR", "EUR", "AMR"]
+    notes: "For individuals with significant ancestry from all three components"
 
 # -----------------------------------------------------------------------------
 # TRACTOR ANALYSIS CONFIGURATIONS
 # -----------------------------------------------------------------------------
 tractor_configs:
-  # African American: 2-way admixture model
-  AAC:
+  # African American: 2-way admixture model (default)
+  AAC_2WAY:
     n_ancestries: 2
-    ancestral_pops: ["EUR", "AFR"]
+    ancestral_pops: ["AFR", "EUR"]
+    grafanc_codes: [107]
     reference_panels:
-      EUR: "1000G EUR populations (CEU, GBR, IBS, TSI, FIN)"
       AFR: "1000G AFR populations (YRI, ESN, GWD, MSL, LWK)"
+      EUR: "1000G EUR populations (CEU, GBR, IBS, TSI, FIN)"
+    notes: "Default for most African Americans"
+
+  # African American: 3-way admixture model (when AMR component present)
+  AAC_3WAY:
+    n_ancestries: 3
+    ancestral_pops: ["AFR", "EUR", "AMR"]
+    grafanc_codes: [107]
+    reference_panels:
+      AFR: "1000G AFR populations (YRI, ESN, GWD, MSL, LWK)"
+      EUR: "1000G EUR populations (CEU, GBR, IBS, TSI, FIN)"
+      AMR: "Native American reference panel"
+    notes: "Use when AAC individuals have significant Native American ancestry"
 
   # Latino: 3-way admixture model
   LATINO:
     n_ancestries: 3
-    ancestral_pops: ["EUR", "AFR", "NAT"]
+    ancestral_pops: ["EUR", "AFR", "AMR"]
+    grafanc_codes: [601, 602]
     reference_panels:
       EUR: "1000G EUR populations"
       AFR: "1000G AFR populations"
-      NAT: "Native American reference panel (requires separate sourcing)"
+      AMR: "Native American reference panel (HGDP or custom)"
     notes: "Native American reference may require HGDP or specific Native panels"
+
+  # General 3-way mixed
+  MIX_3WAY:
+    n_ancestries: 3
+    ancestral_pops: ["AFR", "EUR", "AMR"]
+    grafanc_codes: [800]
+    reference_panels:
+      AFR: "1000G AFR populations"
+      EUR: "1000G EUR populations"
+      AMR: "Native American reference panel"
+    notes: "For mixed individuals with all three ancestry components"
 
 # -----------------------------------------------------------------------------
 # LOCAL ANCESTRY REFERENCE PANELS
@@ -171,13 +291,13 @@ local_ancestry_reference:
     populations: ["YRI", "ESN", "GWD", "MSL", "LWK"]
     n_samples: ~500
 
-  NAT:
+  AMR:
     source: "Custom panel required"
     options:
       - "HGDP Native American samples"
       - "Consortium-specific Native panels"
       - "Published reference panels (Moreno-Estrada et al.)"
-    notes: "Native American reference is critical for accurate Latino analysis"
+    notes: "Native American reference is critical for accurate Latino and 3-way AAC analysis"
 
   EAS:
     source: "1000 Genomes"
