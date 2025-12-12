@@ -1161,6 +1161,382 @@ metabolic:
     enabled: true
 
 # -----------------------------------------------------------------------------
+# HISPANIC/LATINO SPECIFIC QTL RESOURCES - CRITICAL FOR ADMIXED COHORTS
+# -----------------------------------------------------------------------------
+latino_admixed:
+  topmed_multi_ancestry:
+    name: "TOPMed Multi-Ancestry eQTL"
+    description: "Cross-cohort eQTL from 14,324 diverse RNA-seq samples including Hispanic"
+    url: "https://topmed.nhlbi.nih.gov/"
+    publication: "medRxiv 2025 (preprint)"
+    access: "controlled_dbgap"
+    types: [eqtl, sqtl]
+    tissues: [whole_blood, lung, pbmc]
+    n_samples: 14324
+    n_blood: 6454
+    ancestry:
+      EUR: 0.45
+      AFR: 0.25
+      HISP: 0.20
+      OTHER: 0.10
+    features:
+      - secondary_cis_eqtl_signals
+      - trans_eqtl
+      - splicing_qtl
+      - wgs_based_fine_mapping
+    genome_build: "GRCh38"
+    availability: "VERIFIED - dbGaP controlled access, summary stats in preprint"
+    priority_latino: 1
+    priority_leukemia: 1
+    enabled: true
+
+  mesa_multi_omics:
+    name: "MESA Multi-Omics (TOPMed)"
+    description: "Multi-ethnic eQTL, pQTL from PBMC and plasma - EUR/AFR/HIS"
+    url: "https://www.mesa-nhlbi.org/"
+    publication: "Nat Genet 2024"
+    access: "controlled_dbgap"
+    types: [eqtl, pqtl]
+    tissues: [pbmc, plasma]
+    n_mrna: 956
+    n_protein: 854
+    ancestry:
+      EUR: 0.38
+      AFR: 0.28
+      HISP: 0.22
+      EAS: 0.12
+    features:
+      - sushie_fine_mapping  # Multi-ancestry fine-mapping
+      - cross_ancestry_effects
+    genome_build: "GRCh38"
+    availability: "VERIFIED - TOPMed/dbGaP controlled"
+    priority_latino: 1
+    priority_leukemia: 1
+    enabled: true
+
+  hchs_sol_multi_omics:
+    name: "HCHS/SOL Multi-Omics"
+    description: "Hispanic Community Health Study - largest US Hispanic omics resource"
+    url: "https://sites.cscc.unc.edu/hchs/"
+    publication: "HGG Advances 2024"
+    access: "controlled_dbgap"
+    dbgap_id: "phs000810"
+    types: [eqtl, mqtl, metabolomics]
+    tissues: [whole_blood, plasma]
+    n_genetic: 14126
+    n_rnaseq: 7700  # Whole-blood RNA-seq
+    n_methylation: 12000  # Visit 1 & 2
+    n_proteomics: 2000  # Plasma proteomics
+    n_metabolomics: 12000
+    ancestry:
+      HISP: 1.0
+    hispanic_subgroups:
+      - Mexican
+      - Puerto_Rican
+      - Cuban
+      - Dominican
+      - Central_American
+      - South_American
+    features:
+      - six_hispanic_subgroups
+      - longitudinal_data  # Visit 1, 2, 3
+      - page_study_integration
+    genome_build: "GRCh38"
+    availability: "VERIFIED - dbGaP controlled (phs000810.v2.p2)"
+    priority_latino: 1
+    priority_leukemia: 1
+    note: "CRITICAL: Largest US Hispanic omics dataset"
+    enabled: true
+
+  gala_sage_eqtl:
+    name: "GALA II & SAGE II eQTL"
+    description: "Latino and African American asthma cohorts with blood eQTL"
+    url: "https://pharm.ucsf.edu/burchard/research/study-populations"
+    access: "controlled"
+    types: [eqtl]
+    tissues: [whole_blood, nasal_epithelia]
+    n_participants: 9000
+    ancestry:
+      HISP: 0.60  # GALA II - Latino
+      AFR: 0.40   # SAGE II - African American
+    features:
+      - admixture_mapping
+      - local_ancestry_aware
+      - bronchodilator_response
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Contact PI for access"
+    priority_latino: 2
+    enabled: true
+
+  mexican_biobank:
+    name: "Mexican Biobank"
+    description: "6,057 Mexicans from 898 localities with diverse indigenous ancestry"
+    url: "https://www.nature.com/articles/s41586-023-06560-0"
+    publication: "Nature 2023"
+    access: "controlled"
+    types: [gwas, reference_panel]
+    n_samples: 6057
+    n_localities: 898
+    ancestry:
+      AMR: 0.50  # Indigenous Mexican
+      EUR: 0.40
+      AFR: 0.10
+    features:
+      - 68_indigenous_groups
+      - fine_scale_population_structure
+      - imputation_reference
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Contact for access"
+    priority_latino: 1
+    enabled: true
+
+  latincells_project:
+    name: "LatinCells Project"
+    description: "High-resolution molecular profiles with ancestry-linked RNA expression"
+    url: "https://sangerinstitute.blog/2025/07/24/making-genomics-data-more-representative-through-latin-american-research/"
+    publication: "In progress (2025)"
+    access: "upcoming"
+    types: [eqtl, ancestry_eqtl]
+    tissues: [multiple]
+    ancestry:
+      HISP: 1.0
+    features:
+      - ancestry_linked_expression
+      - adaptation_mechanisms
+      - disease_markers
+    genome_build: "GRCh38"
+    availability: "UPCOMING - Wellcome Sanger collaboration"
+    priority_latino: 2
+    enabled: false  # Enable when released
+
+# -----------------------------------------------------------------------------
+# COMPREHENSIVE QTL DATABASES / AGGREGATORS
+# -----------------------------------------------------------------------------
+databases:
+  xqtlatlas:
+    name: "xQTLatlas"
+    description: "Cellular-resolution multi-omics QTL atlas - 151 cell types, 339 cell states"
+    url: "http://www.hitxqtl.org.cn/"
+    publication: "NAR 2025"
+    access: "public"
+    types: [eqtl, sqtl, caqtl, mqtl, hqtl, pqtl, sc_eqtl]
+    n_datasets: 796
+    n_cell_types: 151
+    n_cell_states: 339
+    n_tissues: 55
+    n_qtl_types: 20
+    n_entries: 1500000000  # 1.5 billion significant entries
+    features:
+      - purified_cell_type_xqtl
+      - single_cell_xqtl
+      - cell_state_interaction_xqtl
+      - in_silico_inferred_xqtl
+      - vannoportal_annotations
+      - causaldb_integration
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Public web database"
+    priority_leukemia: 1
+    note: "Most comprehensive cellular-resolution QTL database"
+    enabled: true
+
+  qtlbase2:
+    name: "QTLbase2"
+    description: "Enhanced QTL catalog - 22 molecular phenotypes, 95+ tissues/cells"
+    url: "http://mulinlab.org/qtlbase"
+    publication: "NAR 2023"
+    access: "public"
+    types: [eqtl, sqtl, mqtl, pqtl, caqtl, hqtl, apaQTL, m6aQTL, circQTL, bQTL, tuQTL, eaQTL, stQTL, vQTL]
+    n_datasets: 1681
+    n_studies: 377
+    n_molecular_phenotypes: 22
+    n_tissue_cell_types: 95
+    features:
+      - context_specific_qtl  # 434 datasets
+      - disease_state_qtl     # 305 datasets
+      - stimulation_qtl       # 73 datasets
+      - drug_treatment_qtl    # 15 datasets - important for pharmacogenomics
+      - differentiation_qtl   # 41 datasets
+      - vannoportal_annotations  # 40 annotations
+      - hic_interactions      # 60 tissue/cell types
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Public, no login required"
+    priority_leukemia: 1
+    note: "Includes drug treatment QTLs relevant for chemotherapy response"
+    enabled: true
+
+  xqtlbiolinks:
+    name: "xQTLbiolinks"
+    description: "Comprehensive QTL retrieval and colocalization R package"
+    url: "https://github.com/dingruofan/xQTLbiolinks"
+    publication: "Brief Bioinform 2024"
+    access: "public"
+    types: [eqtl, sqtl, 3aQTL, mqtl, hqtl, sc_eqtl]
+    n_samples: 23839
+    n_tissues: 75
+    n_sc_studies: 16
+    n_sc_cell_types: 57
+    features:
+      - qtl_retrieval
+      - quality_control
+      - colocalization  # coloc, enloc, smr
+      - visualization
+      - gtex_integration
+    genome_build: "GRCh38"
+    availability: "VERIFIED - R package on GitHub"
+    priority_leukemia: 1
+    enabled: true
+
+  singleq:
+    name: "SingleQ"
+    description: "Single-cell eQTL database across human tissues"
+    url: "https://academic.oup.com/database/article/doi/10.1093/database/baae010/7624893"
+    publication: "Database 2024"
+    access: "public"
+    types: [sc_eqtl]
+    features:
+      - cross_tissue_sc_eqtl
+      - cell_type_specific
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Web database"
+    priority_leukemia: 2
+    enabled: true
+
+  eqtl_catalogue:
+    name: "eQTL Catalogue (EBI)"
+    description: "Uniformly processed eQTL/sQTL from multiple studies"
+    url: "https://www.ebi.ac.uk/eqtl/"
+    publication: "Nat Genet 2021"
+    access: "public"
+    types: [eqtl, sqtl, tuQTL]
+    n_datasets: 131
+    n_cell_types: 95
+    features:
+      - uniformly_processed
+      - harmonized_format
+      - api_access
+      - colocalisation_ready
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Fully public with API"
+    priority_leukemia: 1
+    enabled: true
+
+# -----------------------------------------------------------------------------
+# PHARMACOGENOMICS / DRUG RESPONSE QTL
+# -----------------------------------------------------------------------------
+pharmacogenomics:
+  pancanqtl_drug_response:
+    name: "PancanQTLv2 Drug Response"
+    description: "Cancer eQTL associations with drug response across 33 cancer types"
+    url: "https://hanlaboratory.com/PancanQTLv2/"
+    publication: "NAR 2024"
+    access: "public"
+    types: [eqtl, drug_response_eqtl]
+    n_cancer_types: 33
+    n_eqtls: 5606570
+    features:
+      - drug_response_associations
+      - survival_eqtls
+      - immune_infiltration
+      - fine_mapped_eqtls
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Public web database"
+    priority_leukemia: 1
+    note: "Important for chemotherapy response prediction"
+    enabled: true
+
+  qtlbase2_drug_treatment:
+    name: "QTLbase2 Drug Treatment QTLs"
+    description: "15 drug treatment context QTL datasets"
+    url: "http://mulinlab.org/qtlbase"
+    access: "public"
+    types: [drug_eqtl]
+    n_datasets: 15
+    features:
+      - drug_induced_expression_changes
+      - treatment_response_qtl
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Via QTLbase2"
+    priority_leukemia: 2
+    enabled: true
+
+  pharmgkb_annotations:
+    name: "PharmGKB Variant Annotations"
+    description: "Pharmacogenomic variant-drug associations"
+    url: "https://www.pharmgkb.org/"
+    access: "public"
+    types: [pharmacogenomics]
+    features:
+      - drug_gene_associations
+      - clinical_annotations
+      - dosing_guidelines
+      - drug_labels
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Fully public"
+    priority_leukemia: 1
+    note: "Essential for drug response interpretation"
+    enabled: true
+
+# -----------------------------------------------------------------------------
+# MULTI-ANCESTRY FINE-MAPPING RESOURCES
+# -----------------------------------------------------------------------------
+fine_mapping_resources:
+  sushie_weights:
+    name: "SuShiE Multi-Ancestry Weights"
+    description: "Cross-ancestry fine-mapping and expression prediction weights"
+    publication: "Nat Genet 2024"
+    url: "https://www.nature.com/articles/s41588-025-02262-7"
+    access: "public"
+    types: [fine_mapping, prediction_weights]
+    tissues: [pbmc, lcl, plasma]
+    features:
+      - multi_ancestry_fine_mapping
+      - cross_ancestry_effect_correlation
+      - ancestry_specific_weights
+      - functional_enrichment
+    ancestry:
+      EUR: 0.40
+      AFR: 0.30
+      HISP: 0.30
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Code and weights on GitHub"
+    priority_latino: 1
+    enabled: true
+
+  mesusie_resources:
+    name: "MESuSiE Multi-Ancestry Fine-Mapping"
+    description: "Scalable multi-ancestry fine-mapping with shared/specific signals"
+    publication: "Nat Genet 2024"
+    url: "https://www.nature.com/articles/s41588-023-01604-7"
+    access: "public"
+    types: [fine_mapping]
+    features:
+      - summary_stats_based
+      - ancestry_specific_ld
+      - shared_causal_snps
+      - ancestry_specific_causal_snps
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Software available"
+    priority_latino: 1
+    enabled: true
+
+  carmax_admixed:
+    name: "CARMA-X Admixed Fine-Mapping"
+    description: "Fine-mapping in admixed populations using local ancestry"
+    publication: "AJHG 2025"
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S0002929725000953"
+    access: "public"
+    types: [fine_mapping]
+    features:
+      - local_ancestry_modeling
+      - admixed_population_optimized
+      - reduced_false_discovery
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Software available"
+    priority_latino: 1
+    note: "Specifically designed for Latino/admixed populations"
+    enabled: true
+
+# -----------------------------------------------------------------------------
 # STUDY-TYPE PRESETS
 # Recommended QTL datasets by study focus
 # -----------------------------------------------------------------------------
@@ -1213,6 +1589,16 @@ study_type_presets:
     secondary: [eqtlgen_blood, cancer_immunity_qtl, hca_immune_atlas]
     cell_types: [HSPC, T_cell, B_cell, monocyte]
 
+  leukemia_latino:
+    description: "Leukemia/blood cancer in Hispanic/Latino populations"
+    primary: [hchs_sol_multi_omics, topmed_multi_ancestry, mesa_multi_omics, onek1k_pbmc]
+    secondary: [dice_immune, pancanqtl_v2, gala_sage_eqtl]
+    databases: [xqtlatlas, qtlbase2, eqtl_catalogue]
+    fine_mapping: [sushie_weights, carmax_admixed]
+    pharmacogenomics: [pancanqtl_drug_response, pharmgkb_annotations, qtlbase2_drug_treatment]
+    cell_types: [HSPC, T_cell, B_cell, monocyte, pbmc]
+    note: "Prioritize HCHS/SOL and TOPMed for Hispanic-specific eQTL; use CARMA-X for admixed fine-mapping"
+
 # -----------------------------------------------------------------------------
 # POOLING STRATEGY FOR LEUKEMIA COHORT
 # Priority 1 = Use first, Priority 2 = Supplement
@@ -1249,9 +1635,12 @@ pooling_strategy:
     note: "Use both AFR and EUR sources for admixed"
 
   HISP:  # Hispanic/Latino combined
-    primary: [mesa_eqtl, hchs_sol_eqtl]
-    secondary: [onek1k_pbmc, gtex_v8]
-    note: "Limited resources - use multi-ethnic sources"
+    primary: [hchs_sol_multi_omics, topmed_multi_ancestry, mesa_multi_omics, gala_sage_eqtl]
+    secondary: [mexican_biobank, onek1k_pbmc, gtex_v8]
+    databases: [xqtlatlas, qtlbase2, eqtl_catalogue]
+    fine_mapping: [sushie_weights, carmax_admixed, mesusie_resources]
+    pharmacogenomics: [pancanqtl_drug_response, pharmgkb_annotations]
+    note: "Use HCHS/SOL as primary - largest Hispanic omics; TOPMed for multi-ancestry; CARMA-X for admixed fine-mapping"
 
   EAS:
     primary: [bbj_eqtl, eas_blood_mqtl, aida_sqtl]
@@ -1279,3 +1668,199 @@ custom_datasets:
     # tissues: [blood]
     # genome_build: "GRCh38"
     # enabled: true
+
+# =============================================================================
+# DATA ACCESS AND DOWNLOAD DOCUMENTATION
+# =============================================================================
+# This section documents how to access each dataset and whether local download
+# is required. The pipeline can use either:
+#   1. LOCAL: Pre-downloaded data in assets/qtl_data/
+#   2. API: Real-time query via database APIs (xQTLbiolinks, eQTL Catalogue)
+#   3. HYBRID: Download only what's needed on-the-fly
+#
+# For Latino/admixed cohorts, prioritize:
+#   - HCHS/SOL (dbGaP controlled) - largest Hispanic omics
+#   - TOPMed (dbGaP controlled) - multi-ancestry with Hispanic
+#   - Public databases (xQTLatlas, QTLbase2) - aggregated QTLs
+# =============================================================================
+
+data_access:
+  # -------------------------------------------------------------------------
+  # FULLY PUBLIC - NO APPLICATION REQUIRED
+  # Can be downloaded directly or queried via API
+  # -------------------------------------------------------------------------
+  public_download:
+    eqtlgen_blood:
+      url: "https://www.eqtlgen.org/cis-eqtls.html"
+      format: "txt.gz"
+      size: "~15GB"
+      download_required: true
+      note: "Download cis-eQTL and trans-eQTL files"
+
+    gtex_v8:
+      url: "https://gtexportal.org/home/downloads/adult-gtex/qtl"
+      format: "txt.gz per tissue"
+      size: "~50GB total"
+      download_required: true
+      note: "Select blood tissues: Whole_Blood, Cells_EBV-transformed_lymphocytes"
+
+    godmc:
+      url: "http://mqtldb.godmc.org.uk/downloads"
+      format: "txt.gz"
+      size: "~5GB"
+      download_required: true
+
+    dice_immune:
+      url: "https://dice-database.org/download"
+      format: "txt"
+      download_required: true
+      note: "Download per cell type"
+
+    pancanqtl_v2:
+      url: "https://hanlaboratory.com/PancanQTLv2/"
+      format: "txt.gz"
+      download_required: true
+      note: "Download cancer-specific or use web interface"
+
+    pharmgkb:
+      url: "https://www.pharmgkb.org/downloads"
+      format: "tsv"
+      download_required: true
+      note: "Clinical annotations and variant annotations files"
+
+  # -------------------------------------------------------------------------
+  # PUBLIC DATABASES - API ACCESS AVAILABLE
+  # Can query without downloading full dataset
+  # -------------------------------------------------------------------------
+  public_api:
+    xqtlatlas:
+      url: "http://www.hitxqtl.org.cn/"
+      api: true
+      download_required: false
+      note: "Web interface for querying; no bulk download needed"
+
+    qtlbase2:
+      url: "http://mulinlab.org/qtlbase"
+      api: true
+      download_required: false
+      note: "Query by variant/gene; includes drug treatment QTLs"
+
+    eqtl_catalogue:
+      url: "https://www.ebi.ac.uk/eqtl/api-docs/"
+      api: true
+      download_required: false
+      note: "REST API available; uniformly processed data"
+      api_example: "curl -X GET 'https://www.ebi.ac.uk/eqtl/api/genes/ENSG00000141510'"
+
+    xqtlbiolinks:
+      url: "https://github.com/dingruofan/xQTLbiolinks"
+      api: "R package"
+      download_required: false
+      note: "R package queries GTEx, DICE, eQTLGen automatically"
+      install: "devtools::install_github('dingruofan/xQTLbiolinks')"
+
+  # -------------------------------------------------------------------------
+  # CONTROLLED ACCESS - APPLICATION REQUIRED
+  # Requires dbGaP or EGA application (2-4 weeks typical)
+  # -------------------------------------------------------------------------
+  controlled_dbgap:
+    hchs_sol_multi_omics:
+      dbgap_id: "phs000810.v2.p2"
+      url: "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000810"
+      application_time: "2-4 weeks"
+      download_required: true
+      data_types:
+        - whole_blood_rnaseq  # 7,700 samples
+        - methylation         # 12,000 samples
+        - proteomics          # 2,000 samples
+        - metabolomics        # 12,000 samples
+      note: "CRITICAL for Latino leukemia - largest Hispanic omics dataset"
+
+    topmed_multi_ancestry:
+      dbgap_id: "Multiple phs IDs"
+      url: "https://topmed.nhlbi.nih.gov/"
+      application_time: "2-4 weeks"
+      download_required: true
+      note: "Apply via dbGaP; TOPMed Freeze 9+ has RNA-seq"
+
+    mesa_multi_omics:
+      dbgap_id: "phs001416"
+      url: "https://www.mesa-nhlbi.org/"
+      application_time: "2-4 weeks"
+      download_required: true
+      note: "Multi-ethnic with pQTL and eQTL; part of TOPMed"
+
+    genoa_eqtl:
+      dbgap_id: "phs000379"
+      url: "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000379"
+      application_time: "2-4 weeks"
+      download_required: true
+      note: "African American LCL eQTL and mQTL"
+
+    blueprint_blood:
+      ega_id: ["EGAD00001005199", "EGAD00001005200"]
+      url: "https://ega-archive.org/"
+      application_time: "2-4 weeks"
+      download_required: true
+      note: "European blood cell eQTL/mQTL/hQTL; apply via EGA"
+
+  # -------------------------------------------------------------------------
+  # CONTACT PI / COLLABORATIVE ACCESS
+  # Requires direct contact with study investigators
+  # -------------------------------------------------------------------------
+  contact_required:
+    gala_sage_eqtl:
+      pi: "Esteban Burchard"
+      institution: "UCSF"
+      url: "https://pharm.ucsf.edu/burchard/research/study-populations"
+      note: "Latino (GALA II) and African American (SAGE II) asthma cohorts"
+
+    mexican_biobank:
+      contact: "See Nature 2023 publication"
+      url: "https://www.nature.com/articles/s41586-023-06560-0"
+      note: "68 indigenous groups; imputation reference panel"
+
+    onek1k_pbmc:
+      url: "https://onek1k.org/"
+      note: "Some data public via GEO; full access via collaboration"
+
+# =============================================================================
+# RECOMMENDED DOWNLOAD PRIORITY FOR LATINO LEUKEMIA COHORT
+# =============================================================================
+# Priority order for setting up the pipeline:
+#
+# STEP 1: PUBLIC DOWNLOADS (do first - no application needed)
+#   1. eQTLGen blood eQTL
+#   2. GTEx v8 blood tissues
+#   3. DICE immune cell eQTL
+#   4. PancanQTLv2 (cancer eQTL + drug response)
+#   5. PharmGKB annotations
+#   6. GoDMC mQTL
+#
+# STEP 2: INSTALL API TOOLS
+#   1. xQTLbiolinks R package
+#   2. Test eQTL Catalogue API
+#
+# STEP 3: APPLY FOR CONTROLLED ACCESS (start early - 2-4 weeks)
+#   1. HCHS/SOL (phs000810) - HIGHEST PRIORITY for Latino
+#   2. TOPMed RNA-seq - multi-ancestry eQTL
+#   3. MESA multi-omics - Hispanic pQTL
+#   4. GENOA - African American (for AAC Tractor comparison)
+#   5. BLUEPRINT - cell-type specific
+#
+# STEP 4: CONTACT PIs
+#   1. GALA/SAGE - Latino/AA blood eQTL (if needed)
+#   2. Mexican Biobank - reference panel (if imputation needed)
+# =============================================================================
+
+download_paths:
+  # Where to store downloaded QTL data
+  base_dir: "assets/qtl_data"
+  eqtl_dir: "assets/qtl_data/eqtl"
+  mqtl_dir: "assets/qtl_data/mqtl"
+  pqtl_dir: "assets/qtl_data/pqtl"
+  caqtl_dir: "assets/qtl_data/caqtl"
+  annotations_dir: "assets/annotations"
+
+  # Controlled access data (user provides path after dbGaP download)
+  controlled_data_dir: null  # Set to path after downloading controlled data
