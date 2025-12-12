@@ -566,6 +566,230 @@ leukemia_specific:
     priority_leukemia: 1
     enabled: true
 
+  pancanqtl_v2:
+    name: "PancanQTLv2.0"
+    description: "Cancer eQTL across 33 TCGA cancer types with fine-mapping, drug response, and immune infiltration"
+    url: "https://hanlaboratory.com/PancanQTLv2/"
+    publication: "NAR 2024"
+    access: "public"
+    types: [eqtl, fine_mapped_eqtl]
+    tissues: 33  # cancer types
+    n_samples: 9196
+    n_eqtls: 5606570  # cis-eQTL-gene pairs
+    n_trans_eqtls: 231210
+    n_fine_mapped: 58747  # credible sets
+    n_gwas_linked: 84592135  # LD associations with GWAS
+    features:
+      - survival_associated_eqtls
+      - drug_response_associations
+      - immune_infiltration_associations
+    ancestry:
+      EUR: 0.90
+      OTHER: 0.10
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Web database with downloads"
+    priority_leukemia: 1
+    enabled: true
+
+  pancan_meqtl:
+    name: "Pancan-meQTL"
+    description: "Cancer methylation QTL across TCGA cancer types"
+    url: "https://hanlaboratory.com/pancanmeQTL/"
+    publication: "NAR 2019"
+    access: "public"
+    types: [mqtl]
+    tissues: 33  # cancer types
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Web database"
+    priority_leukemia: 2
+    enabled: true
+
+  cancer_immunity_qtl:
+    name: "CancerImmunityQTL"
+    description: "Genetic variants affecting immune cell infiltration in tumors"
+    publication: "NAR 2021"
+    access: "public"
+    types: [immunqtl]
+    tissues: [tumor]
+    n_immunqtls: 913  # across cancer types
+    n_survival_assoc: 5
+    n_gwas_overlap: 527
+    method: "CIBERSORT immune cell fractions"
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Web database"
+    priority_leukemia: 1
+    note: "Links tumor genetic variants to immune cell abundance"
+    enabled: true
+
+# -----------------------------------------------------------------------------
+# COLOCALIZATION TOOLS AND INTEGRATIVE RESOURCES
+# -----------------------------------------------------------------------------
+integrative_tools:
+  xqtlbiolinks:
+    name: "xQTLbiolinks"
+    description: "Comprehensive QTL retrieval and colocalization tool"
+    url: "https://github.com/dingruofan/xQTLbiolinks"
+    publication: "Brief Bioinform 2024"
+    access: "public"
+    features:
+      - qtl_retrieval
+      - quality_control
+      - colocalization_analysis
+      - visualization
+    data_sources: 75  # tissues and cell types
+    qtl_types: [eqtl, sqtl, 3aQTL]
+    colocalization_methods: [coloc, enloc, smr]
+    n_eqtls: 4000000+  # accessible
+    genome_build: "GRCh38"
+    availability: "VERIFIED - R package"
+    enabled: true
+
+  colocquial:
+    name: "ColocQuiaL"
+    description: "QTL-GWAS colocalization pipeline"
+    publication: "2022"
+    access: "public"
+    types: [tool]
+    colocalization_methods: [coloc]
+    genome_build: "GRCh38"
+    availability: "VERIFIED - GitHub"
+    enabled: true
+
+# -----------------------------------------------------------------------------
+# FUNCTIONAL ANNOTATION DATABASES
+# -----------------------------------------------------------------------------
+functional_annotation:
+  regulomedb:
+    name: "RegulomeDB v2"
+    description: "Regulatory variant annotation with scoring system and machine learning"
+    url: "https://regulomedb.org/regulome-search/"
+    publication: "Genome Res 2012; updated 2019"
+    access: "public"
+    types: [regulatory_annotation]
+    features:
+      - encode_chromatin_data
+      - tf_binding_sites
+      - dnase_footprints
+      - eqtl_integration
+      - regulatory_scoring
+      - tland_ml_predictions  # cell/organ-specific regulatory predictions
+      - surf_mpra_predictions  # functional variant predictions
+    data_sources:
+      - ENCODE
+      - Roadmap_Epigenomics
+      - ChIP-seq
+      - DNase-seq
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Web interface and API"
+    priority_leukemia: 1
+    enabled: true
+
+  annovar:
+    name: "ANNOVAR"
+    description: "Efficient functional annotation of genetic variants"
+    url: "https://annovar.openbioinformatics.org/"
+    access: "public"
+    types: [annotation_tool]
+    features:
+      - gene_based_annotation
+      - region_based_annotation
+      - filter_based_annotation
+      - pathogenicity_scores
+    databases:
+      - RefSeq
+      - UCSC
+      - Ensembl
+      - dbSNP
+      - gnomAD
+      - ClinVar
+      - COSMIC
+      - SIFT
+      - PolyPhen
+      - CADD
+    genome_builds: [GRCh37, GRCh38, T2T-CHM13]
+    availability: "VERIFIED - Command-line tool"
+    priority_leukemia: 1
+    enabled: true
+
+  haploreg:
+    name: "HaploReg v4.2"
+    description: "LD-based regulatory annotation from Broad Institute"
+    url: "https://pubs.broadinstitute.org/mammals/haploreg/haploreg.php"
+    access: "public"
+    types: [ld_annotation, regulatory_annotation]
+    features:
+      - ld_expansion
+      - chromatin_state_annotation
+      - dnase_annotation
+      - motif_disruption
+      - eqtl_lookup
+    data_sources:
+      - 1000_Genomes
+      - ENCODE
+      - Roadmap_Epigenomics
+      - GTEx
+      - GEUVADIS
+    populations: [AFR, AMR, ASN, EUR]
+    genome_build: "GRCh37"  # NOTE: Still on hg19
+    availability: "VERIFIED - Web interface"
+    priority_leukemia: 2
+    enabled: true
+
+  forgedb:
+    name: "FORGEdb"
+    description: "Candidate functional variants and target gene identification"
+    url: "https://forge2.altiusinstitute.org/"
+    publication: "Genome Biol 2023"
+    access: "public"
+    types: [functional_annotation]
+    features:
+      - tf_motifs
+      - cato_scores
+      - dnase_allelic_binding
+      - abc_scores  # Activity-by-Contact
+      - target_gene_prediction
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Web interface"
+    priority_leukemia: 2
+    enabled: true
+
+  varadb:
+    name: "VARAdb"
+    description: "Comprehensive variation annotation database"
+    url: "https://varadb.com/"
+    publication: "NAR 2021"
+    access: "public"
+    types: [annotation_database]
+    features:
+      - functional_annotation
+      - regulatory_elements
+      - disease_associations
+      - population_frequencies
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Web database"
+    enabled: true
+
+  fuma:
+    name: "FUMA GWAS"
+    description: "Functional mapping and annotation of GWAS"
+    url: "https://fuma.ctglab.nl/"
+    access: "public"
+    types: [gwas_annotation]
+    features:
+      - snp2gene
+      - gene2func
+      - cell_type_enrichment
+      - tissue_enrichment
+      - gwas_catalog_comparison
+    integrates:
+      - GTEx_eQTL
+      - ENCODE
+      - Roadmap_Epigenomics
+    genome_build: "GRCh37/GRCh38"
+    availability: "VERIFIED - Web platform"
+    priority_leukemia: 1
+    enabled: true
+
 # -----------------------------------------------------------------------------
 # POOLING STRATEGY FOR LEUKEMIA COHORT
 # Priority 1 = Use first, Priority 2 = Supplement
