@@ -17,12 +17,14 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-include { PREPARE_QTL_DATA   } from '../../modules/local/prepare_qtl_data'
-include { POOL_QTL_DATASETS  } from '../../modules/local/pool_qtl_datasets'
-include { COLOC              } from '../../modules/local/coloc'
-include { ECAVIAR            } from '../../modules/local/ecaviar'
-include { FASTENLOC          } from '../../modules/local/fastenloc'
-include { COLOC_SUMMARY      } from '../../modules/local/coloc_summary'
+include { PREPARE_QTL_DATA           } from '../../modules/local/prepare_qtl_data'
+include { POOL_QTL_DATASETS          } from '../../modules/local/pool_qtl_datasets'
+include { COLOC                      } from '../../modules/local/coloc'
+include { ECAVIAR                    } from '../../modules/local/ecaviar'
+include { FASTENLOC                  } from '../../modules/local/fastenloc'
+include { COLOC_SUMMARY              } from '../../modules/local/coloc_summary'
+include { COLOC_DIVERGENCE_ANALYSIS  } from '../../modules/local/coloc_divergence'
+include { COLOC_ANCESTRY_HEATMAP     } from '../../modules/local/coloc_divergence'
 
 workflow COLOCALIZATION {
     take:
@@ -152,6 +154,48 @@ workflow COLOCALIZATION {
     )
     ch_versions = ch_versions.mix(COLOC_SUMMARY.out.versions)
 
+    // =========================================================================
+    // SHARED vs DIVERGENT COLOCALIZATION ANALYSIS
+    // =========================================================================
+    // Compare ancestry-stratified to meta-analysis to identify:
+    // - SHARED: Universal regulatory mechanisms (in meta + multiple ancestries)
+    // - DIVERGENT: Population-specific effects (only in one ancestry)
+    // - META-ONLY: Effects only significant when combined
+
+    // Group coloc results by trait for divergence analysis
+    ch_ancestry_by_trait = ch_coloc_ancestry
+        .map { meta, results -> [meta.trait, results] }
+        .groupTuple()
+
+    ch_meta_by_trait = ch_coloc_meta
+        .map { meta, results -> [meta.trait, results] }
+
+    // Join ancestry and meta results by trait
+    ch_divergence_input = ch_ancestry_by_trait
+        .join(ch_meta_by_trait)
+        .map { trait, ancestry_files, meta_file ->
+            [ancestry_files, meta_file, trait]
+        }
+
+    COLOC_DIVERGENCE_ANALYSIS(
+        ch_divergence_input.map { it[0] },  // ancestry files
+        ch_divergence_input.map { it[1] },  // meta file
+        ch_divergence_input.map { it[2] },  // trait name
+        0.8  // PP4 threshold
+    )
+    ch_versions = ch_versions.mix(COLOC_DIVERGENCE_ANALYSIS.out.versions)
+
+    // Heatmap of PP4 across ancestries
+    ch_all_coloc_files = ch_coloc_all
+        .map { meta, results -> [meta.trait, results] }
+        .groupTuple()
+
+    COLOC_ANCESTRY_HEATMAP(
+        ch_all_coloc_files.map { trait, files -> files },
+        ch_all_coloc_files.map { trait, files -> trait }
+    )
+    ch_versions = ch_versions.mix(COLOC_ANCESTRY_HEATMAP.out.versions)
+
     emit:
     // All colocalization results combined
     coloc_results         = ch_coloc_all               // channel: [ meta, coloc_results ]
@@ -159,6 +203,13 @@ workflow COLOCALIZATION {
     coloc_ancestry        = ch_coloc_ancestry          // channel: [ meta, coloc_results ]
     // Meta-analysis results only
     coloc_meta            = ch_coloc_meta              // channel: [ meta, coloc_results ]
+    // Shared vs Divergent analysis
+    shared_coloc          = COLOC_DIVERGENCE_ANALYSIS.out.shared     // channel: [ shared_coloc.tsv ]
+    divergent_coloc       = COLOC_DIVERGENCE_ANALYSIS.out.divergent  // channel: [ divergent_coloc.tsv ]
+    meta_only_coloc       = COLOC_DIVERGENCE_ANALYSIS.out.meta_only  // channel: [ meta_only_coloc.tsv ]
+    divergence_summary    = COLOC_DIVERGENCE_ANALYSIS.out.summary    // channel: [ summary.tsv ]
+    divergence_plot       = COLOC_DIVERGENCE_ANALYSIS.out.plot       // channel: [ divergence.pdf ]
+    ancestry_heatmap      = COLOC_ANCESTRY_HEATMAP.out.heatmap       // channel: [ heatmap.pdf ]
     // Summary statistics
     summary               = COLOC_SUMMARY.out.summary  // channel: [ summary_file ]
     pooled_qtl            = ch_qtl_pooled              // channel: [ type, pooled_qtl_file ]
