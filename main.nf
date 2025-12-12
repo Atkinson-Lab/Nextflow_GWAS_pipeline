@@ -53,10 +53,29 @@ def helpMessage() {
         --phenotype_cols        Phenotype column names (comma-separated)
         --outdir                Output directory
 
-    Optional Arguments:
-        --ancestry_method       Ancestry inference method [graf, admixture, pca] (default: graf)
-        --gwas_tool             GWAS tool [regenie, saige, bolt-lmm, plink2] (default: regenie)
-        --meta_analysis         Run meta-analysis [true/false] (default: true)
+    Ancestry Options:
+        --run_ancestry_inference  Run ancestry inference (default: false, can use pre-computed)
+        --ancestry_calls_file     Pre-computed ancestry calls file
+        --ancestry_method         Ancestry inference method [graf-anc, admixture, pca] (default: graf-anc)
+
+    GWAS Options:
+        --gwas_tool             GWAS tool [regenie, saige, bolt-lmm, plink2, genesis] (default: regenie)
+        --gwas_model            Genetic model [additive, dominant, recessive] (default: additive)
+        --kinship_matrix        Pre-computed kinship matrix (for GENESIS)
+
+    Tractor Options (Local Ancestry-Aware GWAS):
+        --run_tractor           Run Tractor for admixed populations (default: false)
+        --tractor_aac_pops      Ancestral populations for AAC (default: EUR,AFR)
+        --tractor_lat_pops      Ancestral populations for Latino (default: EUR,AFR,NAT)
+        --local_ancestry_files  Local ancestry MSP files (RFMix format)
+
+    Survival Analysis:
+        --survival_analysis     Run survival GWAS with SPA-Cox (default: false)
+        --time_col              Time-to-event column name
+        --event_col             Event indicator column name
+
+    Analysis Options:
+        --meta_analysis         Run MR-MEGA meta-analysis [true/false] (default: true)
         --fine_mapping          Run fine-mapping [true/false] (default: true)
         --prs_analysis          Run PRS analysis [true/false] (default: true)
         --heritability          Run heritability analysis [true/false] (default: true)
@@ -187,15 +206,29 @@ workflow {
     // =========================================================================
     // GWAS BY ANCESTRY GROUP (PARALLELIZED)
     // =========================================================================
+    // Prepare phenotype channel with metadata
+    ch_phenotypes_with_meta = ch_phenotypes
+        .map { pheno -> [[id: 'phenotypes'], pheno] }
+
     GWAS_WORKFLOW(
         ch_gwas_inputs,
-        ch_phenotypes,
+        ch_phenotypes_with_meta,
         params.covariate_cols,
         params.gwas_tool,
-        params.gwas_model
+        params.gwas_model,
+        params.kinship_matrix ? file(params.kinship_matrix) : [],
+        params.run_tractor,
+        ch_local_ancestry,
+        params.tractor_aac_pops,
+        params.tractor_lat_pops,
+        params.survival_analysis,
+        params.time_col,
+        params.event_col
     )
     ch_gwas_results = GWAS_WORKFLOW.out.summary_stats
     ch_gwas_filtered = GWAS_WORKFLOW.out.filtered_results
+    ch_tractor_results = GWAS_WORKFLOW.out.tractor_results
+    ch_survival_results = GWAS_WORKFLOW.out.survival_results
     ch_versions = ch_versions.mix(GWAS_WORKFLOW.out.versions)
 
     // =========================================================================
