@@ -1,0 +1,180 @@
+# =============================================================================
+# GRAF-ANC 3-DIGIT ANCESTRY CODE MAPPING
+# =============================================================================
+# Reference: https://github.com/jimmy-penn/grafanc/blob/master/GrafAncDocumentation.md
+# GRAF-ANC uses a hierarchical 3-digit coding system for ~40 subpopulations
+# =============================================================================
+
+# Major continental groups (first digit = X00)
+major_groups:
+  AFR:
+    code: 100
+    name: "African"
+    subgroups:
+      - code: 100
+        name: "West African"
+        examples: ["Yoruba", "Esan", "Gambian", "Mende"]
+      - code: 110
+        name: "East African"
+        examples: ["Luhya", "Maasai"]
+      - code: 120
+        name: "South African"
+        examples: []
+
+  MEN:
+    code: 200
+    name: "Middle Eastern / North African"
+    subgroups:
+      - code: 200
+        name: "Middle Eastern"
+        examples: ["Bedouin", "Palestinian", "Druze"]
+      - code: 210
+        name: "North African"
+        examples: ["Mozabite"]
+
+  EUR:
+    code: 300
+    name: "European"
+    subgroups:
+      - code: 300
+        name: "Northern European"
+        examples: ["CEU", "GBR", "FIN"]
+      - code: 310
+        name: "Southern European"
+        examples: ["IBS", "TSI"]
+      - code: 320
+        name: "Ashkenazi Jewish"
+        examples: []
+      - code: 330
+        name: "Eastern European"
+        examples: []
+
+  SAS:
+    code: 400
+    name: "South Asian"
+    subgroups:
+      - code: 400
+        name: "Indian/Pakistani"
+        examples: ["GIH", "PJL", "BEB", "STU", "ITU"]
+      - code: 410
+        name: "Bangladeshi"
+        examples: []
+
+  EAS:
+    code: 500
+    name: "East Asian"
+    subgroups:
+      - code: 500
+        name: "Chinese"
+        examples: ["CHB", "CHS", "CDX"]
+      - code: 510
+        name: "Japanese"
+        examples: ["JPT"]
+      - code: 520
+        name: "Korean"
+        examples: ["KHV"]
+      - code: 530
+        name: "Southeast Asian"
+        examples: []
+
+  AMR:
+    code: 600
+    name: "American / Indigenous"
+    subgroups:
+      - code: 600
+        name: "Native American"
+        examples: ["PEL indigenous component"]
+      - code: 610
+        name: "Mexican / Central American (LAT1)"
+        examples: ["MXL"]
+        notes: "Higher Native American + European, lower African"
+      - code: 620
+        name: "Caribbean / South American (LAT2)"
+        examples: ["PUR", "CLM", "PEL"]
+        notes: "Variable African, European, Native American proportions"
+
+  OCN:
+    code: 700
+    name: "Oceanian"
+    subgroups:
+      - code: 700
+        name: "Melanesian/Papuan"
+        examples: []
+      - code: 710
+        name: "Polynesian"
+        examples: []
+
+  MIX:
+    code: 800
+    name: "Mixed / Admixed"
+    subgroups:
+      - code: 800
+        name: "African American (AAC)"
+        ancestry_proportions:
+          AFR: "0.70-0.90"
+          EUR: "0.10-0.30"
+        examples: ["ASW", "ACB"]
+      - code: 810
+        name: "Hispanic/Latino (Admixed)"
+        ancestry_proportions:
+          EUR: "0.30-0.70"
+          AMR: "0.20-0.50"
+          AFR: "0.05-0.20"
+        examples: ["Variable by region"]
+
+# Pipeline-to-GRAF-ANC mapping
+# Use these codes in your ancestry_calls_file or when interpreting GRAF-ANC output
+pipeline_mapping:
+  # Input: pipeline code -> Output: GRAF-ANC codes to include
+  AFR: [100, 110, 120]
+  MEN: [200, 210]
+  EUR: [300, 310, 320, 330]
+  SAS: [400, 410]
+  EAS: [500, 510, 520, 530]
+  AMR: [600]
+  OCN: [700, 710]
+  MIX: [800, 810]
+  AAC: [800]           # African American specifically
+  LAT1: [610]          # Mexican/Central American Latino
+  LAT2: [620]          # Caribbean/South American Latino
+  LATINO: [610, 620, 810]  # All Latino groups combined
+
+# Tractor analysis configurations
+tractor_configurations:
+  # African American: 2-way admixture (AFR + EUR)
+  AAC:
+    ancestral_populations: ["EUR", "AFR"]
+    n_ancestries: 2
+    expected_proportions:
+      AFR: 0.80
+      EUR: 0.20
+
+  # Latino: 3-way admixture (EUR + AFR + Native American)
+  LATINO:
+    ancestral_populations: ["EUR", "AFR", "NAT"]
+    n_ancestries: 3
+    # LAT1 and LAT2 are COMBINED for analysis
+    combines: ["LAT1", "LAT2"]
+    expected_proportions:
+      EUR: 0.50
+      NAT: 0.35
+      AFR: 0.15
+
+# Reference populations for local ancestry inference
+local_ancestry_reference:
+  EUR:
+    source: "1000G"
+    populations: ["CEU", "GBR", "IBS", "TSI", "FIN"]
+  AFR:
+    source: "1000G"
+    populations: ["YRI", "ESN", "GWD", "MSL", "LWK"]
+  NAT:
+    source: "Custom"
+    populations: ["Native American reference panel"]
+    notes: "Requires specific Native American reference for Latino analysis"
+  EAS:
+    source: "1000G"
+    populations: ["CHB", "CHS", "CDX", "JPT", "KHV"]
+  SAS:
+    source: "1000G"
+    populations: ["GIH", "PJL", "BEB", "STU", "ITU"]

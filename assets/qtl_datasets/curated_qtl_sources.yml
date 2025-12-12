@@ -497,6 +497,173 @@ pqtl:
     priority_leukemia: 2
     enabled: true
 
+  blood_pqtl_finemapped_2024:
+    name: "Blood pQTL Fine-mapped (2024)"
+    description: "Fine-mapped blood eQTLs and pQTLs from 1,405 donors with functional validation"
+    publication: "Nature Genetics 2024, doi:10.1038/s41588-024-01896-3"
+    url: "https://www.nature.com/articles/s41588-024-01896-3"
+    access: "public"
+    types: [pqtl, eqtl, fine_mapped]
+    tissues: [whole_blood, plasma]
+    n_eqtls_finemapped: 3464
+    n_pqtls_finemapped: 582
+    n_donors_mrna: 1405
+    n_donors_protein: 2932
+    features:
+      - statistical_fine_mapping
+      - mpra_validated_variants  # 932 variants validated
+      - missense_enrichment
+      - extracellular_domain_enrichment
+    ancestry:
+      EAS: 1.0  # Japan COVID-19 Task Force cohort
+    genome_build: "GRCh38"
+    availability: "VERIFIED - Summary stats in supplement"
+    priority_leukemia: 1
+    note: "Excellent for cross-ancestry validation with EAS-specific pQTLs"
+    enabled: true
+
+  fenland_pqtl:
+    name: "Fenland Study pQTL"
+    description: "Plasma pQTL from SomaScan assay"
+    publication: "Nature 2020"
+    access: "public"
+    types: [pqtl]
+    tissues: [plasma]
+    n_proteins: 3622
+    n_donors: 10708
+    ancestry:
+      EUR: 1.0
+    genome_build: "GRCh37"
+    availability: "VERIFIED - Summary stats available"
+    priority_leukemia: 2
+    enabled: true
+
+  aric_pqtl:
+    name: "ARIC pQTL"
+    description: "Atherosclerosis Risk in Communities plasma pQTL"
+    url: "https://sites.cscc.unc.edu/aric/"
+    access: "controlled_dbgap"
+    types: [pqtl]
+    tissues: [plasma]
+    n_proteins: 4877
+    n_donors: 7213
+    ancestry:
+      EUR: 0.75
+      AFR: 0.25
+    genome_build: "GRCh38"
+    availability: "VERIFIED - dbGaP controlled"
+    priority_leukemia: 2
+    note: "Multi-ancestry pQTL with African American representation"
+    enabled: true
+
+  interval_pqtl:
+    name: "INTERVAL Study pQTL"
+    description: "Blood donor plasma pQTL"
+    publication: "Nature 2018"
+    access: "public"
+    types: [pqtl]
+    tissues: [plasma]
+    n_proteins: 2994
+    n_donors: 3301
+    ancestry:
+      EUR: 1.0
+    genome_build: "GRCh37"
+    availability: "VERIFIED - Summary stats available"
+    priority_leukemia: 2
+    enabled: true
+
+# -----------------------------------------------------------------------------
+# HISTONE QTLs (hQTL)
+# -----------------------------------------------------------------------------
+hqtl:
+  blueprint_h3k4me1:
+    name: "BLUEPRINT H3K4me1 QTL"
+    description: "Histone H3K4me1 mark QTL in blood cells (enhancer mark)"
+    url: "https://www.blueprint-epigenome.eu/"
+    access: "controlled_ega"
+    types: [hqtl]
+    histone_mark: "H3K4me1"
+    tissues: [blood]
+    cell_types: [Monocyte, Neutrophil, T_cell]
+    n_donors: 200
+    ancestry:
+      EUR: 1.0
+    genome_build: "GRCh38"
+    availability: "VERIFIED - EGA controlled"
+    priority_leukemia: 1
+    note: "H3K4me1 marks enhancers - relevant for gene regulation"
+    enabled: true
+
+  blueprint_h3k27ac:
+    name: "BLUEPRINT H3K27ac QTL"
+    description: "Histone H3K27ac mark QTL in blood cells (active enhancer mark)"
+    url: "https://www.blueprint-epigenome.eu/"
+    access: "controlled_ega"
+    types: [hqtl]
+    histone_mark: "H3K27ac"
+    tissues: [blood]
+    cell_types: [Monocyte, Neutrophil, T_cell]
+    n_donors: 200
+    ancestry:
+      EUR: 1.0
+    genome_build: "GRCh38"
+    availability: "VERIFIED - EGA controlled"
+    priority_leukemia: 1
+    note: "H3K27ac marks active enhancers - critical for gene activation"
+    enabled: true
+
+  roadmap_hqtl:
+    name: "Roadmap Epigenomics hQTL"
+    description: "Histone modification QTL across tissues"
+    url: "http://www.roadmapepigenomics.org/"
+    access: "public"
+    types: [hqtl]
+    histone_marks: [H3K4me1, H3K4me3, H3K27ac, H3K27me3, H3K36me3, H3K9me3]
+    tissues: 127  # epigenomes
+    genome_build: "GRCh37"
+    availability: "VERIFIED - Public data"
+    priority_leukemia: 2
+    enabled: true
+
+# -----------------------------------------------------------------------------
+# RESPONSE QTLs (reQTL) - Context-Dependent
+# -----------------------------------------------------------------------------
+reqtl:
+  dice_stim_eqtl:
+    name: "DICE Stimulation eQTL"
+    description: "eQTL in stimulated vs unstimulated immune cells"
+    url: "https://dice-database.org/"
+    access: "public"
+    types: [reqtl, stimulation_eqtl]
+    tissues: [blood]
+    conditions:
+      - unstimulated
+      - anti_CD3_CD28_stim  # T cell activation
+      - LPS_stim            # Monocyte activation
+    cell_types: [CD4_T, CD8_T, Monocyte]
+    genome_build: "GRCh37"
+    availability: "VERIFIED - DICE database"
+    priority_leukemia: 1
+    note: "Response eQTLs reveal condition-specific genetic effects"
+    enabled: true
+
+  blueprint_neutrophil_activation:
+    name: "Neutrophil Activation QTL"
+    description: "eQTL in resting vs activated neutrophils"
+    publication: "Nature Genetics 2016"
+    access: "public"
+    types: [reqtl]
+    tissues: [blood]
+    conditions: [resting, fMLP_activated]
+    cell_types: [Neutrophil]
+    n_donors: 114
+    ancestry:
+      EUR: 1.0
+    genome_build: "GRCh37"
+    availability: "VERIFIED - Publication supplement"
+    priority_leukemia: 1
+    enabled: true
+
 # -----------------------------------------------------------------------------
 # SINGLE-CELL / CELL-TYPE SPECIFIC QTLs - CRITICAL FOR LEUKEMIA
 # -----------------------------------------------------------------------------
