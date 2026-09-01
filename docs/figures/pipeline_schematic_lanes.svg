@@ -35,7 +35,7 @@
 <text x="250.0" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" fill="#5A6675" text-anchor="start">Largely European (HRC, 1000G)</text>
 <circle cx="567.6" cy="301.5" r="7.5" fill="#18A05F" stroke="#FFFFFF" stroke-width="0"/>
 <path d="M563.8000000000001,301.5 l2.9,2.9 l5.5,-6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="582.6" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="17.5" font-weight="bold" fill="#0F6B45" text-anchor="start">TOPMed, All of Us, or your own panel</text>
+<text x="582.6" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15.5" font-weight="bold" fill="#0F6B45" text-anchor="start">TOPMed, All of Us; custom panels for local ancestry</text>
 <line x1="48.0" y1="320.0" x2="1013.0" y2="320.0" stroke="#E4E9EF" stroke-width="1" stroke-linecap="round"/>
 <text x="62.0" y="345.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16.5" font-weight="bold" fill="#101828" text-anchor="start">Variant filtering</text>
 <text x="250.0" y="345.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" fill="#5A6675" text-anchor="start">Fixed R² cut-off</text>
@@ -118,8 +118,8 @@
 <rect x="420.0" y="570.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
 <text x="436.5" y="697.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Impute</text>
 <text x="436.5" y="727.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Two-step against TOPMed, All</text>
-<text x="436.5" y="752.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">of Us, Michigan or a custom</text>
-<text x="436.5" y="777.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">panel</text>
+<text x="436.5" y="752.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">of Us or Michigan; extensible</text>
+<text x="436.5" y="777.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">to new panels</text>
 <rect x="795.0" y="561.0" width="354.5" height="349.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
 <rect x="796.5" y="570.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
 <text x="813.0" y="709.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#2B4A99" text-anchor="start">Ancestry-aware QC</text>
@@ -127,10 +127,11 @@
 <text x="813.0" y="764.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">extensive post-imputation QC</text>
 <rect x="1171.5" y="561.0" width="354.5" height="349.0" rx="11" ry="11" fill="#EEEBF8" stroke="#A497D7" stroke-width="1.8" opacity="1"/>
 <rect x="1173.0" y="570.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#A497D7" stroke="none" opacity="1"/>
-<text x="1189.5" y="697.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#4C3A9B" text-anchor="start">Infer ancestry</text>
-<text x="1189.5" y="727.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global; RFMix local</text>
-<text x="1189.5" y="752.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">ancestry against</text>
-<text x="1189.5" y="777.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">population-matched panels</text>
+<text x="1189.5" y="684.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#4C3A9B" text-anchor="start">Infer ancestry</text>
+<text x="1189.5" y="714.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global; RFMix local</text>
+<text x="1189.5" y="739.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">ancestry with user-supplied,</text>
+<text x="1189.5" y="764.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">population-matched reference</text>
+<text x="1189.5" y="789.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">panels</text>
 <rect x="1548.0" y="561.0" width="470.0" height="349.0" rx="11" ry="11" fill="#E7F0F8" stroke="#17568A" stroke-width="2.2" stroke-dasharray="7,5" opacity="1"/>
 <rect x="1549.5" y="570.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#17568A" stroke="none" opacity="1"/>
 <text x="1566.0" y="596.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Benchmark</text>

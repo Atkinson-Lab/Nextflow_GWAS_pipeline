@@ -35,7 +35,7 @@
 <text x="250.0" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" fill="#5A6675" text-anchor="start">Largely European (HRC, 1000G)</text>
 <circle cx="635.6" cy="301.5" r="7.5" fill="#18A05F" stroke="#FFFFFF" stroke-width="0"/>
 <path d="M631.8000000000001,301.5 l2.9,2.9 l5.5,-6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="650.6" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="17.5" font-weight="bold" fill="#0F6B45" text-anchor="start">TOPMed, All of Us, or your own panel</text>
+<text x="650.6" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="17.5" font-weight="bold" fill="#0F6B45" text-anchor="start">TOPMed, All of Us; custom panels for local ancestry</text>
 <line x1="48.0" y1="320.0" x2="1183.0" y2="320.0" stroke="#E4E9EF" stroke-width="1" stroke-linecap="round"/>
 <text x="62.0" y="345.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16.5" font-weight="bold" fill="#101828" text-anchor="start">Variant filtering</text>
 <text x="250.0" y="345.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" fill="#5A6675" text-anchor="start">Fixed R² cut-off</text>
@@ -135,11 +135,12 @@
 <text x="482.0" y="777.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">pre-imputation QC</text>
 <rect x="727.0" y="561.0" width="241.0" height="349.0" rx="11" ry="11" fill="#E7F0F8" stroke="#84B0D4" stroke-width="1.8" opacity="1"/>
 <rect x="728.5" y="570.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="745.0" y="684.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Impute</text>
-<text x="745.0" y="714.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Two-step against</text>
-<text x="745.0" y="739.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">TOPMed, All of Us,</text>
-<text x="745.0" y="764.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Michigan or a</text>
-<text x="745.0" y="789.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">custom panel</text>
+<text x="745.0" y="672.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Impute</text>
+<text x="745.0" y="702.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Two-step against</text>
+<text x="745.0" y="727.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">TOPMed, All of Us</text>
+<text x="745.0" y="752.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">or Michigan;</text>
+<text x="745.0" y="777.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">extensible to new</text>
+<text x="745.0" y="802.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">panels</text>
 <rect x="990.0" y="561.0" width="241.0" height="349.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
 <rect x="991.5" y="570.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
 <text x="1008.0" y="684.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#2B4A99" text-anchor="start">Ancestry-aware QC</text>
@@ -149,12 +150,13 @@
 <text x="1008.0" y="789.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">post-imputation QC</text>
 <rect x="1253.0" y="561.0" width="241.0" height="349.0" rx="11" ry="11" fill="#EEEBF8" stroke="#A497D7" stroke-width="1.8" opacity="1"/>
 <rect x="1254.5" y="570.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#A497D7" stroke="none" opacity="1"/>
-<text x="1271.0" y="672.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#4C3A9B" text-anchor="start">Infer ancestry</text>
-<text x="1271.0" y="702.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global;</text>
-<text x="1271.0" y="727.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">RFMix local</text>
-<text x="1271.0" y="752.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">ancestry against</text>
-<text x="1271.0" y="777.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">population-matched</text>
-<text x="1271.0" y="802.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">panels</text>
+<text x="1271.0" y="659.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#4C3A9B" text-anchor="start">Infer ancestry</text>
+<text x="1271.0" y="689.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global;</text>
+<text x="1271.0" y="714.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">RFMix local</text>
+<text x="1271.0" y="739.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">ancestry with</text>
+<text x="1271.0" y="764.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">user-supplied,</text>
+<text x="1271.0" y="789.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">population-matched</text>
+<text x="1271.0" y="814.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">reference panels</text>
 <rect x="1516.0" y="561.0" width="500.0" height="349.0" rx="11" ry="11" fill="#E7F0F8" stroke="#17568A" stroke-width="2.2" stroke-dasharray="7,5" opacity="1"/>
 <rect x="1517.5" y="570.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#17568A" stroke="none" opacity="1"/>
 <text x="1534.0" y="596.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Benchmark</text>
@@ -208,11 +210,12 @@
 <line x1="970.0" y1="601.0" x2="987.0" y2="601.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
 <line x1="1233.0" y1="601.0" x2="1250.0" y2="601.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
 <line x1="1496.0" y1="601.0" x2="1513.0" y2="601.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<rect x="2038.0" y="676.5" width="320.0" height="118.0" rx="12" ry="12" fill="#17568A" stroke="none" opacity="1"/>
-<text x="2056.0" y="704.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19" font-weight="bold" fill="#FFFFFF" text-anchor="start">Benchmark result</text>
-<text x="2056.0" y="727.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#FFFFFF" text-anchor="start">· gain and cost by ancestry group</text>
-<text x="2056.0" y="748.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#FFFFFF" text-anchor="start">· best variant and panel per platform</text>
-<text x="2056.0" y="769.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#FFFFFF" text-anchor="start">· ancestries needing better panels</text>
+<rect x="2038.0" y="662.0" width="320.0" height="147.0" rx="12" ry="12" fill="#17568A" stroke="none" opacity="1"/>
+<text x="2056.0" y="690.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19" font-weight="bold" fill="#FFFFFF" text-anchor="start">Benchmark result</text>
+<text x="2056.0" y="713.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#FFFFFF" text-anchor="start">· gain and cost by ancestry group</text>
+<text x="2056.0" y="734.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#FFFFFF" text-anchor="start">· best variant and panel per platform</text>
+<text x="2056.0" y="755.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#FFFFFF" text-anchor="start">· ancestries needing better reference</text>
+<text x="2068.0" y="776.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#FFFFFF" text-anchor="start">populations</text>
 <line x1="2018.0" y1="735.5" x2="2035.0" y2="735.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
 <path d="M1373.5,910.0 V977.0 H1439.0" fill="none" stroke="#243044" stroke-width="4" marker-end="url(#arrow)" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="965.0" y="950.0" width="470.0" height="54.0" rx="12" ry="12" fill="#243044" stroke="none" opacity="1"/>

@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1604" height="1936" viewBox="0 0 1604 1936">
+<svg xmlns="http://www.w3.org/2000/svg" width="1604" height="1961" viewBox="0 0 1604 1961">
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#33415C"/></marker></defs>
-<rect x="0" y="0" width="1604" height="1936" fill="#FFFFFF"/>
-<rect x="20" y="834" width="760" height="1050.0000000000005" rx="18" fill="#FAFBFC" stroke="#DCE2E8" stroke-width="1.8"/>
-<rect x="824" y="834" width="760" height="1050.0000000000005" rx="18" fill="#FAFBFC" stroke="#DCE2E8" stroke-width="1.8"/>
+<rect x="0" y="0" width="1604" height="1961" fill="#FFFFFF"/>
+<rect x="20" y="834" width="760" height="1075.0000000000005" rx="18" fill="#FAFBFC" stroke="#DCE2E8" stroke-width="1.8"/>
+<rect x="824" y="834" width="760" height="1075.0000000000005" rx="18" fill="#FAFBFC" stroke="#DCE2E8" stroke-width="1.8"/>
 <rect x="20" y="16" width="1564" height="788" rx="20" fill="#F2F5F9" stroke="#243044" stroke-width="3"/>
 <text x="42.0" y="68.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="38" font-weight="bold" fill="#101828" text-anchor="start">A</text>
 <text x="90.0" y="66.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="25" font-weight="bold" fill="#101828" text-anchor="start">What this framework changes</text>
@@ -35,7 +35,7 @@
 <text x="246.0" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" fill="#5A6675" text-anchor="start">Largely European (HRC, 1000G)</text>
 <circle cx="784.0" cy="301.5" r="7.5" fill="#18A05F" stroke="#FFFFFF" stroke-width="0"/>
 <path d="M780.2,301.5 l2.9,2.9 l5.5,-6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="799.0" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="17.5" font-weight="bold" fill="#0F6B45" text-anchor="start">TOPMed, All of Us, or your own panel</text>
+<text x="799.0" y="308.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="17.5" font-weight="bold" fill="#0F6B45" text-anchor="start">TOPMed, All of Us; custom panels for local ancestry</text>
 <line x1="44.0" y1="320.0" x2="1560.0" y2="320.0" stroke="#E4E9EF" stroke-width="1" stroke-linecap="round"/>
 <text x="58.0" y="345.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16.5" font-weight="bold" fill="#101828" text-anchor="start">Variant filtering</text>
 <text x="246.0" y="345.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" fill="#5A6675" text-anchor="start">Fixed R² cut-off</text>
@@ -112,108 +112,109 @@
 <rect x="41.5" y="927.0" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#6FB7AB" stroke="none" opacity="1"/>
 <text x="58.0" y="953.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#0E6255" text-anchor="start">Harmonize</text>
 <text x="58.0" y="983.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Liftover, align, union merge; light pre-imputation QC</text>
-<rect x="40.0" y="1039.0" width="720.0" height="97.0" rx="11" ry="11" fill="#E7F0F8" stroke="#84B0D4" stroke-width="1.8" opacity="1"/>
-<rect x="41.5" y="1048.0" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
+<rect x="40.0" y="1039.0" width="720.0" height="122.0" rx="11" ry="11" fill="#E7F0F8" stroke="#84B0D4" stroke-width="1.8" opacity="1"/>
+<rect x="41.5" y="1048.0" width="5.0" height="104.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
 <text x="58.0" y="1074.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Impute</text>
-<text x="58.0" y="1104.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Two-step against TOPMed, All of Us, Michigan or a custom panel</text>
-<rect x="40.0" y="1160.0" width="720.0" height="97.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
-<rect x="41.5" y="1169.0" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
-<text x="58.0" y="1195.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#2B4A99" text-anchor="start">Ancestry-aware QC</text>
-<text x="58.0" y="1225.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">MagicalRsq-X filter, merge, extensive post-imputation QC</text>
-<rect x="40.0" y="1281.0" width="720.0" height="122.0" rx="11" ry="11" fill="#EEEBF8" stroke="#A497D7" stroke-width="1.8" opacity="1"/>
-<rect x="41.5" y="1290.0" width="5.0" height="104.0" rx="2.5" ry="2.5" fill="#A497D7" stroke="none" opacity="1"/>
-<text x="58.0" y="1316.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#4C3A9B" text-anchor="start">Infer ancestry</text>
-<text x="58.0" y="1346.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global; RFMix local ancestry against population-matched</text>
-<text x="58.0" y="1371.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">panels</text>
-<rect x="40.0" y="1427.0" width="720.0" height="349.0" rx="11" ry="11" fill="#E7F0F8" stroke="#17568A" stroke-width="2.2" stroke-dasharray="7,5" opacity="1"/>
-<rect x="41.5" y="1436.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#17568A" stroke="none" opacity="1"/>
-<text x="58.0" y="1462.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Benchmark</text>
-<text x="58.0" y="1492.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Array harmonization is not standardized: six published variants</text>
-<text x="58.0" y="1517.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">run head-to-head</text>
-<rect x="634.5" y="1447.0" width="107.5" height="21.0" rx="10" ry="10" fill="#FFFFFF" stroke="#17568A" stroke-width="1.2" opacity="1"/>
-<text x="688.3" y="1462.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" fill="#17568A" text-anchor="middle">illustrative</text>
-<rect x="58.0" y="1546.0" width="337.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="67.0" y="1565.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13.5" font-weight="bold" fill="#101828" text-anchor="start">Concordance</text>
-<text x="67.0" y="1580.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" fill="#5A6675" text-anchor="start">array vs WGS truth</text>
-<line x1="71.0" y1="1594.0" x2="71.0" y2="1623.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<line x1="71.0" y1="1623.0" x2="384.5" y2="1623.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="110.3" y="1596.3" width="56.1" height="26.7" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="138.4" y="1639.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
-<rect x="203.9" y="1602.4" width="56.1" height="20.6" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
-<text x="232.0" y="1639.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
-<rect x="297.5" y="1599.8" width="56.1" height="23.2" rx="1" ry="1" fill="#3F9E7C" stroke="none" opacity="1"/>
-<text x="325.5" y="1639.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
-<rect x="404.5" y="1546.0" width="337.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="413.5" y="1565.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13.5" font-weight="bold" fill="#101828" text-anchor="start">Panel choice</text>
-<text x="413.5" y="1580.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" fill="#5A6675" text-anchor="start">R² by reference panel</text>
-<line x1="417.5" y1="1594.0" x2="417.5" y2="1623.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<line x1="417.5" y1="1623.0" x2="731.0" y2="1623.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="473.5" y="1603.3" width="80.0" height="19.7" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
-<text x="513.6" y="1639.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">1000G</text>
-<rect x="606.9" y="1596.9" width="80.0" height="26.1" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
-<text x="647.0" y="1639.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">TOPMed</text>
-<rect x="58.0" y="1658.0" width="337.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="67.0" y="1677.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13.5" font-weight="bold" fill="#101828" text-anchor="start">Gain vs standard</text>
-<text x="67.0" y="1692.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" fill="#5A6675" text-anchor="start">variants retained</text>
-<line x1="71.0" y1="1706.0" x2="71.0" y2="1735.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<line x1="71.0" y1="1735.0" x2="384.5" y2="1735.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="110.3" y="1726.9" width="56.1" height="8.1" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
-<text x="138.4" y="1751.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
-<rect x="203.9" y="1713.5" width="56.1" height="21.5" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
-<text x="232.0" y="1751.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
-<rect x="297.5" y="1717.0" width="56.1" height="18.0" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="325.5" y="1751.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
-<rect x="404.5" y="1658.0" width="337.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="413.5" y="1677.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13.5" font-weight="bold" fill="#101828" text-anchor="start">GWAS power</text>
-<text x="413.5" y="1692.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" fill="#5A6675" text-anchor="start">simulated effects</text>
-<line x1="417.5" y1="1706.0" x2="417.5" y2="1735.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<line x1="417.5" y1="1735.0" x2="731.0" y2="1735.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="456.8" y="1722.2" width="56.1" height="12.8" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
-<text x="484.9" y="1751.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
-<rect x="550.4" y="1717.0" width="56.1" height="18.0" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="578.5" y="1751.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
-<rect x="644.0" y="1708.9" width="56.1" height="26.1" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
-<text x="672.0" y="1751.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
+<text x="58.0" y="1104.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Two-step against TOPMed, All of Us or Michigan; extensible to new</text>
+<text x="58.0" y="1129.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">panels</text>
+<rect x="40.0" y="1185.0" width="720.0" height="97.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
+<rect x="41.5" y="1194.0" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
+<text x="58.0" y="1220.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#2B4A99" text-anchor="start">Ancestry-aware QC</text>
+<text x="58.0" y="1250.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">MagicalRsq-X filter, merge, extensive post-imputation QC</text>
+<rect x="40.0" y="1306.0" width="720.0" height="122.0" rx="11" ry="11" fill="#EEEBF8" stroke="#A497D7" stroke-width="1.8" opacity="1"/>
+<rect x="41.5" y="1315.0" width="5.0" height="104.0" rx="2.5" ry="2.5" fill="#A497D7" stroke="none" opacity="1"/>
+<text x="58.0" y="1341.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#4C3A9B" text-anchor="start">Infer ancestry</text>
+<text x="58.0" y="1371.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global; RFMix local ancestry with user-supplied,</text>
+<text x="58.0" y="1396.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">population-matched reference panels</text>
+<rect x="40.0" y="1452.0" width="720.0" height="349.0" rx="11" ry="11" fill="#E7F0F8" stroke="#17568A" stroke-width="2.2" stroke-dasharray="7,5" opacity="1"/>
+<rect x="41.5" y="1461.0" width="5.0" height="331.0" rx="2.5" ry="2.5" fill="#17568A" stroke="none" opacity="1"/>
+<text x="58.0" y="1487.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Benchmark</text>
+<text x="58.0" y="1517.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Array harmonization is not standardized: six published variants</text>
+<text x="58.0" y="1542.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">run head-to-head</text>
+<rect x="634.5" y="1472.0" width="107.5" height="21.0" rx="10" ry="10" fill="#FFFFFF" stroke="#17568A" stroke-width="1.2" opacity="1"/>
+<text x="688.3" y="1487.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" fill="#17568A" text-anchor="middle">illustrative</text>
+<rect x="58.0" y="1571.0" width="337.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="67.0" y="1590.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13.5" font-weight="bold" fill="#101828" text-anchor="start">Concordance</text>
+<text x="67.0" y="1605.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" fill="#5A6675" text-anchor="start">array vs WGS truth</text>
+<line x1="71.0" y1="1619.0" x2="71.0" y2="1648.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="71.0" y1="1648.0" x2="384.5" y2="1648.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="110.3" y="1621.3" width="56.1" height="26.7" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
+<text x="138.4" y="1664.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
+<rect x="203.9" y="1627.4" width="56.1" height="20.6" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
+<text x="232.0" y="1664.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
+<rect x="297.5" y="1624.8" width="56.1" height="23.2" rx="1" ry="1" fill="#3F9E7C" stroke="none" opacity="1"/>
+<text x="325.5" y="1664.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
+<rect x="404.5" y="1571.0" width="337.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="413.5" y="1590.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13.5" font-weight="bold" fill="#101828" text-anchor="start">Panel choice</text>
+<text x="413.5" y="1605.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" fill="#5A6675" text-anchor="start">R² by reference panel</text>
+<line x1="417.5" y1="1619.0" x2="417.5" y2="1648.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="417.5" y1="1648.0" x2="731.0" y2="1648.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="473.5" y="1628.3" width="80.0" height="19.7" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
+<text x="513.6" y="1664.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">1000G</text>
+<rect x="606.9" y="1621.9" width="80.0" height="26.1" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
+<text x="647.0" y="1664.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">TOPMed</text>
+<rect x="58.0" y="1683.0" width="337.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="67.0" y="1702.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13.5" font-weight="bold" fill="#101828" text-anchor="start">Gain vs standard</text>
+<text x="67.0" y="1717.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" fill="#5A6675" text-anchor="start">variants retained</text>
+<line x1="71.0" y1="1731.0" x2="71.0" y2="1760.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="71.0" y1="1760.0" x2="384.5" y2="1760.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="110.3" y="1751.9" width="56.1" height="8.1" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
+<text x="138.4" y="1776.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
+<rect x="203.9" y="1738.5" width="56.1" height="21.5" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
+<text x="232.0" y="1776.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
+<rect x="297.5" y="1742.0" width="56.1" height="18.0" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
+<text x="325.5" y="1776.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
+<rect x="404.5" y="1683.0" width="337.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="413.5" y="1702.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13.5" font-weight="bold" fill="#101828" text-anchor="start">GWAS power</text>
+<text x="413.5" y="1717.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" fill="#5A6675" text-anchor="start">simulated effects</text>
+<line x1="417.5" y1="1731.0" x2="417.5" y2="1760.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="417.5" y1="1760.0" x2="731.0" y2="1760.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="456.8" y="1747.2" width="56.1" height="12.8" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
+<text x="484.9" y="1776.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
+<rect x="550.4" y="1742.0" width="56.1" height="18.0" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
+<text x="578.5" y="1776.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
+<rect x="644.0" y="1733.9" width="56.1" height="26.1" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
+<text x="672.0" y="1776.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
 <line x1="84.0" y1="1017.0" x2="84.0" y2="1036.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="84.0" y1="1138.0" x2="84.0" y2="1157.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="84.0" y1="1259.0" x2="84.0" y2="1278.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="84.0" y1="1405.0" x2="84.0" y2="1424.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="84.0" y1="1778.0" x2="84.0" y2="1797.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<rect x="40.0" y="1800.0" width="720.0" height="62.0" rx="12" ry="12" fill="#243044" stroke="none" opacity="1"/>
-<text x="400.0" y="1827.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Analysis-ready genotypes</text>
-<text x="400.0" y="1848.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" fill="#E3E8EF" text-anchor="middle">+ global and local ancestry</text>
+<line x1="84.0" y1="1163.0" x2="84.0" y2="1182.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="84.0" y1="1284.0" x2="84.0" y2="1303.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="84.0" y1="1430.0" x2="84.0" y2="1449.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="84.0" y1="1803.0" x2="84.0" y2="1822.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<rect x="40.0" y="1825.0" width="720.0" height="62.0" rx="12" ry="12" fill="#243044" stroke="none" opacity="1"/>
+<text x="400.0" y="1852.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Analysis-ready genotypes</text>
+<text x="400.0" y="1873.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" fill="#E3E8EF" text-anchor="middle">+ global and local ancestry</text>
 <text x="844.0" y="870.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="38" font-weight="bold" fill="#101828" text-anchor="start">C</text>
 <text x="892.0" y="868.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="25" font-weight="bold" fill="#101828" text-anchor="start">Ancestry-aware GWAS & downstream</text>
 <rect x="844.0" y="918.0" width="720.0" height="97.0" rx="11" ry="11" fill="#E7F0F8" stroke="#84B0D4" stroke-width="1.8" opacity="1"/>
 <rect x="845.5" y="927.0" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
 <text x="862.0" y="953.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#17568A" text-anchor="start">Stratify</text>
 <text x="862.0" y="983.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc groups; ancestry × trait in parallel</text>
-<rect x="844.0" y="1089.4" width="720.0" height="122.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
-<rect x="845.5" y="1098.4" width="5.0" height="104.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
-<text x="862.0" y="1124.4" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#2B4A99" text-anchor="start">GWAS per ancestry</text>
-<text x="862.0" y="1154.4" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">REGENIE, SAIGE, GENESIS, Tractor; survival GWAS for OS, DFS,</text>
-<text x="862.0" y="1179.4" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">relapse and toxicity with local ancestry</text>
-<rect x="844.0" y="1285.8" width="720.0" height="97.0" rx="11" ry="11" fill="#EFEBF8" stroke="#A89AD8" stroke-width="1.8" opacity="1"/>
-<rect x="845.5" y="1294.8" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#A89AD8" stroke="none" opacity="1"/>
-<text x="862.0" y="1320.8" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#513C9B" text-anchor="start">Meta-regression</text>
-<text x="862.0" y="1350.8" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">MR-MEGA-env: ancestry and cohort heterogeneity</text>
-<rect x="844.0" y="1457.2" width="720.0" height="97.0" rx="11" ry="11" fill="#F4EBF7" stroke="#BC97CE" stroke-width="1.8" opacity="1"/>
-<rect x="845.5" y="1466.2" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#BC97CE" stroke="none" opacity="1"/>
-<text x="862.0" y="1492.2" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#71368C" text-anchor="start">Fine-map</text>
-<text x="862.0" y="1522.2" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">PolyFun + SuSiE; multi-trait, multi-ancestry MG-FLASH-FM</text>
-<rect x="844.0" y="1628.6" width="720.0" height="97.0" rx="11" ry="11" fill="#F9EBF3" stroke="#CD97BE" stroke-width="1.8" opacity="1"/>
-<rect x="845.5" y="1637.6" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#CD97BE" stroke="none" opacity="1"/>
-<text x="862.0" y="1663.6" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#8C2F71" text-anchor="start">Downstream</text>
-<text x="862.0" y="1693.6" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Ancestry-aware PRS, heritability, colocalization, annotation</text>
-<line x1="888.0" y1="1017.0" x2="888.0" y2="1086.4" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="888.0" y1="1213.4" x2="888.0" y2="1282.8" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="888.0" y1="1384.8" x2="888.0" y2="1454.2" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="888.0" y1="1556.2" x2="888.0" y2="1625.6" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="888.0" y1="1727.6" x2="888.0" y2="1797.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<rect x="844.0" y="1800.0" width="720.0" height="62.0" rx="12" ry="12" fill="#243044" stroke="none" opacity="1"/>
-<text x="1204.0" y="1827.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Ancestry-resolved results</text>
-<text x="1204.0" y="1848.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" fill="#E3E8EF" text-anchor="middle">associations · credible sets · PRS</text>
-<path d="M760.0,1831.0 H808.0 V950.0 H840.0" fill="none" stroke="#243044" stroke-width="4" marker-end="url(#arrow)" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="760.0" cy="1831.0" r="6" fill="#243044" stroke="#FFFFFF" stroke-width="2"/>
-<text x="26.0" y="1914.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#5A6675" text-anchor="start">Run end to end or any step alone  ·  dashed = optional</text>
+<rect x="844.0" y="1094.4" width="720.0" height="122.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
+<rect x="845.5" y="1103.4" width="5.0" height="104.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
+<text x="862.0" y="1129.4" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#2B4A99" text-anchor="start">GWAS per ancestry</text>
+<text x="862.0" y="1159.4" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">REGENIE, SAIGE, GENESIS, Tractor; survival GWAS for OS, DFS,</text>
+<text x="862.0" y="1184.4" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">relapse and toxicity with local ancestry</text>
+<rect x="844.0" y="1295.8" width="720.0" height="97.0" rx="11" ry="11" fill="#EFEBF8" stroke="#A89AD8" stroke-width="1.8" opacity="1"/>
+<rect x="845.5" y="1304.8" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#A89AD8" stroke="none" opacity="1"/>
+<text x="862.0" y="1330.8" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#513C9B" text-anchor="start">Meta-regression</text>
+<text x="862.0" y="1360.8" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">MR-MEGA-env: ancestry and cohort heterogeneity</text>
+<rect x="844.0" y="1472.2" width="720.0" height="97.0" rx="11" ry="11" fill="#F4EBF7" stroke="#BC97CE" stroke-width="1.8" opacity="1"/>
+<rect x="845.5" y="1481.2" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#BC97CE" stroke="none" opacity="1"/>
+<text x="862.0" y="1507.2" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#71368C" text-anchor="start">Fine-map</text>
+<text x="862.0" y="1537.2" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">PolyFun + SuSiE; multi-trait, multi-ancestry MG-FLASH-FM</text>
+<rect x="844.0" y="1648.6" width="720.0" height="97.0" rx="11" ry="11" fill="#F9EBF3" stroke="#CD97BE" stroke-width="1.8" opacity="1"/>
+<rect x="845.5" y="1657.6" width="5.0" height="79.0" rx="2.5" ry="2.5" fill="#CD97BE" stroke="none" opacity="1"/>
+<text x="862.0" y="1683.6" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22" font-weight="bold" fill="#8C2F71" text-anchor="start">Downstream</text>
+<text x="862.0" y="1713.6" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="19.5" font-weight="600" fill="#101828" text-anchor="start">Ancestry-aware PRS, heritability, colocalization, annotation</text>
+<line x1="888.0" y1="1017.0" x2="888.0" y2="1091.4" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="888.0" y1="1218.4" x2="888.0" y2="1292.8" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="888.0" y1="1394.8" x2="888.0" y2="1469.2" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="888.0" y1="1571.2" x2="888.0" y2="1645.6" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="888.0" y1="1747.6" x2="888.0" y2="1822.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<rect x="844.0" y="1825.0" width="720.0" height="62.0" rx="12" ry="12" fill="#243044" stroke="none" opacity="1"/>
+<text x="1204.0" y="1852.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Ancestry-resolved results</text>
+<text x="1204.0" y="1873.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" fill="#E3E8EF" text-anchor="middle">associations · credible sets · PRS</text>
+<path d="M760.0,1856.0 H808.0 V950.0 H840.0" fill="none" stroke="#243044" stroke-width="4" marker-end="url(#arrow)" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="760.0" cy="1856.0" r="6" fill="#243044" stroke="#FFFFFF" stroke-width="2"/>
+<text x="26.0" y="1939.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" fill="#5A6675" text-anchor="start">Run end to end or any step alone  ·  dashed = optional</text>
 </svg>
