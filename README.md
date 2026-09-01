@@ -49,7 +49,7 @@ Panel B below is this pipeline; Panel A is the upstream
 that produces the harmonized genotypes and ancestry calls it consumes. Panel C contrasts the
 combined framework with a typical GWAS workflow.
 
-![Pipeline schematic](docs/figures/pipeline_schematic_compact.png)
+![Pipeline schematic](docs/figures/pipeline_schematic_stack.png)
 
 Full-detail and compact versions, editable SVGs and a figure caption are in
 [`docs/figures/`](docs/figures/pipeline_schematic_caption.md). The figures are generated from

@@ -1,21 +1,40 @@
 # Pipeline schematic: figure caption and notes
 
-Files in this directory:
+## Which version to use
+
+Two **reviewer-friendly "key takeaways" options** (recommended for the grant):
+
+| File | Layout | Size at 200 px/in |
+|------|--------|-------------------|
+| `pipeline_schematic_lanes.svg` / `.png` | **Option 1, landscape.** Panel A and Panel B as two horizontal lanes (five phases each, one line per phase), benchmark insets at the end of lane A, takeaway table (Panel C) below. | 10 x 6.4 in (landscape page or a wide half page) |
+| `pipeline_schematic_stack.svg` / `.png` | **Option 2, portrait.** Same content as two side-by-side columns with the table below. | 7.5 x 7.7 in (about three quarters of a portrait page) |
+
+Both options collapse the nine genotype modules into five phases (module numbers shown as small chips), keep one line of text per phase, mark the benchmarking phase as optional/illustrative with a single tag instead of footnotes, and carry a two-part takeaway table that covers genotype harmonization **and** GWAS. Regenerate (from the genotype pipeline repo) with `python3 make_pipeline_schematic_v2.py --layout lanes|stack` (add `--no-table` to drop Panel C).
+
+Detailed versions (every module with bullets) are kept for documentation and talks:
 
 | File | Use |
 |------|-----|
-| `pipeline_schematic.svg` / `.png` | Full-detail figure with Panels A, B and C. Sized for a 7.5 in page width; body text prints at about 6 pt. About 7.5 × 11 in, so use it as a full landscape page, scale to about 6.9 in wide, or drop Panel C. |
-| `pipeline_schematic_AB_only.svg` / `.png` | Full-detail Panels A and B without the comparison table. About 7.5 × 9.5 in (fits one portrait page). |
-| `pipeline_schematic_compact.svg` / `.png` | One line per module, Panels A, B and C. About 7.5 × 8.4 in. Recommended when the figure has to share a page with text. |
-| `make_pipeline_schematic.py` (in the genotype pipeline repo, `documentation/figures/`) | Regenerates the SVGs (`python3 make_pipeline_schematic.py`, add `--compact` for the short version and `--no-table` to omit Panel C). No dependencies. Edit the `PANEL_A` / `PANEL_B` / `COMPARISON` lists to change wording. |
-| `render_svg.js` (same location) | Renders an SVG to PNG with headless Chromium via Playwright: `node render_svg.js in.svg out.png 2` (the last number is the pixel scale; 2 gives about 400 dpi at 7.5 in). |
+| `pipeline_schematic.svg` / `.png` | Full detail, Panels A to C. Needs a full landscape page or scaling to about 6.9 in wide. |
+| `pipeline_schematic_AB_only.svg` / `.png` | Full detail without the table; fits one portrait page. |
+| `pipeline_schematic_compact.svg` / `.png` | One line per module, Panels A to C, about 7.5 x 8.4 in. |
+| `make_pipeline_schematic.py` (genotype pipeline repo, `documentation/figures/`) | Regenerates the detailed versions (`--compact`, `--no-table`). No dependencies. |
+| `render_svg.js` | Renders any SVG to PNG with headless Chromium via Playwright: `node render_svg.js in.svg out.png 2` (2 = pixel scale, about 400 dpi). |
 
-The SVG is editable in Illustrator, Inkscape, PowerPoint (Insert → Pictures) and can be uploaded to BioRender as an image asset.
+The SVGs are editable in Illustrator, Inkscape and PowerPoint, and can be uploaded to BioRender as image assets.
 
 ---
 
-## Figure caption (grant version)
+## Caption for the key-takeaways options (Option 1 or 2)
 
+**Figure 1. A modular, ancestry-aware framework for genotype harmonization and GWAS.**
+**(A)** Genotype harmonization, QC and ancestry inference (`Nextflow_Genotype_Pipeline`, modules M0–M8). Genotypes from multiple arrays, batches and genome builds are lifted over, aligned and UNION-merged, imputed on the TOPMed, Michigan and All of Us servers through automated job handling, filtered with the ancestry-aware MagicalRsq-X metric instead of a fixed R² cut-off, intersection-merged and optionally re-imputed, and passed through final QC. Global ancestry (GRAF-anc) and local ancestry tracts (RFMix) are inferred, and an optional benchmarking module compares imputed genotypes with whole-genome sequencing truth and simulates GWAS power by ancestry (insets illustrative).
+**(B)** Ancestry-aware GWAS and downstream analyses (`Nextflow_GWAS_pipeline`). Harmonized genotypes and ancestry calls are stratified into continental and admixed groups and analysed in parallel per ancestry and trait (REGENIE, SAIGE, GENESIS), with Tractor decomposing effects by local ancestry in African American and Latin American participants and time-to-event GWAS that incorporates local ancestry (GENESIS extension). Group results are combined by MR-MEGA / MR-MEGA-env meta-regression, which models ancestry-aware and cohort-specific heterogeneity, fine-mapped within ancestry (PolyFun + SuSiE) and across traits and ancestries (MG-FLASH-FM for related traits), and carried into ancestry-aware polygenic scores, heritability, colocalization with diverse QTL resources and functional annotation.
+**(C)** Key differences from a typical GWAS workflow. Every module is an independent Nextflow entry point, so the framework runs end to end or module by module; dashed outlines mark optional modules and orange marks admixed-population methods.
+
+---
+
+## Caption for the detailed versions
 **Figure 1. Modular Nextflow framework for ancestry-aware genotype harmonization and GWAS.**
 **(A)** Genotype harmonization, imputation, quality control (QC) and ancestry inference (`Nextflow_Genotype_Pipeline`). Heterogeneous array genotypes (multiple platforms, batches, file layouts and genome builds) are converted, lifted over to hg38, aligned to the reference and merged by platform using a UNION strategy that preserves variant diversity (Module 1). Each platform is imputed separately on the TOPMed, Michigan and/or All of Us (AnVIL) imputation servers through automated job submission and retrieval (Module 2), filtered with the ancestry-aware MagicalRsq-X quality metric rather than a fixed R² cut-off (Module 3), harmonized and INTERSECTION-merged across platforms (Module 4), optionally re-imputed to recover variants lost at the intersection (Module 5), and passed through final sample- and variant-level QC including Hardy–Weinberg, minor allele frequency, heterozygosity, sex-check, relatedness and principal-component analyses (Module 6). Global ancestry is inferred with GRAF-anc and ADMIXTURE, and local ancestry with RFMix v2, FLARE or G-NOMIX against a 1000 Genomes–HGDP reference panel (Module 7). An optional benchmarking module compares imputed genotypes with whole-genome-sequencing truth, contrasts six QC/merge strategies across three imputation servers, and simulates phenotypes with GCTA to quantify GWAS power, hit recovery and local-ancestry accuracy within each ancestry group (Module 8; inset panels are illustrative). The output is an analysis-ready genotype set with global ancestry calls and local ancestry tracts.
 **(B)** Ancestry-aware GWAS and downstream analyses (`Nextflow_GWAS_pipeline`). Harmonized genotypes, phenotypes and ancestry calls from (A) are QC'd and stratified into major and admixed ancestry groups, and GWAS is run in parallel per group and trait with REGENIE, SAIGE, BOLT-LMM, PLINK2 or GENESIS mixed models; admixed groups are additionally analysed with Tractor, which decomposes effects by local ancestry (two-way for African American, three-way for Latino participants), and time-to-event outcomes with SPA-Cox. Group-level results are combined with MR-MEGA meta-regression, which models ancestry-correlated heterogeneity, then fine-mapped within ancestry (PolyFun + SuSiE) and across ancestries (MG-FLASH-FM, SuSiE-ME). Downstream subworkflows compute ancestry-aware polygenic risk scores (PRS-CSx, PRS-CS, GAUDI, LDpred2), heritability and cross-ancestry genetic correlation (LDSC, GCTA), colocalization with ancestry-matched QTL resources, and functional annotation (MAGMA, FUMA, LAVA, FLAMES), followed by visualization and automated reporting. Every module in both pipelines is an independent Nextflow DSL2 entry point, so the framework can be run end-to-end or any module can be run alone on existing outputs; dashed outlines mark optional modules and orange marks admixed-population methods. **(C)** Principal departures from a typical GWAS workflow: end-to-end containerized merging instead of cohort-specific scripts; two-step imputation against the diverse TOPMed and All of Us AnVIL panels rather than a single largely European panel; ancestry-aware MagicalRsq-X filtering instead of a fixed R² cut-off; GRAF-anc plus local ancestry inference instead of self-report or global principal components; benchmarking built into the workflow; and containerized, parallelized, portable execution on HPC/SLURM.
