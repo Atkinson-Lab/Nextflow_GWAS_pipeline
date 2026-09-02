@@ -42,6 +42,19 @@ Optimized for:
 - Rare variants
 - Large biobank data
 
+## Pipeline Schematic
+
+Panel B below is this pipeline; Panel A is the upstream
+[Nextflow_Genotype_Pipeline](https://github.com/atkinson-lab/nextflow_genotype_pipeline)
+that produces the harmonized genotypes and ancestry calls it consumes. Panel C contrasts the
+combined framework with a typical GWAS workflow.
+
+![Pipeline schematic](docs/figures/pipeline_schematic_stack.png)
+
+Full-detail and compact versions, editable SVGs and a figure caption are in
+[`docs/figures/`](docs/figures/pipeline_schematic_caption.md). The figures are generated from
+`documentation/figures/make_pipeline_schematic.py` in the genotype pipeline repository.
+
 ## Pipeline Architecture
 
 ```
