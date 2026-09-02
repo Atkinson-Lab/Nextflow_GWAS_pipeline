@@ -95,22 +95,23 @@
 <rect x="1445.0" y="134.0" width="1373.0" height="360.0" rx="14" ry="14" fill="none" stroke="#C9D2DC" stroke-width="1.6" opacity="1"/>
 <text x="42.0" y="581.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="42" font-weight="bold" fill="#101828" text-anchor="start">B</text>
 <text x="96.0" y="579.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="29" font-weight="bold" fill="#101828" text-anchor="start">Genotype harmonization, imputation, and ancestry inference</text>
-<rect x="42.0" y="659.5" width="500.0" height="150.0" rx="11" ry="11" fill="#E8ECF2" stroke="#243044" stroke-width="2.6" opacity="1"/>
-<path d="M53,659.5 H531 a11,11 0 0 1 11,11 V723.5 H42 V670.5 a11,11 0 0 1 11,-11 z" fill="#243044"/>
-<text x="60.0" y="700.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="27" font-weight="bold" fill="#FFFFFF" text-anchor="start">Public + simulated</text>
-<rect x="380.0" y="675.5" width="144.0" height="32.0" rx="16" ry="16" fill="#FFFFFF" stroke="none" opacity="1"/>
-<text x="452.0" y="697.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" font-weight="bold" fill="#243044" text-anchor="middle">GROUND TRUTH</text>
-<text x="60.0" y="751.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">1000 Genomes on multiple SNP arrays with</text>
-<text x="60.0" y="778.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">matched WGS truth; simulated phenotypes</text>
-<line x1="544.0" y1="734.5" x2="561.0" y2="734.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<rect x="42.0" y="821.5" width="500.0" height="177.0" rx="11" ry="11" fill="#FBE6D4" stroke="#B85C10" stroke-width="2.6" opacity="1"/>
-<path d="M53,821.5 H531 a11,11 0 0 1 11,11 V885.5 H42 V832.5 a11,11 0 0 1 11,-11 z" fill="#B85C10"/>
-<text x="60.0" y="862.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="23.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">Diverse cancer cohorts</text>
-<rect x="351.5" y="837.5" width="172.5" height="32.0" rx="16" ry="16" fill="#FFFFFF" stroke="none" opacity="1"/>
-<text x="437.8" y="859.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" font-weight="bold" fill="#B85C10" text-anchor="middle">REAL-WORLD DATA</text>
-<text x="60.0" y="913.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Pediatric B-ALL: REDIAL (n = 1,870</text>
-<text x="60.0" y="940.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">genotyped) and additional multi-site</text>
-<text x="60.0" y="967.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">cohorts; subset with paired germline WGS</text>
+<rect x="42.0" y="646.0" width="500.0" height="150.0" rx="11" ry="11" fill="#E8ECF2" stroke="#243044" stroke-width="2.6" opacity="1"/>
+<path d="M53,646.0 H531 a11,11 0 0 1 11,11 V710.0 H42 V657.0 a11,11 0 0 1 11,-11 z" fill="#243044"/>
+<text x="60.0" y="687.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="27" font-weight="bold" fill="#FFFFFF" text-anchor="start">Public + simulated</text>
+<rect x="380.0" y="662.0" width="144.0" height="32.0" rx="16" ry="16" fill="#FFFFFF" stroke="none" opacity="1"/>
+<text x="452.0" y="683.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" font-weight="bold" fill="#243044" text-anchor="middle">GROUND TRUTH</text>
+<text x="60.0" y="738.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">1000 Genomes on multiple SNP arrays with</text>
+<text x="60.0" y="765.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">matched WGS truth; simulated phenotypes</text>
+<line x1="544.0" y1="721.0" x2="561.0" y2="721.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<rect x="42.0" y="808.0" width="500.0" height="204.0" rx="11" ry="11" fill="#FBE6D4" stroke="#B85C10" stroke-width="2.6" opacity="1"/>
+<path d="M53,808.0 H531 a11,11 0 0 1 11,11 V872.0 H42 V819.0 a11,11 0 0 1 11,-11 z" fill="#B85C10"/>
+<text x="60.0" y="849.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="23.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">Diverse cancer cohorts</text>
+<rect x="351.5" y="824.0" width="172.5" height="32.0" rx="16" ry="16" fill="#FFFFFF" stroke="none" opacity="1"/>
+<text x="437.8" y="845.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="16" font-weight="bold" fill="#B85C10" text-anchor="middle">REAL-WORLD DATA</text>
+<text x="60.0" y="900.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Pediatric B-ALL, n = 6,955 genotyped</text>
+<text x="60.0" y="927.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">across multi-site cohorts including</text>
+<text x="60.0" y="954.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">REDIAL; subset with paired array and</text>
+<text x="60.0" y="981.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">germline WGS</text>
 <line x1="544.0" y1="910.0" x2="561.0" y2="910.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
 <rect x="564.0" y="620.0" width="301.0" height="418.0" rx="11" ry="11" fill="#E8F3F0" stroke="#6BB4B7" stroke-width="1.8" opacity="1"/>
 <rect x="565.5" y="629.0" width="5.0" height="400.0" rx="2.5" ry="2.5" fill="#6BB4B7" stroke="none" opacity="1"/>
