@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2540" height="1525" viewBox="0 0 2540 1525">
+<svg xmlns="http://www.w3.org/2000/svg" width="2540" height="1529" viewBox="0 0 2540 1529">
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#33415C"/></marker></defs>
-<rect x="0" y="0" width="2540" height="1525" fill="#FFFFFF"/>
-<rect x="24" y="506" width="2492" height="443" rx="18" fill="#FAFBFC" stroke="#DCE2E8" stroke-width="1.8"/>
-<rect x="24" y="1055" width="2492" height="446" rx="18" fill="#FAFBFC" stroke="#DCE2E8" stroke-width="1.8"/>
+<rect x="0" y="0" width="2540" height="1529" fill="#FFFFFF"/>
+<rect x="24" y="506" width="2492" height="447" rx="18" fill="#FAFBFC" stroke="#DCE2E8" stroke-width="1.8"/>
+<rect x="24" y="1059" width="2492" height="446" rx="18" fill="#FAFBFC" stroke="#DCE2E8" stroke-width="1.8"/>
 <rect x="24" y="16" width="2492" height="456" rx="20" fill="#F2F5F9" stroke="#243044" stroke-width="3"/>
 <text x="48.0" y="73.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="42" font-weight="bold" fill="#101828" text-anchor="start">A</text>
 <text x="102.0" y="71.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="31" font-weight="bold" fill="#101828" text-anchor="start">What this framework changes</text>
@@ -96,511 +96,512 @@
 <rect x="1285.0" y="150.0" width="1207.0" height="306.0" rx="14" ry="14" fill="none" stroke="#243044" stroke-width="2.4" opacity="1"/>
 <text x="42.0" y="541.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="42" font-weight="bold" fill="#101828" text-anchor="start">B</text>
 <text x="96.0" y="539.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="29" font-weight="bold" fill="#101828" text-anchor="start">Genotype harmonization, imputation, and ancestry inference</text>
-<rect x="42.0" y="589.5" width="430.0" height="159.0" rx="11" ry="11" fill="#DCEAF6" stroke="#17568A" stroke-width="2.6" opacity="1"/>
-<path d="M53,589.5 H461 a11,11 0 0 1 11,11 V635.5 H42 V600.5 a11,11 0 0 1 11,-11 z" fill="#17568A"/>
-<text x="60.0" y="620.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="start">Public + simulated</text>
-<rect x="363.2" y="601.5" width="90.8" height="23.0" rx="11" ry="11" fill="#FFFFFF" stroke="none" opacity="1"/>
-<text x="408.6" y="618.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" fill="#17568A" text-anchor="middle">BENCHMARK</text>
-<text x="60.0" y="663.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">1000 Genomes on multiple SNP arrays</text>
-<text x="60.0" y="690.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">with matched WGS truth; simulated</text>
-<text x="60.0" y="717.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">phenotypes</text>
-<line x1="474.0" y1="669.0" x2="491.0" y2="669.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<rect x="42.0" y="760.5" width="430.0" height="159.0" rx="11" ry="11" fill="#FBE6D4" stroke="#B85C10" stroke-width="2.6" opacity="1"/>
-<path d="M53,760.5 H461 a11,11 0 0 1 11,11 V806.5 H42 V771.5 a11,11 0 0 1 11,-11 z" fill="#B85C10"/>
-<text x="60.0" y="791.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22.0" font-weight="bold" fill="#FFFFFF" text-anchor="start">Diverse cancer cohorts</text>
-<rect x="333.5" y="772.5" width="120.5" height="23.0" rx="11" ry="11" fill="#FFFFFF" stroke="none" opacity="1"/>
-<text x="393.8" y="789.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" fill="#B85C10" text-anchor="middle">CANCER COHORT</text>
-<text x="60.0" y="834.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Pediatric B-ALL, n = 6,092</text>
-<text x="60.0" y="861.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">genotyped, including REDIAL; subset</text>
-<text x="60.0" y="888.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">with paired germline WGS</text>
-<line x1="474.0" y1="840.0" x2="491.0" y2="840.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<rect x="494.0" y="578.0" width="263.5" height="353.0" rx="11" ry="11" fill="#E8F4F1" stroke="#6FB7AB" stroke-width="1.8" opacity="1"/>
-<rect x="495.5" y="587.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#6FB7AB" stroke="none" opacity="1"/>
-<text x="512.0" y="713.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#0E6255" text-anchor="start">Harmonize</text>
-<text x="512.0" y="743.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Liftover, align,</text>
-<text x="512.0" y="770.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">union merge; light</text>
-<text x="512.0" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">pre-imputation QC</text>
-<rect x="779.5" y="578.0" width="263.5" height="353.0" rx="11" ry="11" fill="#E7F0F8" stroke="#84B0D4" stroke-width="1.8" opacity="1"/>
-<rect x="781.0" y="587.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="797.5" y="713.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#17568A" text-anchor="start">Impute</text>
-<text x="797.5" y="743.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Two-step: TOPMed,</text>
-<text x="797.5" y="770.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">All of Us or</text>
-<text x="797.5" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Michigan; extensible</text>
-<rect x="1065.0" y="578.0" width="263.5" height="353.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
-<rect x="1066.5" y="587.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
-<text x="1083.0" y="713.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#2B4A99" text-anchor="start">Ancestry-aware QC</text>
-<text x="1083.0" y="743.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">MagicalRsq-X filter,</text>
-<text x="1083.0" y="770.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">merge, extensive</text>
-<text x="1083.0" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">post-imputation QC</text>
-<rect x="1350.5" y="578.0" width="263.5" height="353.0" rx="11" ry="11" fill="#EEEBF8" stroke="#A497D7" stroke-width="1.8" opacity="1"/>
-<rect x="1352.0" y="587.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#A497D7" stroke="none" opacity="1"/>
-<text x="1368.5" y="686.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#4C3A9B" text-anchor="start">Infer ancestry</text>
-<text x="1368.5" y="716.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global;</text>
-<text x="1368.5" y="743.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">RFMix local ancestry</text>
-<text x="1368.5" y="770.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">with custom</text>
-<text x="1368.5" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">population-matched</text>
-<text x="1368.5" y="824.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">panels</text>
-<rect x="1636.0" y="578.0" width="500.0" height="353.0" rx="11" ry="11" fill="#E7F0F8" stroke="#17568A" stroke-width="2.2" stroke-dasharray="7,5" opacity="1"/>
-<rect x="1637.5" y="587.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#17568A" stroke="none" opacity="1"/>
-<text x="1654.0" y="613.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#17568A" text-anchor="start">Benchmark</text>
-<text x="1654.0" y="643.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">No standard exists: six published</text>
-<text x="1654.0" y="670.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">workflows run head-to-head</text>
-<rect x="1998.1" y="598.0" width="119.9" height="23.0" rx="11" ry="11" fill="#FFFFFF" stroke="#17568A" stroke-width="1.3" opacity="1"/>
-<text x="2058.0" y="614.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" fill="#17568A" text-anchor="middle">illustrative</text>
-<rect x="1654.0" y="701.0" width="227.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="1664.0" y="722.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Concordance</text>
-<text x="1664.0" y="738.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">array vs WGS truth</text>
-<line x1="1667.0" y1="749.0" x2="1667.0" y2="778.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<line x1="1667.0" y1="778.0" x2="1870.5" y2="778.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="1692.5" y="751.3" width="36.4" height="26.7" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="1710.7" y="795.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
-<rect x="1753.3" y="757.4" width="36.4" height="20.6" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
-<text x="1771.5" y="795.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
-<rect x="1814.0" y="754.8" width="36.4" height="23.2" rx="1" ry="1" fill="#3F9E7C" stroke="none" opacity="1"/>
-<text x="1832.2" y="795.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
-<rect x="1890.5" y="701.0" width="227.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="1900.5" y="722.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Panel choice</text>
-<text x="1900.5" y="738.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">R² by reference panel</text>
-<line x1="1903.5" y1="749.0" x2="1903.5" y2="778.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<line x1="1903.5" y1="778.0" x2="2107.0" y2="778.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="1939.9" y="758.3" width="52.0" height="19.7" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
-<text x="1965.8" y="795.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">1000G</text>
-<rect x="2026.5" y="751.9" width="52.0" height="26.1" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
-<text x="2052.4" y="795.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">TOPMed</text>
-<rect x="1654.0" y="813.0" width="227.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="1664.0" y="834.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Gain vs standard</text>
-<text x="1664.0" y="850.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">sites retained</text>
-<line x1="1667.0" y1="861.0" x2="1667.0" y2="890.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<line x1="1667.0" y1="890.0" x2="1870.5" y2="890.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="1692.5" y="881.9" width="36.4" height="8.1" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
-<text x="1710.7" y="907.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
-<rect x="1753.3" y="868.5" width="36.4" height="21.5" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
-<text x="1771.5" y="907.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
-<rect x="1814.0" y="872.0" width="36.4" height="18.0" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="1832.2" y="907.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
-<rect x="1890.5" y="813.0" width="227.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="1900.5" y="834.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">GWAS power</text>
-<text x="1900.5" y="850.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">simulated effects</text>
-<line x1="1903.5" y1="861.0" x2="1903.5" y2="890.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<line x1="1903.5" y1="890.0" x2="2107.0" y2="890.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="1929.0" y="877.2" width="36.4" height="12.8" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
-<text x="1947.2" y="907.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
-<rect x="1989.8" y="872.0" width="36.4" height="18.0" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="2008.0" y="907.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
-<rect x="2050.5" y="863.9" width="36.4" height="26.1" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
-<text x="2068.7" y="907.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
-<line x1="759.5" y1="618.0" x2="776.5" y2="618.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="1045.0" y1="618.0" x2="1062.0" y2="618.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="1330.5" y1="618.0" x2="1347.5" y2="618.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="1616.0" y1="618.0" x2="1633.0" y2="618.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<rect x="2158.0" y="655.0" width="340.0" height="199.0" rx="12" ry="12" fill="#17568A" stroke="none" opacity="1"/>
-<text x="2178.0" y="687.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="23" font-weight="bold" fill="#FFFFFF" text-anchor="start">Benchmark result</text>
-<text x="2178.0" y="715.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">· best-performing workflow per</text>
-<text x="2190.0" y="740.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">platform</text>
-<text x="2178.0" y="765.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">· gain and cost by ancestry group</text>
-<text x="2178.0" y="790.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">· ancestries needing better</text>
-<text x="2190.0" y="815.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">reference populations</text>
-<line x1="2138.0" y1="754.5" x2="2155.0" y2="754.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<path d="M1482.2,931.0 V1000.0 H1584.0" fill="none" stroke="#243044" stroke-width="4" marker-end="url(#arrow)" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="960.0" y="971.0" width="620.0" height="58.0" rx="12" ry="12" fill="#243044" stroke="none" opacity="1"/>
-<text x="1270.0" y="1007.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Analysis-ready genotypes & ancestry variables</text>
-<text x="42.0" y="1090.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="42" font-weight="bold" fill="#101828" text-anchor="start">C</text>
-<text x="96.0" y="1088.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="29" font-weight="bold" fill="#101828" text-anchor="start">Ancestry-aware GWAS & downstream analysis</text>
-<rect x="42.0" y="1228.5" width="336.5" height="153.0" rx="11" ry="11" fill="#E7F0F8" stroke="#84B0D4" stroke-width="1.8" opacity="1"/>
-<rect x="43.5" y="1237.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
-<text x="60.0" y="1277.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#17568A" text-anchor="start">Stratify</text>
-<text x="60.0" y="1307.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc groups; ancestry</text>
-<text x="60.0" y="1334.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">× trait in parallel</text>
-<rect x="400.5" y="1228.5" width="420.0" height="153.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
-<rect x="402.0" y="1237.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
-<text x="418.5" y="1263.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#2B4A99" text-anchor="start">GWAS per ancestry</text>
-<text x="418.5" y="1293.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">REGENIE, SAIGE, GENESIS, Tractor;</text>
-<text x="418.5" y="1320.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">time-to-event GWAS with local</text>
-<text x="418.5" y="1347.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">ancestry effects</text>
-<rect x="842.5" y="1228.5" width="336.5" height="153.0" rx="11" ry="11" fill="#EFEBF8" stroke="#A89AD8" stroke-width="1.8" opacity="1"/>
-<rect x="844.0" y="1237.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#A89AD8" stroke="none" opacity="1"/>
-<text x="860.5" y="1277.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#513C9B" text-anchor="start">Meta-regression</text>
-<text x="860.5" y="1307.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">MR-MEGA-env: ancestry and</text>
-<text x="860.5" y="1334.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">cohort heterogeneity</text>
-<rect x="1201.0" y="1228.5" width="336.5" height="153.0" rx="11" ry="11" fill="#F4EBF7" stroke="#BC97CE" stroke-width="1.8" opacity="1"/>
-<rect x="1202.5" y="1237.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#BC97CE" stroke="none" opacity="1"/>
-<text x="1219.0" y="1263.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#71368C" text-anchor="start">Fine-map</text>
-<text x="1219.0" y="1293.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">PolyFun + SuSiE;</text>
-<text x="1219.0" y="1320.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">multi-trait,</text>
-<text x="1219.0" y="1347.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">multi-ancestry MG-FLASH-FM</text>
-<rect x="1559.5" y="1228.5" width="336.5" height="153.0" rx="11" ry="11" fill="#F9EBF3" stroke="#CD97BE" stroke-width="1.8" opacity="1"/>
-<rect x="1561.0" y="1237.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#CD97BE" stroke="none" opacity="1"/>
-<text x="1577.5" y="1263.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#8C2F71" text-anchor="start">Downstream</text>
-<text x="1577.5" y="1293.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Ancestry-aware PRS,</text>
-<text x="1577.5" y="1320.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">heritability,</text>
-<text x="1577.5" y="1347.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">colocalization, annotation</text>
-<line x1="380.5" y1="1268.5" x2="397.5" y2="1268.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="822.5" y1="1268.5" x2="839.5" y2="1268.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="1181.0" y1="1268.5" x2="1198.0" y2="1268.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<line x1="1539.5" y1="1268.5" x2="1556.5" y2="1268.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<rect x="1918.0" y="1127.0" width="580.0" height="356.0" rx="12" ry="12" fill="#B85C10" stroke="none" opacity="1"/>
-<text x="1938.0" y="1159.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="23" font-weight="bold" fill="#FFFFFF" text-anchor="start">REDIAL case example: B-ALL outcomes</text>
-<text x="1938.0" y="1187.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">net gain across workflows · known and novel loci</text>
-<rect x="1934.0" y="1214.0" width="269.5" height="121.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="1944.0" y="1235.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Relapse</text>
-<text x="1944.0" y="1251.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">PYGL, PDE4B</text>
-<line x1="1946.0" y1="1262.0" x2="1946.0" y2="1319.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
-<line x1="1946.0" y1="1319.0" x2="2193.5" y2="1319.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
-<line x1="1946.0" y1="1279.1" x2="2193.5" y2="1279.1" stroke="#C2410C" stroke-width="1" stroke-dasharray="4,3" stroke-linecap="round"/>
-<circle cx="1947.1" cy="1310.4" r="1.7" fill="#93A9C4"/>
-<circle cx="1949.4" cy="1317.4" r="1.7" fill="#93A9C4"/>
-<circle cx="1951.7" cy="1316.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1954.0" cy="1306.8" r="1.7" fill="#93A9C4"/>
-<circle cx="1956.3" cy="1289.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1958.6" cy="1318.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1960.9" cy="1290.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1963.2" cy="1291.4" r="1.7" fill="#93A9C4"/>
-<circle cx="1965.5" cy="1318.0" r="1.7" fill="#93A9C4"/>
-<circle cx="1967.8" cy="1316.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1970.1" cy="1316.7" r="1.7" fill="#93A9C4"/>
-<circle cx="1972.4" cy="1303.0" r="1.7" fill="#93A9C4"/>
-<circle cx="1974.6" cy="1295.7" r="1.7" fill="#93A9C4"/>
-<circle cx="1976.9" cy="1302.2" r="1.7" fill="#93A9C4"/>
-<circle cx="1979.2" cy="1319.0" r="1.7" fill="#93A9C4"/>
-<circle cx="1981.5" cy="1319.0" r="1.7" fill="#93A9C4"/>
-<circle cx="1983.8" cy="1315.0" r="1.7" fill="#93A9C4"/>
-<circle cx="1986.1" cy="1305.4" r="1.7" fill="#93A9C4"/>
-<circle cx="1988.4" cy="1310.8" r="1.7" fill="#54759B"/>
-<circle cx="1990.7" cy="1304.1" r="1.7" fill="#B85C10"/>
-<circle cx="1993.0" cy="1292.1" r="1.7" fill="#B85C10"/>
-<circle cx="1995.3" cy="1283.0" r="1.7" fill="#B85C10"/>
-<circle cx="1997.6" cy="1275.2" r="1.7" fill="#B85C10"/>
-<circle cx="1999.9" cy="1268.3" r="1.7" fill="#B85C10"/>
-<circle cx="2002.1" cy="1271.5" r="1.7" fill="#B85C10"/>
-<circle cx="2004.4" cy="1278.8" r="1.7" fill="#B85C10"/>
-<circle cx="2006.7" cy="1287.1" r="1.7" fill="#B85C10"/>
-<circle cx="2009.0" cy="1297.3" r="1.7" fill="#B85C10"/>
-<circle cx="2011.3" cy="1301.2" r="1.7" fill="#B85C10"/>
-<circle cx="2013.6" cy="1314.4" r="1.7" fill="#54759B"/>
-<circle cx="2015.9" cy="1315.2" r="1.7" fill="#54759B"/>
-<circle cx="2018.2" cy="1315.8" r="1.7" fill="#54759B"/>
-<circle cx="2020.5" cy="1300.7" r="1.7" fill="#54759B"/>
-<circle cx="2022.8" cy="1318.7" r="1.7" fill="#54759B"/>
-<circle cx="2025.1" cy="1299.8" r="1.7" fill="#54759B"/>
-<circle cx="2027.4" cy="1304.9" r="1.7" fill="#54759B"/>
-<circle cx="2029.6" cy="1309.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2031.9" cy="1318.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2034.2" cy="1317.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2036.5" cy="1295.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2038.8" cy="1309.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2041.1" cy="1315.4" r="1.7" fill="#93A9C4"/>
-<circle cx="2043.4" cy="1319.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2045.7" cy="1297.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2048.0" cy="1318.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2050.3" cy="1313.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2052.6" cy="1315.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2054.9" cy="1318.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2057.1" cy="1318.6" r="1.7" fill="#93A9C4"/>
-<circle cx="2059.4" cy="1318.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2061.7" cy="1317.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2064.0" cy="1300.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2066.3" cy="1318.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2068.6" cy="1310.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2070.9" cy="1310.2" r="1.7" fill="#54759B"/>
-<circle cx="2073.2" cy="1297.4" r="1.7" fill="#54759B"/>
-<circle cx="2075.5" cy="1308.6" r="1.7" fill="#54759B"/>
-<circle cx="2077.8" cy="1316.9" r="1.7" fill="#54759B"/>
-<circle cx="2080.1" cy="1319.0" r="1.7" fill="#54759B"/>
-<circle cx="2082.4" cy="1312.9" r="1.7" fill="#54759B"/>
-<circle cx="2084.6" cy="1317.7" r="1.7" fill="#54759B"/>
-<circle cx="2086.9" cy="1291.3" r="1.7" fill="#54759B"/>
-<circle cx="2089.2" cy="1313.6" r="1.7" fill="#54759B"/>
-<circle cx="2091.5" cy="1308.5" r="1.7" fill="#B85C10"/>
-<circle cx="2093.8" cy="1298.1" r="1.7" fill="#B85C10"/>
-<circle cx="2096.1" cy="1289.7" r="1.7" fill="#B85C10"/>
-<circle cx="2098.4" cy="1282.7" r="1.7" fill="#B85C10"/>
-<circle cx="2100.7" cy="1276.5" r="1.7" fill="#B85C10"/>
-<circle cx="2103.0" cy="1276.0" r="1.7" fill="#B85C10"/>
-<circle cx="2105.3" cy="1282.2" r="1.7" fill="#B85C10"/>
-<circle cx="2107.6" cy="1289.1" r="1.7" fill="#B85C10"/>
-<circle cx="2109.9" cy="1297.4" r="1.7" fill="#B85C10"/>
-<circle cx="2112.1" cy="1303.1" r="1.7" fill="#B85C10"/>
-<circle cx="2114.4" cy="1319.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2116.7" cy="1311.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2119.0" cy="1312.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2121.3" cy="1317.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2123.6" cy="1304.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2125.9" cy="1294.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2128.2" cy="1299.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2130.5" cy="1317.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2132.8" cy="1318.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2135.1" cy="1318.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2137.4" cy="1309.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2139.6" cy="1290.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2141.9" cy="1293.4" r="1.7" fill="#93A9C4"/>
-<circle cx="2144.2" cy="1296.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2146.5" cy="1317.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2148.8" cy="1316.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2151.1" cy="1300.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2153.4" cy="1303.3" r="1.7" fill="#54759B"/>
-<circle cx="2155.7" cy="1319.0" r="1.7" fill="#54759B"/>
-<circle cx="2158.0" cy="1316.9" r="1.7" fill="#54759B"/>
-<circle cx="2160.3" cy="1318.5" r="1.7" fill="#54759B"/>
-<circle cx="2162.6" cy="1319.0" r="1.7" fill="#54759B"/>
-<circle cx="2164.9" cy="1300.4" r="1.7" fill="#54759B"/>
-<circle cx="2167.1" cy="1289.7" r="1.7" fill="#54759B"/>
-<circle cx="2169.4" cy="1316.0" r="1.7" fill="#54759B"/>
-<circle cx="2171.7" cy="1312.1" r="1.7" fill="#54759B"/>
-<circle cx="2174.0" cy="1307.4" r="1.7" fill="#54759B"/>
-<circle cx="2176.3" cy="1318.8" r="1.7" fill="#54759B"/>
-<circle cx="2178.6" cy="1317.7" r="1.7" fill="#54759B"/>
-<circle cx="2180.9" cy="1294.4" r="1.7" fill="#54759B"/>
-<circle cx="2183.2" cy="1317.7" r="1.7" fill="#54759B"/>
-<circle cx="2185.5" cy="1313.6" r="1.7" fill="#54759B"/>
-<circle cx="2187.8" cy="1307.4" r="1.7" fill="#54759B"/>
-<circle cx="2190.1" cy="1307.6" r="1.7" fill="#54759B"/>
-<circle cx="2192.4" cy="1316.4" r="1.7" fill="#54759B"/>
-<rect x="2212.5" y="1214.0" width="269.5" height="121.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="2222.5" y="1235.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Minimal residual disease</text>
-<text x="2222.5" y="1251.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">IL15, GATA3</text>
-<line x1="2224.5" y1="1262.0" x2="2224.5" y2="1319.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
-<line x1="2224.5" y1="1319.0" x2="2472.0" y2="1319.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
-<line x1="2224.5" y1="1279.1" x2="2472.0" y2="1279.1" stroke="#C2410C" stroke-width="1" stroke-dasharray="4,3" stroke-linecap="round"/>
-<circle cx="2225.6" cy="1300.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2227.9" cy="1309.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2230.2" cy="1315.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2232.5" cy="1314.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2234.8" cy="1314.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2237.1" cy="1310.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2239.4" cy="1316.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2241.7" cy="1292.6" r="1.7" fill="#93A9C4"/>
-<circle cx="2244.0" cy="1318.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2246.3" cy="1318.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2248.6" cy="1306.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2250.9" cy="1301.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2253.1" cy="1311.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2255.4" cy="1295.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2257.7" cy="1314.4" r="1.7" fill="#93A9C4"/>
-<circle cx="2260.0" cy="1293.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2262.3" cy="1297.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2264.6" cy="1317.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2266.9" cy="1315.1" r="1.7" fill="#54759B"/>
-<circle cx="2269.2" cy="1318.9" r="1.7" fill="#54759B"/>
-<circle cx="2271.5" cy="1318.6" r="1.7" fill="#54759B"/>
-<circle cx="2273.8" cy="1289.7" r="1.7" fill="#54759B"/>
-<circle cx="2276.1" cy="1296.0" r="1.7" fill="#54759B"/>
-<circle cx="2278.4" cy="1313.9" r="1.7" fill="#54759B"/>
-<circle cx="2280.6" cy="1315.1" r="1.7" fill="#54759B"/>
-<circle cx="2282.9" cy="1298.5" r="1.7" fill="#54759B"/>
-<circle cx="2285.2" cy="1318.7" r="1.7" fill="#54759B"/>
-<circle cx="2287.5" cy="1308.8" r="1.7" fill="#54759B"/>
-<circle cx="2289.8" cy="1307.3" r="1.7" fill="#54759B"/>
-<circle cx="2292.1" cy="1317.8" r="1.7" fill="#54759B"/>
-<circle cx="2294.4" cy="1318.9" r="1.7" fill="#54759B"/>
-<circle cx="2296.7" cy="1302.1" r="1.7" fill="#54759B"/>
-<circle cx="2299.0" cy="1319.0" r="1.7" fill="#54759B"/>
-<circle cx="2301.3" cy="1305.3" r="1.7" fill="#B85C10"/>
-<circle cx="2303.6" cy="1293.6" r="1.7" fill="#B85C10"/>
-<circle cx="2305.9" cy="1284.9" r="1.7" fill="#B85C10"/>
-<circle cx="2308.1" cy="1277.4" r="1.7" fill="#B85C10"/>
-<circle cx="2310.4" cy="1270.7" r="1.7" fill="#B85C10"/>
-<circle cx="2312.7" cy="1273.3" r="1.7" fill="#B85C10"/>
-<circle cx="2315.0" cy="1280.3" r="1.7" fill="#B85C10"/>
-<circle cx="2317.3" cy="1288.2" r="1.7" fill="#B85C10"/>
-<circle cx="2319.6" cy="1292.6" r="1.7" fill="#B85C10"/>
-<circle cx="2321.9" cy="1312.5" r="1.7" fill="#B85C10"/>
-<circle cx="2324.2" cy="1312.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2326.5" cy="1317.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2328.8" cy="1312.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2331.1" cy="1318.4" r="1.7" fill="#93A9C4"/>
-<circle cx="2333.4" cy="1319.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2335.6" cy="1298.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2337.9" cy="1319.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2340.2" cy="1318.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2342.5" cy="1295.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2344.8" cy="1319.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2347.1" cy="1301.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2349.4" cy="1318.1" r="1.7" fill="#54759B"/>
-<circle cx="2351.7" cy="1317.2" r="1.7" fill="#54759B"/>
-<circle cx="2354.0" cy="1310.7" r="1.7" fill="#54759B"/>
-<circle cx="2356.3" cy="1307.9" r="1.7" fill="#54759B"/>
-<circle cx="2358.6" cy="1318.4" r="1.7" fill="#54759B"/>
-<circle cx="2360.9" cy="1319.0" r="1.7" fill="#54759B"/>
-<circle cx="2363.1" cy="1313.9" r="1.7" fill="#54759B"/>
-<circle cx="2365.4" cy="1314.5" r="1.7" fill="#54759B"/>
-<circle cx="2367.7" cy="1317.7" r="1.7" fill="#54759B"/>
-<circle cx="2370.0" cy="1315.7" r="1.7" fill="#54759B"/>
-<circle cx="2372.3" cy="1316.8" r="1.7" fill="#54759B"/>
-<circle cx="2374.6" cy="1305.7" r="1.7" fill="#54759B"/>
-<circle cx="2376.9" cy="1308.5" r="1.7" fill="#54759B"/>
-<circle cx="2379.2" cy="1318.6" r="1.7" fill="#54759B"/>
-<circle cx="2381.5" cy="1303.1" r="1.7" fill="#54759B"/>
-<circle cx="2383.8" cy="1316.4" r="1.7" fill="#54759B"/>
-<circle cx="2386.1" cy="1317.4" r="1.7" fill="#54759B"/>
-<circle cx="2388.4" cy="1312.7" r="1.7" fill="#54759B"/>
-<circle cx="2390.6" cy="1312.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2392.9" cy="1290.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2395.2" cy="1311.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2397.5" cy="1318.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2399.8" cy="1311.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2402.1" cy="1311.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2404.4" cy="1318.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2406.7" cy="1306.0" r="1.7" fill="#B85C10"/>
-<circle cx="2409.0" cy="1299.4" r="1.7" fill="#B85C10"/>
-<circle cx="2411.3" cy="1290.2" r="1.7" fill="#B85C10"/>
-<circle cx="2413.6" cy="1282.7" r="1.7" fill="#B85C10"/>
-<circle cx="2415.9" cy="1276.2" r="1.7" fill="#B85C10"/>
-<circle cx="2418.1" cy="1273.2" r="1.7" fill="#B85C10"/>
-<circle cx="2420.4" cy="1279.5" r="1.7" fill="#B85C10"/>
-<circle cx="2422.7" cy="1286.5" r="1.7" fill="#B85C10"/>
-<circle cx="2425.0" cy="1294.7" r="1.7" fill="#B85C10"/>
-<circle cx="2427.3" cy="1305.5" r="1.7" fill="#B85C10"/>
-<circle cx="2429.6" cy="1308.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2431.9" cy="1307.4" r="1.7" fill="#54759B"/>
-<circle cx="2434.2" cy="1291.9" r="1.7" fill="#54759B"/>
-<circle cx="2436.5" cy="1306.1" r="1.7" fill="#54759B"/>
-<circle cx="2438.8" cy="1319.0" r="1.7" fill="#54759B"/>
-<circle cx="2441.1" cy="1318.2" r="1.7" fill="#54759B"/>
-<circle cx="2443.4" cy="1303.1" r="1.7" fill="#54759B"/>
-<circle cx="2445.6" cy="1295.4" r="1.7" fill="#54759B"/>
-<circle cx="2447.9" cy="1317.7" r="1.7" fill="#54759B"/>
-<circle cx="2450.2" cy="1312.4" r="1.7" fill="#54759B"/>
-<circle cx="2452.5" cy="1308.4" r="1.7" fill="#54759B"/>
-<circle cx="2454.8" cy="1319.0" r="1.7" fill="#54759B"/>
-<circle cx="2457.1" cy="1317.9" r="1.7" fill="#54759B"/>
-<circle cx="2459.4" cy="1319.0" r="1.7" fill="#54759B"/>
-<circle cx="2461.7" cy="1316.6" r="1.7" fill="#54759B"/>
-<circle cx="2464.0" cy="1301.4" r="1.7" fill="#54759B"/>
-<circle cx="2466.3" cy="1294.3" r="1.7" fill="#54759B"/>
-<circle cx="2468.6" cy="1315.3" r="1.7" fill="#54759B"/>
-<circle cx="2470.9" cy="1297.2" r="1.7" fill="#54759B"/>
-<rect x="1934.0" y="1344.0" width="269.5" height="121.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="1944.0" y="1365.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Overall survival</text>
-<text x="1944.0" y="1381.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">time to event</text>
-<line x1="1946.0" y1="1392.0" x2="1946.0" y2="1449.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
-<line x1="1946.0" y1="1449.0" x2="2193.5" y2="1449.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
-<line x1="1946.0" y1="1409.1" x2="2193.5" y2="1409.1" stroke="#C2410C" stroke-width="1" stroke-dasharray="4,3" stroke-linecap="round"/>
-<circle cx="1947.1" cy="1446.7" r="1.7" fill="#93A9C4"/>
-<circle cx="1949.4" cy="1445.5" r="1.7" fill="#93A9C4"/>
-<circle cx="1951.7" cy="1442.3" r="1.7" fill="#93A9C4"/>
-<circle cx="1954.0" cy="1448.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1956.3" cy="1445.7" r="1.7" fill="#93A9C4"/>
-<circle cx="1958.6" cy="1443.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1960.9" cy="1444.5" r="1.7" fill="#93A9C4"/>
-<circle cx="1963.2" cy="1437.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1965.5" cy="1420.5" r="1.7" fill="#93A9C4"/>
-<circle cx="1967.8" cy="1448.3" r="1.7" fill="#93A9C4"/>
-<circle cx="1970.1" cy="1437.8" r="1.7" fill="#93A9C4"/>
-<circle cx="1972.4" cy="1448.1" r="1.7" fill="#93A9C4"/>
-<circle cx="1974.6" cy="1442.0" r="1.7" fill="#93A9C4"/>
-<circle cx="1976.9" cy="1440.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1979.2" cy="1446.1" r="1.7" fill="#93A9C4"/>
-<circle cx="1981.5" cy="1447.6" r="1.7" fill="#93A9C4"/>
-<circle cx="1983.8" cy="1444.9" r="1.7" fill="#93A9C4"/>
-<circle cx="1986.1" cy="1445.7" r="1.7" fill="#93A9C4"/>
-<circle cx="1988.4" cy="1423.4" r="1.7" fill="#54759B"/>
-<circle cx="1990.7" cy="1447.9" r="1.7" fill="#54759B"/>
-<circle cx="1993.0" cy="1437.6" r="1.7" fill="#54759B"/>
-<circle cx="1995.3" cy="1447.7" r="1.7" fill="#54759B"/>
-<circle cx="1997.6" cy="1424.7" r="1.7" fill="#54759B"/>
-<circle cx="1999.9" cy="1448.2" r="1.7" fill="#54759B"/>
-<circle cx="2002.1" cy="1445.9" r="1.7" fill="#54759B"/>
-<circle cx="2004.4" cy="1448.3" r="1.7" fill="#54759B"/>
-<circle cx="2006.7" cy="1420.9" r="1.7" fill="#54759B"/>
-<circle cx="2009.0" cy="1421.7" r="1.7" fill="#54759B"/>
-<circle cx="2011.3" cy="1439.6" r="1.7" fill="#54759B"/>
-<circle cx="2013.6" cy="1442.2" r="1.7" fill="#54759B"/>
-<circle cx="2015.9" cy="1427.2" r="1.7" fill="#54759B"/>
-<circle cx="2018.2" cy="1448.8" r="1.7" fill="#54759B"/>
-<circle cx="2020.5" cy="1446.0" r="1.7" fill="#54759B"/>
-<circle cx="2022.8" cy="1447.4" r="1.7" fill="#54759B"/>
-<circle cx="2025.1" cy="1442.8" r="1.7" fill="#54759B"/>
-<circle cx="2027.4" cy="1448.9" r="1.7" fill="#54759B"/>
-<circle cx="2029.6" cy="1430.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2031.9" cy="1429.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2034.2" cy="1447.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2036.5" cy="1437.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2038.8" cy="1446.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2041.1" cy="1420.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2043.4" cy="1444.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2045.7" cy="1438.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2048.0" cy="1441.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2050.3" cy="1448.6" r="1.7" fill="#93A9C4"/>
-<circle cx="2052.6" cy="1444.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2054.9" cy="1436.2" r="1.7" fill="#B85C10"/>
-<circle cx="2057.1" cy="1424.6" r="1.7" fill="#B85C10"/>
-<circle cx="2059.4" cy="1415.9" r="1.7" fill="#B85C10"/>
-<circle cx="2061.7" cy="1408.6" r="1.7" fill="#B85C10"/>
-<circle cx="2064.0" cy="1402.1" r="1.7" fill="#B85C10"/>
-<circle cx="2066.3" cy="1404.1" r="1.7" fill="#B85C10"/>
-<circle cx="2068.6" cy="1410.9" r="1.7" fill="#B85C10"/>
-<circle cx="2070.9" cy="1418.5" r="1.7" fill="#B85C10"/>
-<circle cx="2073.2" cy="1427.8" r="1.7" fill="#B85C10"/>
-<circle cx="2075.5" cy="1441.8" r="1.7" fill="#B85C10"/>
-<circle cx="2077.8" cy="1436.3" r="1.7" fill="#54759B"/>
-<circle cx="2080.1" cy="1447.9" r="1.7" fill="#54759B"/>
-<circle cx="2082.4" cy="1439.3" r="1.7" fill="#54759B"/>
-<circle cx="2084.6" cy="1435.0" r="1.7" fill="#54759B"/>
-<circle cx="2086.9" cy="1443.7" r="1.7" fill="#54759B"/>
-<circle cx="2089.2" cy="1433.5" r="1.7" fill="#54759B"/>
-<circle cx="2091.5" cy="1445.0" r="1.7" fill="#54759B"/>
-<circle cx="2093.8" cy="1428.7" r="1.7" fill="#54759B"/>
-<circle cx="2096.1" cy="1445.2" r="1.7" fill="#54759B"/>
-<circle cx="2098.4" cy="1425.2" r="1.7" fill="#54759B"/>
-<circle cx="2100.7" cy="1428.0" r="1.7" fill="#54759B"/>
-<circle cx="2103.0" cy="1448.9" r="1.7" fill="#54759B"/>
-<circle cx="2105.3" cy="1441.4" r="1.7" fill="#54759B"/>
-<circle cx="2107.6" cy="1434.4" r="1.7" fill="#54759B"/>
-<circle cx="2109.9" cy="1445.3" r="1.7" fill="#54759B"/>
-<circle cx="2112.1" cy="1443.6" r="1.7" fill="#93A9C4"/>
-<circle cx="2114.4" cy="1441.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2116.7" cy="1448.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2119.0" cy="1434.7" r="1.7" fill="#93A9C4"/>
-<circle cx="2121.3" cy="1423.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2123.6" cy="1448.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2125.9" cy="1447.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2128.2" cy="1427.4" r="1.7" fill="#93A9C4"/>
-<circle cx="2130.5" cy="1448.1" r="1.7" fill="#93A9C4"/>
-<circle cx="2132.8" cy="1449.0" r="1.7" fill="#93A9C4"/>
-<circle cx="2135.1" cy="1436.2" r="1.7" fill="#93A9C4"/>
-<circle cx="2137.4" cy="1448.9" r="1.7" fill="#93A9C4"/>
-<circle cx="2139.6" cy="1448.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2141.9" cy="1437.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2144.2" cy="1420.3" r="1.7" fill="#93A9C4"/>
-<circle cx="2146.5" cy="1433.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2148.8" cy="1426.5" r="1.7" fill="#93A9C4"/>
-<circle cx="2151.1" cy="1436.8" r="1.7" fill="#93A9C4"/>
-<circle cx="2153.4" cy="1440.9" r="1.7" fill="#54759B"/>
-<circle cx="2155.7" cy="1448.9" r="1.7" fill="#54759B"/>
-<circle cx="2158.0" cy="1428.7" r="1.7" fill="#54759B"/>
-<circle cx="2160.3" cy="1434.4" r="1.7" fill="#54759B"/>
-<circle cx="2162.6" cy="1432.0" r="1.7" fill="#54759B"/>
-<circle cx="2164.9" cy="1442.7" r="1.7" fill="#54759B"/>
-<circle cx="2167.1" cy="1422.7" r="1.7" fill="#54759B"/>
-<circle cx="2169.4" cy="1420.0" r="1.7" fill="#54759B"/>
-<circle cx="2171.7" cy="1446.1" r="1.7" fill="#54759B"/>
-<circle cx="2174.0" cy="1444.1" r="1.7" fill="#54759B"/>
-<circle cx="2176.3" cy="1427.2" r="1.7" fill="#54759B"/>
-<circle cx="2178.6" cy="1448.2" r="1.7" fill="#54759B"/>
-<circle cx="2180.9" cy="1449.0" r="1.7" fill="#54759B"/>
-<circle cx="2183.2" cy="1424.7" r="1.7" fill="#54759B"/>
-<circle cx="2185.5" cy="1448.6" r="1.7" fill="#54759B"/>
-<circle cx="2187.8" cy="1426.4" r="1.7" fill="#54759B"/>
-<circle cx="2190.1" cy="1444.6" r="1.7" fill="#54759B"/>
-<circle cx="2192.4" cy="1420.7" r="1.7" fill="#54759B"/>
-<rect x="2212.5" y="1344.0" width="269.5" height="121.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
-<text x="2222.5" y="1365.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Net gain by workflow</text>
-<text x="2222.5" y="1381.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">loci detected</text>
-<text x="2472.0" y="1381.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12" fill="#5A6675" text-anchor="end">novel</text>
-<rect x="2428.9" y="1372.0" width="10.0" height="10.0" rx="1.5" ry="1.5" fill="#F0A868" stroke="none" opacity="1"/>
-<text x="2418.9" y="1381.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12" fill="#5A6675" text-anchor="end">known</text>
-<rect x="2375.8" y="1372.0" width="10.0" height="10.0" rx="1.5" ry="1.5" fill="#8C4A0E" stroke="none" opacity="1"/>
-<line x1="2224.5" y1="1380.0" x2="2224.5" y2="1449.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
-<line x1="2224.5" y1="1449.0" x2="2472.0" y2="1449.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
-<rect x="2246.7" y="1420.0" width="26.6" height="29.0" rx="1" ry="1" fill="#8C4A0E" stroke="none" opacity="1"/>
-<rect x="2275.3" y="1435.2" width="26.6" height="13.8" rx="1" ry="1" fill="#F0A868" stroke="none" opacity="1"/>
-<text x="2273.3" y="1466.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">A</text>
-<rect x="2320.5" y="1409.0" width="26.6" height="40.0" rx="1" ry="1" fill="#8C4A0E" stroke="none" opacity="1"/>
-<rect x="2349.1" y="1422.8" width="26.6" height="26.2" rx="1" ry="1" fill="#F0A868" stroke="none" opacity="1"/>
-<text x="2347.1" y="1466.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">C</text>
-<rect x="2394.4" y="1385.5" width="26.6" height="63.5" rx="1" ry="1" fill="#8C4A0E" stroke="none" opacity="1"/>
-<rect x="2423.0" y="1393.8" width="26.6" height="55.2" rx="1" ry="1" fill="#F0A868" stroke="none" opacity="1"/>
-<text x="2421.0" y="1466.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">F</text>
-<line x1="1898.0" y1="1305.0" x2="1915.0" y2="1305.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
-<path d="M960.0,1000.0 H12.0 V1305.0 H38.0" fill="none" stroke="#243044" stroke-width="4" marker-end="url(#arrow)" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="42.0" y="578.0" width="430.0" height="159.0" rx="11" ry="11" fill="#DCEAF6" stroke="#17568A" stroke-width="2.6" opacity="1"/>
+<path d="M53,578.0 H461 a11,11 0 0 1 11,11 V624.0 H42 V589.0 a11,11 0 0 1 11,-11 z" fill="#17568A"/>
+<text x="60.0" y="609.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="start">Public + simulated</text>
+<rect x="363.2" y="590.0" width="90.8" height="23.0" rx="11" ry="11" fill="#FFFFFF" stroke="none" opacity="1"/>
+<text x="408.6" y="606.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" fill="#17568A" text-anchor="middle">BENCHMARK</text>
+<text x="60.0" y="652.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">1000 Genomes on multiple SNP arrays</text>
+<text x="60.0" y="679.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">with matched WGS truth; simulated</text>
+<text x="60.0" y="706.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">phenotypes</text>
+<line x1="474.0" y1="657.5" x2="491.0" y2="657.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<rect x="42.0" y="749.0" width="430.0" height="186.0" rx="11" ry="11" fill="#FBE6D4" stroke="#B85C10" stroke-width="2.6" opacity="1"/>
+<path d="M53,749.0 H461 a11,11 0 0 1 11,11 V795.0 H42 V760.0 a11,11 0 0 1 11,-11 z" fill="#B85C10"/>
+<text x="60.0" y="780.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="22.0" font-weight="bold" fill="#FFFFFF" text-anchor="start">Diverse cancer cohorts</text>
+<rect x="333.5" y="761.0" width="120.5" height="23.0" rx="11" ry="11" fill="#FFFFFF" stroke="none" opacity="1"/>
+<text x="393.8" y="777.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" fill="#B85C10" text-anchor="middle">CANCER COHORT</text>
+<text x="60.0" y="823.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Pediatric B-ALL: REDIAL (n = 1,870</text>
+<text x="60.0" y="850.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">genotyped) and additional</text>
+<text x="60.0" y="877.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">multi-site cohorts; subset with</text>
+<text x="60.0" y="904.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">paired germline WGS</text>
+<line x1="474.0" y1="842.0" x2="491.0" y2="842.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<rect x="494.0" y="580.0" width="263.5" height="353.0" rx="11" ry="11" fill="#E8F4F1" stroke="#6FB7AB" stroke-width="1.8" opacity="1"/>
+<rect x="495.5" y="589.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#6FB7AB" stroke="none" opacity="1"/>
+<text x="512.0" y="715.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#0E6255" text-anchor="start">Harmonize</text>
+<text x="512.0" y="745.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Liftover, align,</text>
+<text x="512.0" y="772.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">union merge; light</text>
+<text x="512.0" y="799.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">pre-imputation QC</text>
+<rect x="779.5" y="580.0" width="263.5" height="353.0" rx="11" ry="11" fill="#E7F0F8" stroke="#84B0D4" stroke-width="1.8" opacity="1"/>
+<rect x="781.0" y="589.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
+<text x="797.5" y="715.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#17568A" text-anchor="start">Impute</text>
+<text x="797.5" y="745.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Two-step: TOPMed,</text>
+<text x="797.5" y="772.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">All of Us or</text>
+<text x="797.5" y="799.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Michigan; extensible</text>
+<rect x="1065.0" y="580.0" width="263.5" height="353.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
+<rect x="1066.5" y="589.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
+<text x="1083.0" y="715.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#2B4A99" text-anchor="start">Ancestry-aware QC</text>
+<text x="1083.0" y="745.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">MagicalRsq-X filter,</text>
+<text x="1083.0" y="772.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">merge, extensive</text>
+<text x="1083.0" y="799.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">post-imputation QC</text>
+<rect x="1350.5" y="580.0" width="263.5" height="353.0" rx="11" ry="11" fill="#EEEBF8" stroke="#A497D7" stroke-width="1.8" opacity="1"/>
+<rect x="1352.0" y="589.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#A497D7" stroke="none" opacity="1"/>
+<text x="1368.5" y="688.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#4C3A9B" text-anchor="start">Infer ancestry</text>
+<text x="1368.5" y="718.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global;</text>
+<text x="1368.5" y="745.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">RFMix local ancestry</text>
+<text x="1368.5" y="772.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">with custom</text>
+<text x="1368.5" y="799.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">population-matched</text>
+<text x="1368.5" y="826.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">panels</text>
+<rect x="1636.0" y="580.0" width="500.0" height="353.0" rx="11" ry="11" fill="#E7F0F8" stroke="#17568A" stroke-width="2.2" stroke-dasharray="7,5" opacity="1"/>
+<rect x="1637.5" y="589.0" width="5.0" height="335.0" rx="2.5" ry="2.5" fill="#17568A" stroke="none" opacity="1"/>
+<text x="1654.0" y="615.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#17568A" text-anchor="start">Benchmark</text>
+<text x="1654.0" y="645.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">No standard exists: six published</text>
+<text x="1654.0" y="672.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">workflows run head-to-head</text>
+<rect x="1998.1" y="600.0" width="119.9" height="23.0" rx="11" ry="11" fill="#FFFFFF" stroke="#17568A" stroke-width="1.3" opacity="1"/>
+<text x="2058.0" y="616.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" fill="#17568A" text-anchor="middle">illustrative</text>
+<rect x="1654.0" y="703.0" width="227.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="1664.0" y="724.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Concordance</text>
+<text x="1664.0" y="740.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">array vs WGS truth</text>
+<line x1="1667.0" y1="751.0" x2="1667.0" y2="780.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="1667.0" y1="780.0" x2="1870.5" y2="780.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="1692.5" y="753.3" width="36.4" height="26.7" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
+<text x="1710.7" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
+<rect x="1753.3" y="759.4" width="36.4" height="20.6" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
+<text x="1771.5" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
+<rect x="1814.0" y="756.8" width="36.4" height="23.2" rx="1" ry="1" fill="#3F9E7C" stroke="none" opacity="1"/>
+<text x="1832.2" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
+<rect x="1890.5" y="703.0" width="227.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="1900.5" y="724.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Panel choice</text>
+<text x="1900.5" y="740.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">R² by reference panel</text>
+<line x1="1903.5" y1="751.0" x2="1903.5" y2="780.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="1903.5" y1="780.0" x2="2107.0" y2="780.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="1939.9" y="760.3" width="52.0" height="19.7" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
+<text x="1965.8" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">1000G</text>
+<rect x="2026.5" y="753.9" width="52.0" height="26.1" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
+<text x="2052.4" y="797.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">TOPMed</text>
+<rect x="1654.0" y="815.0" width="227.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="1664.0" y="836.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Gain vs standard</text>
+<text x="1664.0" y="852.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">sites retained</text>
+<line x1="1667.0" y1="863.0" x2="1667.0" y2="892.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="1667.0" y1="892.0" x2="1870.5" y2="892.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="1692.5" y="883.9" width="36.4" height="8.1" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
+<text x="1710.7" y="909.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
+<rect x="1753.3" y="870.5" width="36.4" height="21.5" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
+<text x="1771.5" y="909.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
+<rect x="1814.0" y="874.0" width="36.4" height="18.0" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
+<text x="1832.2" y="909.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
+<rect x="1890.5" y="815.0" width="227.5" height="103.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="1900.5" y="836.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">GWAS power</text>
+<text x="1900.5" y="852.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">simulated effects</text>
+<line x1="1903.5" y1="863.0" x2="1903.5" y2="892.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="1903.5" y1="892.0" x2="2107.0" y2="892.0" stroke="#101828" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="1929.0" y="879.2" width="36.4" height="12.8" rx="1" ry="1" fill="#CBD3DD" stroke="none" opacity="1"/>
+<text x="1947.2" y="909.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">EUR</text>
+<rect x="1989.8" y="874.0" width="36.4" height="18.0" rx="1" ry="1" fill="#84B0D4" stroke="none" opacity="1"/>
+<text x="2008.0" y="909.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AFR</text>
+<rect x="2050.5" y="865.9" width="36.4" height="26.1" rx="1" ry="1" fill="#17568A" stroke="none" opacity="1"/>
+<text x="2068.7" y="909.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">AMR</text>
+<line x1="759.5" y1="620.0" x2="776.5" y2="620.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="1045.0" y1="620.0" x2="1062.0" y2="620.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="1330.5" y1="620.0" x2="1347.5" y2="620.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="1616.0" y1="620.0" x2="1633.0" y2="620.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<rect x="2158.0" y="657.0" width="340.0" height="199.0" rx="12" ry="12" fill="#17568A" stroke="none" opacity="1"/>
+<text x="2178.0" y="689.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="23" font-weight="bold" fill="#FFFFFF" text-anchor="start">Benchmark result</text>
+<text x="2178.0" y="717.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">· best-performing workflow per</text>
+<text x="2190.0" y="742.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">platform</text>
+<text x="2178.0" y="767.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">· gain and cost by ancestry group</text>
+<text x="2178.0" y="792.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">· ancestries needing better</text>
+<text x="2190.0" y="817.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">reference populations</text>
+<line x1="2138.0" y1="756.5" x2="2155.0" y2="756.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<path d="M1482.2,933.0 V1004.0 H1584.0" fill="none" stroke="#243044" stroke-width="4" marker-end="url(#arrow)" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="960.0" y="975.0" width="620.0" height="58.0" rx="12" ry="12" fill="#243044" stroke="none" opacity="1"/>
+<text x="1270.0" y="1011.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Analysis-ready genotypes & ancestry variables</text>
+<text x="42.0" y="1094.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="42" font-weight="bold" fill="#101828" text-anchor="start">C</text>
+<text x="96.0" y="1092.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="29" font-weight="bold" fill="#101828" text-anchor="start">Ancestry-aware GWAS & downstream analysis</text>
+<rect x="42.0" y="1232.5" width="336.5" height="153.0" rx="11" ry="11" fill="#E7F0F8" stroke="#84B0D4" stroke-width="1.8" opacity="1"/>
+<rect x="43.5" y="1241.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#84B0D4" stroke="none" opacity="1"/>
+<text x="60.0" y="1281.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#17568A" text-anchor="start">Stratify</text>
+<text x="60.0" y="1311.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc groups; ancestry</text>
+<text x="60.0" y="1338.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">× trait in parallel</text>
+<rect x="400.5" y="1232.5" width="420.0" height="153.0" rx="11" ry="11" fill="#E9EEF9" stroke="#94A8DA" stroke-width="1.8" opacity="1"/>
+<rect x="402.0" y="1241.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#94A8DA" stroke="none" opacity="1"/>
+<text x="418.5" y="1267.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#2B4A99" text-anchor="start">GWAS per ancestry</text>
+<text x="418.5" y="1297.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">REGENIE, SAIGE, GENESIS, Tractor;</text>
+<text x="418.5" y="1324.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">time-to-event GWAS with local</text>
+<text x="418.5" y="1351.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">ancestry effects</text>
+<rect x="842.5" y="1232.5" width="336.5" height="153.0" rx="11" ry="11" fill="#EFEBF8" stroke="#A89AD8" stroke-width="1.8" opacity="1"/>
+<rect x="844.0" y="1241.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#A89AD8" stroke="none" opacity="1"/>
+<text x="860.5" y="1281.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#513C9B" text-anchor="start">Meta-regression</text>
+<text x="860.5" y="1311.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">MR-MEGA-env: ancestry and</text>
+<text x="860.5" y="1338.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">cohort heterogeneity</text>
+<rect x="1201.0" y="1232.5" width="336.5" height="153.0" rx="11" ry="11" fill="#F4EBF7" stroke="#BC97CE" stroke-width="1.8" opacity="1"/>
+<rect x="1202.5" y="1241.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#BC97CE" stroke="none" opacity="1"/>
+<text x="1219.0" y="1267.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#71368C" text-anchor="start">Fine-map</text>
+<text x="1219.0" y="1297.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">PolyFun + SuSiE;</text>
+<text x="1219.0" y="1324.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">multi-trait,</text>
+<text x="1219.0" y="1351.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">multi-ancestry MG-FLASH-FM</text>
+<rect x="1559.5" y="1232.5" width="336.5" height="153.0" rx="11" ry="11" fill="#F9EBF3" stroke="#CD97BE" stroke-width="1.8" opacity="1"/>
+<rect x="1561.0" y="1241.5" width="5.0" height="135.0" rx="2.5" ry="2.5" fill="#CD97BE" stroke="none" opacity="1"/>
+<text x="1577.5" y="1267.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#8C2F71" text-anchor="start">Downstream</text>
+<text x="1577.5" y="1297.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">Ancestry-aware PRS,</text>
+<text x="1577.5" y="1324.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">heritability,</text>
+<text x="1577.5" y="1351.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">colocalization, annotation</text>
+<line x1="380.5" y1="1272.5" x2="397.5" y2="1272.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="822.5" y1="1272.5" x2="839.5" y2="1272.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="1181.0" y1="1272.5" x2="1198.0" y2="1272.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<line x1="1539.5" y1="1272.5" x2="1556.5" y2="1272.5" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<rect x="1918.0" y="1131.0" width="580.0" height="356.0" rx="12" ry="12" fill="#B85C10" stroke="none" opacity="1"/>
+<text x="1938.0" y="1163.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="23" font-weight="bold" fill="#FFFFFF" text-anchor="start">REDIAL case example: B-ALL outcomes</text>
+<text x="1938.0" y="1191.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="18.5" font-weight="bold" fill="#FFFFFF" text-anchor="start">net gain across workflows · known and novel loci</text>
+<rect x="1934.0" y="1218.0" width="269.5" height="121.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="1944.0" y="1239.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Relapse</text>
+<text x="1944.0" y="1255.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">PYGL, PDE4B</text>
+<line x1="1946.0" y1="1266.0" x2="1946.0" y2="1323.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1946.0" y1="1323.0" x2="2193.5" y2="1323.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1946.0" y1="1283.1" x2="2193.5" y2="1283.1" stroke="#C2410C" stroke-width="1" stroke-dasharray="4,3" stroke-linecap="round"/>
+<circle cx="1947.1" cy="1314.4" r="1.7" fill="#93A9C4"/>
+<circle cx="1949.4" cy="1321.4" r="1.7" fill="#93A9C4"/>
+<circle cx="1951.7" cy="1320.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1954.0" cy="1310.8" r="1.7" fill="#93A9C4"/>
+<circle cx="1956.3" cy="1293.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1958.6" cy="1322.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1960.9" cy="1294.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1963.2" cy="1295.4" r="1.7" fill="#93A9C4"/>
+<circle cx="1965.5" cy="1322.0" r="1.7" fill="#93A9C4"/>
+<circle cx="1967.8" cy="1320.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1970.1" cy="1320.7" r="1.7" fill="#93A9C4"/>
+<circle cx="1972.4" cy="1307.0" r="1.7" fill="#93A9C4"/>
+<circle cx="1974.6" cy="1299.7" r="1.7" fill="#93A9C4"/>
+<circle cx="1976.9" cy="1306.2" r="1.7" fill="#93A9C4"/>
+<circle cx="1979.2" cy="1323.0" r="1.7" fill="#93A9C4"/>
+<circle cx="1981.5" cy="1323.0" r="1.7" fill="#93A9C4"/>
+<circle cx="1983.8" cy="1319.0" r="1.7" fill="#93A9C4"/>
+<circle cx="1986.1" cy="1309.4" r="1.7" fill="#93A9C4"/>
+<circle cx="1988.4" cy="1314.8" r="1.7" fill="#54759B"/>
+<circle cx="1990.7" cy="1308.1" r="1.7" fill="#B85C10"/>
+<circle cx="1993.0" cy="1296.1" r="1.7" fill="#B85C10"/>
+<circle cx="1995.3" cy="1287.0" r="1.7" fill="#B85C10"/>
+<circle cx="1997.6" cy="1279.2" r="1.7" fill="#B85C10"/>
+<circle cx="1999.9" cy="1272.3" r="1.7" fill="#B85C10"/>
+<circle cx="2002.1" cy="1275.5" r="1.7" fill="#B85C10"/>
+<circle cx="2004.4" cy="1282.8" r="1.7" fill="#B85C10"/>
+<circle cx="2006.7" cy="1291.1" r="1.7" fill="#B85C10"/>
+<circle cx="2009.0" cy="1301.3" r="1.7" fill="#B85C10"/>
+<circle cx="2011.3" cy="1305.2" r="1.7" fill="#B85C10"/>
+<circle cx="2013.6" cy="1318.4" r="1.7" fill="#54759B"/>
+<circle cx="2015.9" cy="1319.2" r="1.7" fill="#54759B"/>
+<circle cx="2018.2" cy="1319.8" r="1.7" fill="#54759B"/>
+<circle cx="2020.5" cy="1304.7" r="1.7" fill="#54759B"/>
+<circle cx="2022.8" cy="1322.7" r="1.7" fill="#54759B"/>
+<circle cx="2025.1" cy="1303.8" r="1.7" fill="#54759B"/>
+<circle cx="2027.4" cy="1308.9" r="1.7" fill="#54759B"/>
+<circle cx="2029.6" cy="1313.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2031.9" cy="1322.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2034.2" cy="1321.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2036.5" cy="1299.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2038.8" cy="1313.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2041.1" cy="1319.4" r="1.7" fill="#93A9C4"/>
+<circle cx="2043.4" cy="1323.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2045.7" cy="1301.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2048.0" cy="1322.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2050.3" cy="1317.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2052.6" cy="1319.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2054.9" cy="1322.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2057.1" cy="1322.6" r="1.7" fill="#93A9C4"/>
+<circle cx="2059.4" cy="1322.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2061.7" cy="1321.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2064.0" cy="1304.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2066.3" cy="1322.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2068.6" cy="1314.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2070.9" cy="1314.2" r="1.7" fill="#54759B"/>
+<circle cx="2073.2" cy="1301.4" r="1.7" fill="#54759B"/>
+<circle cx="2075.5" cy="1312.6" r="1.7" fill="#54759B"/>
+<circle cx="2077.8" cy="1320.9" r="1.7" fill="#54759B"/>
+<circle cx="2080.1" cy="1323.0" r="1.7" fill="#54759B"/>
+<circle cx="2082.4" cy="1316.9" r="1.7" fill="#54759B"/>
+<circle cx="2084.6" cy="1321.7" r="1.7" fill="#54759B"/>
+<circle cx="2086.9" cy="1295.3" r="1.7" fill="#54759B"/>
+<circle cx="2089.2" cy="1317.6" r="1.7" fill="#54759B"/>
+<circle cx="2091.5" cy="1312.5" r="1.7" fill="#B85C10"/>
+<circle cx="2093.8" cy="1302.1" r="1.7" fill="#B85C10"/>
+<circle cx="2096.1" cy="1293.7" r="1.7" fill="#B85C10"/>
+<circle cx="2098.4" cy="1286.7" r="1.7" fill="#B85C10"/>
+<circle cx="2100.7" cy="1280.5" r="1.7" fill="#B85C10"/>
+<circle cx="2103.0" cy="1280.0" r="1.7" fill="#B85C10"/>
+<circle cx="2105.3" cy="1286.2" r="1.7" fill="#B85C10"/>
+<circle cx="2107.6" cy="1293.1" r="1.7" fill="#B85C10"/>
+<circle cx="2109.9" cy="1301.4" r="1.7" fill="#B85C10"/>
+<circle cx="2112.1" cy="1307.1" r="1.7" fill="#B85C10"/>
+<circle cx="2114.4" cy="1323.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2116.7" cy="1315.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2119.0" cy="1316.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2121.3" cy="1321.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2123.6" cy="1308.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2125.9" cy="1298.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2128.2" cy="1303.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2130.5" cy="1321.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2132.8" cy="1322.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2135.1" cy="1322.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2137.4" cy="1313.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2139.6" cy="1294.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2141.9" cy="1297.4" r="1.7" fill="#93A9C4"/>
+<circle cx="2144.2" cy="1300.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2146.5" cy="1321.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2148.8" cy="1320.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2151.1" cy="1304.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2153.4" cy="1307.3" r="1.7" fill="#54759B"/>
+<circle cx="2155.7" cy="1323.0" r="1.7" fill="#54759B"/>
+<circle cx="2158.0" cy="1320.9" r="1.7" fill="#54759B"/>
+<circle cx="2160.3" cy="1322.5" r="1.7" fill="#54759B"/>
+<circle cx="2162.6" cy="1323.0" r="1.7" fill="#54759B"/>
+<circle cx="2164.9" cy="1304.4" r="1.7" fill="#54759B"/>
+<circle cx="2167.1" cy="1293.7" r="1.7" fill="#54759B"/>
+<circle cx="2169.4" cy="1320.0" r="1.7" fill="#54759B"/>
+<circle cx="2171.7" cy="1316.1" r="1.7" fill="#54759B"/>
+<circle cx="2174.0" cy="1311.4" r="1.7" fill="#54759B"/>
+<circle cx="2176.3" cy="1322.8" r="1.7" fill="#54759B"/>
+<circle cx="2178.6" cy="1321.7" r="1.7" fill="#54759B"/>
+<circle cx="2180.9" cy="1298.4" r="1.7" fill="#54759B"/>
+<circle cx="2183.2" cy="1321.7" r="1.7" fill="#54759B"/>
+<circle cx="2185.5" cy="1317.6" r="1.7" fill="#54759B"/>
+<circle cx="2187.8" cy="1311.4" r="1.7" fill="#54759B"/>
+<circle cx="2190.1" cy="1311.6" r="1.7" fill="#54759B"/>
+<circle cx="2192.4" cy="1320.4" r="1.7" fill="#54759B"/>
+<rect x="2212.5" y="1218.0" width="269.5" height="121.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="2222.5" y="1239.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Minimal residual disease</text>
+<text x="2222.5" y="1255.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">IL15, GATA3</text>
+<line x1="2224.5" y1="1266.0" x2="2224.5" y2="1323.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="2224.5" y1="1323.0" x2="2472.0" y2="1323.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="2224.5" y1="1283.1" x2="2472.0" y2="1283.1" stroke="#C2410C" stroke-width="1" stroke-dasharray="4,3" stroke-linecap="round"/>
+<circle cx="2225.6" cy="1304.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2227.9" cy="1313.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2230.2" cy="1319.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2232.5" cy="1318.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2234.8" cy="1318.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2237.1" cy="1314.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2239.4" cy="1320.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2241.7" cy="1296.6" r="1.7" fill="#93A9C4"/>
+<circle cx="2244.0" cy="1322.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2246.3" cy="1322.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2248.6" cy="1310.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2250.9" cy="1305.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2253.1" cy="1315.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2255.4" cy="1299.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2257.7" cy="1318.4" r="1.7" fill="#93A9C4"/>
+<circle cx="2260.0" cy="1297.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2262.3" cy="1301.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2264.6" cy="1321.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2266.9" cy="1319.1" r="1.7" fill="#54759B"/>
+<circle cx="2269.2" cy="1322.9" r="1.7" fill="#54759B"/>
+<circle cx="2271.5" cy="1322.6" r="1.7" fill="#54759B"/>
+<circle cx="2273.8" cy="1293.7" r="1.7" fill="#54759B"/>
+<circle cx="2276.1" cy="1300.0" r="1.7" fill="#54759B"/>
+<circle cx="2278.4" cy="1317.9" r="1.7" fill="#54759B"/>
+<circle cx="2280.6" cy="1319.1" r="1.7" fill="#54759B"/>
+<circle cx="2282.9" cy="1302.5" r="1.7" fill="#54759B"/>
+<circle cx="2285.2" cy="1322.7" r="1.7" fill="#54759B"/>
+<circle cx="2287.5" cy="1312.8" r="1.7" fill="#54759B"/>
+<circle cx="2289.8" cy="1311.3" r="1.7" fill="#54759B"/>
+<circle cx="2292.1" cy="1321.8" r="1.7" fill="#54759B"/>
+<circle cx="2294.4" cy="1322.9" r="1.7" fill="#54759B"/>
+<circle cx="2296.7" cy="1306.1" r="1.7" fill="#54759B"/>
+<circle cx="2299.0" cy="1323.0" r="1.7" fill="#54759B"/>
+<circle cx="2301.3" cy="1309.3" r="1.7" fill="#B85C10"/>
+<circle cx="2303.6" cy="1297.6" r="1.7" fill="#B85C10"/>
+<circle cx="2305.9" cy="1288.9" r="1.7" fill="#B85C10"/>
+<circle cx="2308.1" cy="1281.4" r="1.7" fill="#B85C10"/>
+<circle cx="2310.4" cy="1274.7" r="1.7" fill="#B85C10"/>
+<circle cx="2312.7" cy="1277.3" r="1.7" fill="#B85C10"/>
+<circle cx="2315.0" cy="1284.3" r="1.7" fill="#B85C10"/>
+<circle cx="2317.3" cy="1292.2" r="1.7" fill="#B85C10"/>
+<circle cx="2319.6" cy="1296.6" r="1.7" fill="#B85C10"/>
+<circle cx="2321.9" cy="1316.5" r="1.7" fill="#B85C10"/>
+<circle cx="2324.2" cy="1316.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2326.5" cy="1321.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2328.8" cy="1316.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2331.1" cy="1322.4" r="1.7" fill="#93A9C4"/>
+<circle cx="2333.4" cy="1323.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2335.6" cy="1302.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2337.9" cy="1323.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2340.2" cy="1322.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2342.5" cy="1299.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2344.8" cy="1323.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2347.1" cy="1305.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2349.4" cy="1322.1" r="1.7" fill="#54759B"/>
+<circle cx="2351.7" cy="1321.2" r="1.7" fill="#54759B"/>
+<circle cx="2354.0" cy="1314.7" r="1.7" fill="#54759B"/>
+<circle cx="2356.3" cy="1311.9" r="1.7" fill="#54759B"/>
+<circle cx="2358.6" cy="1322.4" r="1.7" fill="#54759B"/>
+<circle cx="2360.9" cy="1323.0" r="1.7" fill="#54759B"/>
+<circle cx="2363.1" cy="1317.9" r="1.7" fill="#54759B"/>
+<circle cx="2365.4" cy="1318.5" r="1.7" fill="#54759B"/>
+<circle cx="2367.7" cy="1321.7" r="1.7" fill="#54759B"/>
+<circle cx="2370.0" cy="1319.7" r="1.7" fill="#54759B"/>
+<circle cx="2372.3" cy="1320.8" r="1.7" fill="#54759B"/>
+<circle cx="2374.6" cy="1309.7" r="1.7" fill="#54759B"/>
+<circle cx="2376.9" cy="1312.5" r="1.7" fill="#54759B"/>
+<circle cx="2379.2" cy="1322.6" r="1.7" fill="#54759B"/>
+<circle cx="2381.5" cy="1307.1" r="1.7" fill="#54759B"/>
+<circle cx="2383.8" cy="1320.4" r="1.7" fill="#54759B"/>
+<circle cx="2386.1" cy="1321.4" r="1.7" fill="#54759B"/>
+<circle cx="2388.4" cy="1316.7" r="1.7" fill="#54759B"/>
+<circle cx="2390.6" cy="1316.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2392.9" cy="1294.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2395.2" cy="1315.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2397.5" cy="1322.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2399.8" cy="1315.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2402.1" cy="1315.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2404.4" cy="1322.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2406.7" cy="1310.0" r="1.7" fill="#B85C10"/>
+<circle cx="2409.0" cy="1303.4" r="1.7" fill="#B85C10"/>
+<circle cx="2411.3" cy="1294.2" r="1.7" fill="#B85C10"/>
+<circle cx="2413.6" cy="1286.7" r="1.7" fill="#B85C10"/>
+<circle cx="2415.9" cy="1280.2" r="1.7" fill="#B85C10"/>
+<circle cx="2418.1" cy="1277.2" r="1.7" fill="#B85C10"/>
+<circle cx="2420.4" cy="1283.5" r="1.7" fill="#B85C10"/>
+<circle cx="2422.7" cy="1290.5" r="1.7" fill="#B85C10"/>
+<circle cx="2425.0" cy="1298.7" r="1.7" fill="#B85C10"/>
+<circle cx="2427.3" cy="1309.5" r="1.7" fill="#B85C10"/>
+<circle cx="2429.6" cy="1312.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2431.9" cy="1311.4" r="1.7" fill="#54759B"/>
+<circle cx="2434.2" cy="1295.9" r="1.7" fill="#54759B"/>
+<circle cx="2436.5" cy="1310.1" r="1.7" fill="#54759B"/>
+<circle cx="2438.8" cy="1323.0" r="1.7" fill="#54759B"/>
+<circle cx="2441.1" cy="1322.2" r="1.7" fill="#54759B"/>
+<circle cx="2443.4" cy="1307.1" r="1.7" fill="#54759B"/>
+<circle cx="2445.6" cy="1299.4" r="1.7" fill="#54759B"/>
+<circle cx="2447.9" cy="1321.7" r="1.7" fill="#54759B"/>
+<circle cx="2450.2" cy="1316.4" r="1.7" fill="#54759B"/>
+<circle cx="2452.5" cy="1312.4" r="1.7" fill="#54759B"/>
+<circle cx="2454.8" cy="1323.0" r="1.7" fill="#54759B"/>
+<circle cx="2457.1" cy="1321.9" r="1.7" fill="#54759B"/>
+<circle cx="2459.4" cy="1323.0" r="1.7" fill="#54759B"/>
+<circle cx="2461.7" cy="1320.6" r="1.7" fill="#54759B"/>
+<circle cx="2464.0" cy="1305.4" r="1.7" fill="#54759B"/>
+<circle cx="2466.3" cy="1298.3" r="1.7" fill="#54759B"/>
+<circle cx="2468.6" cy="1319.3" r="1.7" fill="#54759B"/>
+<circle cx="2470.9" cy="1301.2" r="1.7" fill="#54759B"/>
+<rect x="1934.0" y="1348.0" width="269.5" height="121.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="1944.0" y="1369.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Overall survival</text>
+<text x="1944.0" y="1385.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">time to event</text>
+<line x1="1946.0" y1="1396.0" x2="1946.0" y2="1453.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1946.0" y1="1453.0" x2="2193.5" y2="1453.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1946.0" y1="1413.1" x2="2193.5" y2="1413.1" stroke="#C2410C" stroke-width="1" stroke-dasharray="4,3" stroke-linecap="round"/>
+<circle cx="1947.1" cy="1450.7" r="1.7" fill="#93A9C4"/>
+<circle cx="1949.4" cy="1449.5" r="1.7" fill="#93A9C4"/>
+<circle cx="1951.7" cy="1446.3" r="1.7" fill="#93A9C4"/>
+<circle cx="1954.0" cy="1452.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1956.3" cy="1449.7" r="1.7" fill="#93A9C4"/>
+<circle cx="1958.6" cy="1447.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1960.9" cy="1448.5" r="1.7" fill="#93A9C4"/>
+<circle cx="1963.2" cy="1441.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1965.5" cy="1424.5" r="1.7" fill="#93A9C4"/>
+<circle cx="1967.8" cy="1452.3" r="1.7" fill="#93A9C4"/>
+<circle cx="1970.1" cy="1441.8" r="1.7" fill="#93A9C4"/>
+<circle cx="1972.4" cy="1452.1" r="1.7" fill="#93A9C4"/>
+<circle cx="1974.6" cy="1446.0" r="1.7" fill="#93A9C4"/>
+<circle cx="1976.9" cy="1444.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1979.2" cy="1450.1" r="1.7" fill="#93A9C4"/>
+<circle cx="1981.5" cy="1451.6" r="1.7" fill="#93A9C4"/>
+<circle cx="1983.8" cy="1448.9" r="1.7" fill="#93A9C4"/>
+<circle cx="1986.1" cy="1449.7" r="1.7" fill="#93A9C4"/>
+<circle cx="1988.4" cy="1427.4" r="1.7" fill="#54759B"/>
+<circle cx="1990.7" cy="1451.9" r="1.7" fill="#54759B"/>
+<circle cx="1993.0" cy="1441.6" r="1.7" fill="#54759B"/>
+<circle cx="1995.3" cy="1451.7" r="1.7" fill="#54759B"/>
+<circle cx="1997.6" cy="1428.7" r="1.7" fill="#54759B"/>
+<circle cx="1999.9" cy="1452.2" r="1.7" fill="#54759B"/>
+<circle cx="2002.1" cy="1449.9" r="1.7" fill="#54759B"/>
+<circle cx="2004.4" cy="1452.3" r="1.7" fill="#54759B"/>
+<circle cx="2006.7" cy="1424.9" r="1.7" fill="#54759B"/>
+<circle cx="2009.0" cy="1425.7" r="1.7" fill="#54759B"/>
+<circle cx="2011.3" cy="1443.6" r="1.7" fill="#54759B"/>
+<circle cx="2013.6" cy="1446.2" r="1.7" fill="#54759B"/>
+<circle cx="2015.9" cy="1431.2" r="1.7" fill="#54759B"/>
+<circle cx="2018.2" cy="1452.8" r="1.7" fill="#54759B"/>
+<circle cx="2020.5" cy="1450.0" r="1.7" fill="#54759B"/>
+<circle cx="2022.8" cy="1451.4" r="1.7" fill="#54759B"/>
+<circle cx="2025.1" cy="1446.8" r="1.7" fill="#54759B"/>
+<circle cx="2027.4" cy="1452.9" r="1.7" fill="#54759B"/>
+<circle cx="2029.6" cy="1434.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2031.9" cy="1433.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2034.2" cy="1451.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2036.5" cy="1441.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2038.8" cy="1450.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2041.1" cy="1424.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2043.4" cy="1448.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2045.7" cy="1442.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2048.0" cy="1445.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2050.3" cy="1452.6" r="1.7" fill="#93A9C4"/>
+<circle cx="2052.6" cy="1448.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2054.9" cy="1440.2" r="1.7" fill="#B85C10"/>
+<circle cx="2057.1" cy="1428.6" r="1.7" fill="#B85C10"/>
+<circle cx="2059.4" cy="1419.9" r="1.7" fill="#B85C10"/>
+<circle cx="2061.7" cy="1412.6" r="1.7" fill="#B85C10"/>
+<circle cx="2064.0" cy="1406.1" r="1.7" fill="#B85C10"/>
+<circle cx="2066.3" cy="1408.1" r="1.7" fill="#B85C10"/>
+<circle cx="2068.6" cy="1414.9" r="1.7" fill="#B85C10"/>
+<circle cx="2070.9" cy="1422.5" r="1.7" fill="#B85C10"/>
+<circle cx="2073.2" cy="1431.8" r="1.7" fill="#B85C10"/>
+<circle cx="2075.5" cy="1445.8" r="1.7" fill="#B85C10"/>
+<circle cx="2077.8" cy="1440.3" r="1.7" fill="#54759B"/>
+<circle cx="2080.1" cy="1451.9" r="1.7" fill="#54759B"/>
+<circle cx="2082.4" cy="1443.3" r="1.7" fill="#54759B"/>
+<circle cx="2084.6" cy="1439.0" r="1.7" fill="#54759B"/>
+<circle cx="2086.9" cy="1447.7" r="1.7" fill="#54759B"/>
+<circle cx="2089.2" cy="1437.5" r="1.7" fill="#54759B"/>
+<circle cx="2091.5" cy="1449.0" r="1.7" fill="#54759B"/>
+<circle cx="2093.8" cy="1432.7" r="1.7" fill="#54759B"/>
+<circle cx="2096.1" cy="1449.2" r="1.7" fill="#54759B"/>
+<circle cx="2098.4" cy="1429.2" r="1.7" fill="#54759B"/>
+<circle cx="2100.7" cy="1432.0" r="1.7" fill="#54759B"/>
+<circle cx="2103.0" cy="1452.9" r="1.7" fill="#54759B"/>
+<circle cx="2105.3" cy="1445.4" r="1.7" fill="#54759B"/>
+<circle cx="2107.6" cy="1438.4" r="1.7" fill="#54759B"/>
+<circle cx="2109.9" cy="1449.3" r="1.7" fill="#54759B"/>
+<circle cx="2112.1" cy="1447.6" r="1.7" fill="#93A9C4"/>
+<circle cx="2114.4" cy="1445.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2116.7" cy="1452.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2119.0" cy="1438.7" r="1.7" fill="#93A9C4"/>
+<circle cx="2121.3" cy="1427.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2123.6" cy="1452.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2125.9" cy="1451.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2128.2" cy="1431.4" r="1.7" fill="#93A9C4"/>
+<circle cx="2130.5" cy="1452.1" r="1.7" fill="#93A9C4"/>
+<circle cx="2132.8" cy="1453.0" r="1.7" fill="#93A9C4"/>
+<circle cx="2135.1" cy="1440.2" r="1.7" fill="#93A9C4"/>
+<circle cx="2137.4" cy="1452.9" r="1.7" fill="#93A9C4"/>
+<circle cx="2139.6" cy="1452.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2141.9" cy="1441.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2144.2" cy="1424.3" r="1.7" fill="#93A9C4"/>
+<circle cx="2146.5" cy="1437.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2148.8" cy="1430.5" r="1.7" fill="#93A9C4"/>
+<circle cx="2151.1" cy="1440.8" r="1.7" fill="#93A9C4"/>
+<circle cx="2153.4" cy="1444.9" r="1.7" fill="#54759B"/>
+<circle cx="2155.7" cy="1452.9" r="1.7" fill="#54759B"/>
+<circle cx="2158.0" cy="1432.7" r="1.7" fill="#54759B"/>
+<circle cx="2160.3" cy="1438.4" r="1.7" fill="#54759B"/>
+<circle cx="2162.6" cy="1436.0" r="1.7" fill="#54759B"/>
+<circle cx="2164.9" cy="1446.7" r="1.7" fill="#54759B"/>
+<circle cx="2167.1" cy="1426.7" r="1.7" fill="#54759B"/>
+<circle cx="2169.4" cy="1424.0" r="1.7" fill="#54759B"/>
+<circle cx="2171.7" cy="1450.1" r="1.7" fill="#54759B"/>
+<circle cx="2174.0" cy="1448.1" r="1.7" fill="#54759B"/>
+<circle cx="2176.3" cy="1431.2" r="1.7" fill="#54759B"/>
+<circle cx="2178.6" cy="1452.2" r="1.7" fill="#54759B"/>
+<circle cx="2180.9" cy="1453.0" r="1.7" fill="#54759B"/>
+<circle cx="2183.2" cy="1428.7" r="1.7" fill="#54759B"/>
+<circle cx="2185.5" cy="1452.6" r="1.7" fill="#54759B"/>
+<circle cx="2187.8" cy="1430.4" r="1.7" fill="#54759B"/>
+<circle cx="2190.1" cy="1448.6" r="1.7" fill="#54759B"/>
+<circle cx="2192.4" cy="1424.7" r="1.7" fill="#54759B"/>
+<rect x="2212.5" y="1348.0" width="269.5" height="121.0" rx="7" ry="7" fill="#FFFFFF" stroke="#B9C4D0" stroke-width="1.2" opacity="1"/>
+<text x="2222.5" y="1369.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="15" font-weight="bold" fill="#101828" text-anchor="start">Net gain by workflow</text>
+<text x="2222.5" y="1385.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" fill="#5A6675" text-anchor="start">loci detected</text>
+<text x="2472.0" y="1385.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12" fill="#5A6675" text-anchor="end">novel</text>
+<rect x="2428.9" y="1376.0" width="10.0" height="10.0" rx="1.5" ry="1.5" fill="#F0A868" stroke="none" opacity="1"/>
+<text x="2418.9" y="1385.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12" fill="#5A6675" text-anchor="end">known</text>
+<rect x="2375.8" y="1376.0" width="10.0" height="10.0" rx="1.5" ry="1.5" fill="#8C4A0E" stroke="none" opacity="1"/>
+<line x1="2224.5" y1="1384.0" x2="2224.5" y2="1453.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="2224.5" y1="1453.0" x2="2472.0" y2="1453.0" stroke="#101828" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="2246.7" y="1424.0" width="26.6" height="29.0" rx="1" ry="1" fill="#8C4A0E" stroke="none" opacity="1"/>
+<rect x="2275.3" y="1439.2" width="26.6" height="13.8" rx="1" ry="1" fill="#F0A868" stroke="none" opacity="1"/>
+<text x="2273.3" y="1470.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">A</text>
+<rect x="2320.5" y="1413.0" width="26.6" height="40.0" rx="1" ry="1" fill="#8C4A0E" stroke="none" opacity="1"/>
+<rect x="2349.1" y="1426.8" width="26.6" height="26.2" rx="1" ry="1" fill="#F0A868" stroke="none" opacity="1"/>
+<text x="2347.1" y="1470.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">C</text>
+<rect x="2394.4" y="1389.5" width="26.6" height="63.5" rx="1" ry="1" fill="#8C4A0E" stroke="none" opacity="1"/>
+<rect x="2423.0" y="1397.8" width="26.6" height="55.2" rx="1" ry="1" fill="#F0A868" stroke="none" opacity="1"/>
+<text x="2421.0" y="1470.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="bold" fill="#101828" text-anchor="middle">F</text>
+<line x1="1898.0" y1="1309.0" x2="1915.0" y2="1309.0" stroke="#33415C" stroke-width="2.6" marker-end="url(#arrow)" stroke-linecap="round"/>
+<path d="M960.0,1004.0 H12.0 V1309.0 H38.0" fill="none" stroke="#243044" stroke-width="4" marker-end="url(#arrow)" stroke-linejoin="round" stroke-linecap="round"/>
 </svg>
