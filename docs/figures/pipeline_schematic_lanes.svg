@@ -116,8 +116,8 @@
 <text x="1279.5" y="817.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">GRAF-anc global; RFMix local</text>
 <text x="1279.5" y="844.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">ancestry with custom</text>
 <text x="1279.5" y="871.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">population-matched panels</text>
-<rect x="1668.0" y="620.0" width="470.0" height="418.0" rx="11" ry="11" fill="#FFD9B4" stroke="#F7B073" stroke-width="2.2" stroke-dasharray="7,5" opacity="1"/>
-<rect x="1669.5" y="629.0" width="5.0" height="400.0" rx="2.5" ry="2.5" fill="#F7B073" stroke="none" opacity="1"/>
+<rect x="1668.0" y="620.0" width="470.0" height="418.0" rx="11" ry="11" fill="#D6CDEC" stroke="#B29BDC" stroke-width="2.2" stroke-dasharray="7,5" opacity="1"/>
+<rect x="1669.5" y="629.0" width="5.0" height="400.0" rx="2.5" ry="2.5" fill="#B29BDC" stroke="none" opacity="1"/>
 <text x="1686.0" y="655.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="24" font-weight="bold" fill="#101828" text-anchor="start">Benchmark</text>
 <text x="1686.0" y="685.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">No standard exists: six published</text>
 <text x="1686.0" y="712.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="21" font-weight="600" fill="#101828" text-anchor="start">workflows run head-to-head</text>
